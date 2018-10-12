@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="nav_login">login</string>
+    <string name="nav_logout">logout</string>
+    <string name="nav_view_locations">view locations</string>
+    <string name="nav_edit_locations">edit locations</string>
+    <string name="nav_view_inventory">view inventory</string>
+    <string name="nav_edit_inventory">edit inventory</string>
+    <string name="nav_register">register</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
