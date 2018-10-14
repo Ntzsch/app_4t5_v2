@@ -16,8 +16,13 @@
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" />
     <fragment
-        android:id="@+id/registerFragment"
+        android:id="@+id/nav_register"
         android:name="edu.gatech.cs2340.myapplication.RegisterFragment"
         android:label="fragment_register"
         tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/nav_view_locations"
+        android:name="edu.gatech.cs2340.myapplication.ViewLocationFragment"
+        android:label="fragment_view_location"
+        tools:layout="@layout/fragment_view_location" />
 </navigation>

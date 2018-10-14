@@ -1,108 +1,84 @@
 package edu.gatech.cs2340.myapplication;
 
-import android.content.Context;
-import android.net.Uri;
+
 import android.os.Bundle;
-import android.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
+import com.google.android.gms.tasks.Continuation;
+import com.google.android.gms.tasks.Task;
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
+
+import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 /**
  * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link RegisterFragment.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link RegisterFragment#newInstance} factory method to
- * create an instance of this fragment.
  */
 public class RegisterFragment extends Fragment {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    private OnFragmentInteractionListener mListener;
+    private TextInputEditText m_username_text;
+    private TextInputEditText m_password_text;
+    private TextInputLayout m_password_layout;
+    private MaterialButton m_register_button;
+    Spinner m_spinner;
 
     public RegisterFragment() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment RegisterFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static RegisterFragment newInstance(String param1, String param2) {
-        RegisterFragment fragment = new RegisterFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_register, container, false);
-    }
-
-    // TODO: Rename method, update argument and hook method into UI event
-    public void onButtonPressed(Uri uri) {
-        if (mListener != null) {
-            mListener.onFragmentInteraction(uri);
-        }
-    }
-
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        if (context instanceof OnFragmentInteractionListener) {
-            mListener = (OnFragmentInteractionListener) context;
+        View m_view = inflater.inflate(R.layout.fragment_register, container, false);
+        m_spinner = m_view.findViewById(R.id.register_spinner);
+        ArrayAdapter<CharSequence> adapter;
+        if (The_Cloud.get_user_type() == User.Type.ADMIN) {
+            adapter = ArrayAdapter.createFromResource(this.getActivity(), R.array.admin_user_register_options, android.R.layout.simple_spinner_item);
         } else {
-            throw new RuntimeException(context.toString()
-                    + " must implement OnFragmentInteractionListener");
+            adapter = ArrayAdapter.createFromResource(this.getActivity(), R.array.manager_user_register_options, android.R.layout.simple_spinner_item);
         }
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        m_spinner.setAdapter(adapter);
+        return m_view;
     }
-
     @Override
-    public void onDetach() {
-        super.onDetach();
-        mListener = null;
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        m_username_text = view.findViewById(R.id.username_edittext);
+        m_password_text = view.findViewById(R.id.password_edittext);
+        m_password_layout = view.findViewById(R.id.password_textlayout);
+        m_register_button = view.findViewById(R.id.register_button);
+        m_register_button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(final View view) {
+                String username = m_username_text.getText().toString();
+                String password = m_password_text.getText().toString();
+                String user_type = m_spinner.getSelectedItem().toString();
+                m_register_button.setEnabled(false);
+                The_Cloud.register_user(username, password, user_type).continueWith(new Continuation<Boolean, Object>() {
+                    @Override
+                    public Object then(Task<Boolean> task){
+                        m_register_button.setEnabled(true);
+                        if (task.getResult() == true) {
+                            m_password_layout.setError("registered user!");
+                        } else {
+                            m_password_layout.setError("could not register user");
+                        }
+                        m_register_button.setEnabled(true);
+                        return null;
+                    }
+                });
+                m_username_text.setText(user_type);
+                // m_register_button.setEnabled(false);
+            }
+        });
     }
 
-    /**
-     * This interface must be implemented by activities that contain this
-     * fragment to allow an interaction in this fragment to be communicated
-     * to the activity and potentially other fragments contained in that
-     * activity.
-     * <p>
-     * See the Android Training lesson <a href=
-     * "http://developer.android.com/training/basics/fragments/communicating.html"
-     * >Communicating with Other Fragments</a> for more information.
-     */
-    public interface OnFragmentInteractionListener {
-        // TODO: Update argument type and name
-        void onFragmentInteraction(Uri uri);
-    }
 }
