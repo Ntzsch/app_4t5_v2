@@ -1,4 +1,4 @@
-package edu.gatech.cs2340.myapplication;
+package edu.gatech.cs2340.myapplication.controllers;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -11,6 +11,7 @@ import java.util.List;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+import edu.gatech.cs2340.myapplication.R;
 import edu.gatech.cs2340.myapplication.models.LocationEntry;
 
 public class LocationCardRecyclerViewAdapter extends RecyclerView.Adapter<LocationCardRecyclerViewAdapter.LocationCardViewHolder> {  // TODO:
@@ -42,7 +43,7 @@ public class LocationCardRecyclerViewAdapter extends RecyclerView.Adapter<Locati
         }
     }
 
-    LocationCardRecyclerViewAdapter(List<LocationEntry> productList) {
+    public LocationCardRecyclerViewAdapter(List<LocationEntry> productList) {
         this.m_location_list = productList;
         // imageRequester = ImageRequester.getInstance();
     }

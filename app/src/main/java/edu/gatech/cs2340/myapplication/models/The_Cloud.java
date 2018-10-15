@@ -1,4 +1,4 @@
-package edu.gatech.cs2340.myapplication;
+package edu.gatech.cs2340.myapplication.models;
 
 import android.util.Base64;
 import android.util.Log;
@@ -23,7 +23,7 @@ import java.util.List;
 import java.util.Map;
 
 import androidx.annotation.NonNull;
-import edu.gatech.cs2340.myapplication.models.LocationEntry;
+import edu.gatech.cs2340.myapplication.Callback;
 
 public class The_Cloud {
     private static FirebaseAuth m_auth =  m_auth = FirebaseAuth.getInstance();

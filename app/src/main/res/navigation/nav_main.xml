@@ -7,22 +7,22 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="edu.gatech.cs2340.myapplication.MainFragment"
+        android:name="edu.gatech.cs2340.myapplication.controllers.fragments.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" ></fragment>
     <fragment
         android:id="@+id/nav_login"
-        android:name="edu.gatech.cs2340.myapplication.LoginFragment"
+        android:name="edu.gatech.cs2340.myapplication.controllers.fragments.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" />
     <fragment
         android:id="@+id/nav_register"
-        android:name="edu.gatech.cs2340.myapplication.RegisterFragment"
+        android:name="edu.gatech.cs2340.myapplication.controllers.fragments.RegisterFragment"
         android:label="fragment_register"
         tools:layout="@layout/fragment_register" />
     <fragment
         android:id="@+id/nav_view_locations"
-        android:name="edu.gatech.cs2340.myapplication.ViewLocationFragment"
+        android:name="edu.gatech.cs2340.myapplication.controllers.fragments.ViewLocationFragment"
         android:label="fragment_view_location"
         tools:layout="@layout/fragment_view_location" />
 </navigation>

@@ -1,4 +1,4 @@
-package edu.gatech.cs2340.myapplication;
+package edu.gatech.cs2340.myapplication.controllers.fragments;
 
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
@@ -12,7 +12,11 @@ import java.util.List;
 
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import edu.gatech.cs2340.myapplication.Callback;
+import edu.gatech.cs2340.myapplication.R;
+import edu.gatech.cs2340.myapplication.controllers.LocationCardRecyclerViewAdapter;
 import edu.gatech.cs2340.myapplication.models.LocationEntry;
+import edu.gatech.cs2340.myapplication.models.The_Cloud;
 
 public class ViewLocationFragment extends Fragment {
     public ViewLocationFragment() {}

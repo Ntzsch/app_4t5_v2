@@ -1,4 +1,4 @@
-package edu.gatech.cs2340.myapplication;
+package edu.gatech.cs2340.myapplication.controllers.fragments;
 
 
 import android.os.Bundle;
@@ -7,13 +7,12 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
+import edu.gatech.cs2340.myapplication.R;
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link MainFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link MainFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
 public class MainFragment extends Fragment {

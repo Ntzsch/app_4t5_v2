@@ -7,10 +7,9 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
-import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.NavigationUI;
 import edu.gatech.cs2340.myapplication.R;
-import edu.gatech.cs2340.myapplication.The_Cloud;
+import edu.gatech.cs2340.myapplication.models.The_Cloud;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -19,7 +18,7 @@ import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
 
-import static edu.gatech.cs2340.myapplication.The_Cloud.get_user_type;
+import static edu.gatech.cs2340.myapplication.models.The_Cloud.get_user_type;
 
 public class MainActivity extends AppCompatActivity {
     private DrawerLayout m_drawer_layout;

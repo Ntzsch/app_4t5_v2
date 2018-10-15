@@ -1,9 +1,9 @@
-package edu.gatech.cs2340.myapplication;
+package edu.gatech.cs2340.myapplication.models;
 
 public class User {
     private String m_username;
     private String m_password;
-    enum Type {
+    public enum Type {
         GUEST, EMPLOYEE, MANAGER, ADMIN
     }
     private Type m_type;

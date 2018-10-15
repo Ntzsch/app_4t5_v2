@@ -1,4 +1,4 @@
-package edu.gatech.cs2340.myapplication;
+package edu.gatech.cs2340.myapplication.controllers.fragments;
 
 
 import android.os.Bundle;
@@ -15,6 +15,8 @@ import com.google.android.material.textfield.TextInputLayout;
 
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
+import edu.gatech.cs2340.myapplication.R;
+import edu.gatech.cs2340.myapplication.models.The_Cloud;
 import edu.gatech.cs2340.myapplication.controllers.MainActivity;
 
 /**
