@@ -10,7 +10,7 @@ public class LocationEntry {
     public final String name;
     public final String phone;
     public final String state;
-    public final String street_address;
+    public final String streetAddress;
     public final String type;
     public final String website;
     public final String zip;
@@ -23,13 +23,15 @@ public class LocationEntry {
         this.name = "d";
         this.phone = "e";
         this.state = "f";
-        this.street_address = "g";
+        this.streetAddress = "g";
         this.type = "h";
         this.website = "i";
         this.zip = "j";
     } */
-    public LocationEntry(String city, String latitude, String longitude, String name, String phone,
-                         String state, String street_address, String type, String website,
+    public LocationEntry(String city, String latitude, String longitude,
+                         String name, String phone,
+                         String state, String streetAddress, String type,
+                         String website,
                          String zip) {
         this.city = city;
         this.latitude = latitude;
@@ -37,7 +39,7 @@ public class LocationEntry {
         this.name = name;
         this.phone = phone;
         this.state = state;
-        this.street_address = street_address;
+        this.streetAddress = streetAddress;
         this.type = type;
         this.website = website;
         this.zip = zip;

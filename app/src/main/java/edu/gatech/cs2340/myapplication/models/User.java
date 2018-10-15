@@ -1,17 +1,17 @@
 package edu.gatech.cs2340.myapplication.models;
 
 public class User {
-    private String m_username;
-    private String m_password;
+    private String mUsername;
+    private String mPassword;
     public enum Type {
         GUEST, EMPLOYEE, MANAGER, ADMIN
     }
-    private Type m_type;
+    private Type mType;
 
     public User(String username, String password, Type type) {
-        this.m_username = username;
-        this.m_password = password;
-        this.m_type = type;
+        this.mUsername = username;
+        this.mPassword = password;
+        this.mType = type;
     }
 
     public User() {
@@ -19,7 +19,8 @@ public class User {
     }
 
     public Type getType() {
-        return m_type;
+        return mType;
     }
-    public String get_username() { return m_username; }
+    public String getUsername() {
+        return mUsername; }
 }
