@@ -16,7 +16,7 @@ import com.google.android.material.textfield.TextInputLayout;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 import edu.gatech.cs2340.myapplication.R;
-import edu.gatech.cs2340.myapplication.models.The_Cloud;
+import edu.gatech.cs2340.myapplication.models.TheCloud;
 import edu.gatech.cs2340.myapplication.controllers.MainActivity;
 
 /**
@@ -24,10 +24,10 @@ import edu.gatech.cs2340.myapplication.controllers.MainActivity;
  */
 public class LoginFragment extends Fragment {
 
-    private TextInputEditText m_username_text;
-    private TextInputEditText m_password_text;
-    private TextInputLayout m_password_layout;
-    private MaterialButton m_login_button;
+    private TextInputEditText mUsernameText;
+    private TextInputEditText mPasswordText;
+    private TextInputLayout mPasswordLayout;
+    private MaterialButton mLoginButton;
 
     public LoginFragment() {
         // Required empty public constructor
@@ -43,32 +43,35 @@ public class LoginFragment extends Fragment {
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
-        m_username_text = view.findViewById(R.id.username_edittext);
-        m_password_text = view.findViewById(R.id.password_edittext);
-        m_password_layout = view.findViewById(R.id.password_textlayout);
-        m_login_button = view.findViewById(R.id.login_button);
-        m_login_button.setOnClickListener(new View.OnClickListener(){
+        mUsernameText = view.findViewById(R.id.username_edittext);
+        mPasswordText = view.findViewById(R.id.password_edittext);
+        mPasswordLayout = view.findViewById(R.id.password_textlayout);
+        mLoginButton = view.findViewById(R.id.login_button);
+        mLoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View view) {
-                String username = m_username_text.getText().toString();
-                String password = m_password_text.getText().toString();
-                The_Cloud.sign_in(username, password).continueWith(new Continuation<Boolean, Object>() {
+                String username = mUsernameText.getText().toString();
+                String password = mPasswordText.getText().toString();
+                TheCloud.signIn(username, password).continueWith(new
+                                    Continuation<Boolean, Object>() {
                     @Override
-                    public Object then(Task<Boolean> task){
+                    public Object then(Task<Boolean> task) {
                         Log.e("LoginFragment", task.getResult().toString());
-                        m_login_button.setEnabled(true);
-                        if (task.getResult() == true) {
-                            ((MainActivity)getActivity()).update_navigation();
-                            Navigation.findNavController(view).navigate(R.id.mainFragment);
-                            m_username_text.setText("LOGGED IN");
+                        mLoginButton.setEnabled(true);
+                        if (task.getResult()) {
+                            ((MainActivity) getActivity()).updateNavigation();
+                            Navigation.findNavController(view).navigate(R.id
+                                    .mainFragment);
+                            mUsernameText.setText("LOGGED IN");
                         } else {
-                            m_password_layout.setError("incorrect username/password");
+                            mPasswordLayout.setError("incorrect "
+                                    + "username/password");
                         }
                         return null;
                     }
                 });
-                m_password_text.setText("");
-                m_login_button.setEnabled(false);
+                mPasswordText.setText("");
+                mLoginButton.setEnabled(false);
             }
         });
     }

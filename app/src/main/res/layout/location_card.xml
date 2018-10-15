@@ -20,84 +20,84 @@
         android:padding="4dp">
 
         <TextView
-            android:id="@+id/location_name"
+            android:id="@+id/locationName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="location name"
             android:textAppearance="?attr/textAppearanceHeadline6"
-            app:layout_constraintBottom_toTopOf="@+id/location_type"
+            app:layout_constraintBottom_toTopOf="@+id/locationType"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/location_type"
+            android:id="@+id/locationType"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="location type"
             android:textAppearance="?attr/textAppearanceBody2"
-            app:layout_constraintBottom_toTopOf="@+id/location_address"
+            app:layout_constraintBottom_toTopOf="@+id/locationAddress"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/location_name" />
+            app:layout_constraintTop_toBottomOf="@+id/locationName" />
 
         <TextView
-            android:id="@+id/location_address"
+            android:id="@+id/locationAddress"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="location address"
             android:textAppearance="?attr/textAppearanceBody2"
-            app:layout_constraintBottom_toTopOf="@+id/location_phone"
-            app:layout_constraintEnd_toStartOf="@+id/dropdown_button"
+            app:layout_constraintBottom_toTopOf="@+id/locationPhone"
+            app:layout_constraintEnd_toStartOf="@+id/dropdownButton"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/location_type" />
+            app:layout_constraintTop_toBottomOf="@+id/locationType" />
 
         <ImageView
-            android:id="@+id/dropdown_button"
+            android:id="@+id/dropdownButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="@+id/location_address"
+            app:layout_constraintBottom_toBottomOf="@+id/locationAddress"
             app:layout_constraintEnd_toEndOf="parent"
             app:srcCompat="@drawable/ic_arrow_drop_down_black_24dp" />
 
         <TextView
-            android:id="@+id/location_phone"
+            android:id="@+id/locationPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="location phone"
             android:textAppearance="?attr/textAppearanceBody2"
             android:visibility="gone"
-            app:layout_constraintBottom_toTopOf="@+id/location_lat_lon"
+            app:layout_constraintBottom_toTopOf="@+id/locationLatLon"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/location_address" />
+            app:layout_constraintTop_toBottomOf="@+id/locationAddress" />
 
         <TextView
-            android:id="@+id/location_lat_lon"
+            android:id="@+id/locationLatLon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="location lat lon"
             android:textAppearance="?attr/textAppearanceBody2"
             android:visibility="gone"
-            app:layout_constraintBottom_toTopOf="@+id/location_website"
+            app:layout_constraintBottom_toTopOf="@+id/locationWebsite"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/location_phone" />
+            app:layout_constraintTop_toBottomOf="@+id/locationPhone" />
 
         <TextView
-            android:id="@+id/location_website"
+            android:id="@+id/locationWebsite"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="location website"
             android:textAppearance="?attr/textAppearanceBody2"
             android:visibility="gone"
-            app:layout_constraintBottom_toTopOf="@+id/location_zip"
+            app:layout_constraintBottom_toTopOf="@+id/locationZip"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/location_lat_lon" />
+            app:layout_constraintTop_toBottomOf="@+id/locationLatLon" />
 
         <TextView
-            android:id="@+id/location_zip"
+            android:id="@+id/locationZip"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="zip"
@@ -106,7 +106,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/location_website" />
+            app:layout_constraintTop_toBottomOf="@+id/locationWebsite" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
