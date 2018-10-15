@@ -1,53 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:layout_marginBottom="16dp"
-android:layout_marginLeft="12dp"
-android:layout_marginRight="12dp"
-android:layout_marginTop="16dp"
-app:cardBackgroundColor="@android:color/white"
-app:cardCornerRadius="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginTop="4dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="4dp"
     app:cardElevation="2dp"
     app:cardPreventCornerOverlap="true">
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
-
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="4dp">
 
         <TextView
             android:id="@+id/location_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="location location"
-            android:textAppearance="?attr/textAppearanceHeadline6" />
-
-        <TextView
-            android:id="@+id/location_address"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?attr/textAppearanceBody2" />
+            android:text="location name"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            app:layout_constraintBottom_toTopOf="@+id/location_type"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/location_type"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="?attr/textAppearanceBody2" />
+            android:text="location type"
+            android:textAppearance="?attr/textAppearanceBody2"
+            app:layout_constraintBottom_toTopOf="@+id/location_address"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/location_name" />
+
+        <TextView
+            android:id="@+id/location_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="location address"
+            android:textAppearance="?attr/textAppearanceBody2"
+            app:layout_constraintBottom_toTopOf="@+id/location_phone"
+            app:layout_constraintEnd_toStartOf="@+id/dropdown_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/location_type" />
+
+        <ImageView
+            android:id="@+id/dropdown_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/location_address"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_arrow_drop_down_black_24dp" />
+
         <TextView
             android:id="@+id/location_phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="?attr/textAppearanceBody2" />
-    </LinearLayout>
-</LinearLayout>
+            android:text="location phone"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/location_lat_lon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/location_address" />
+
+        <TextView
+            android:id="@+id/location_lat_lon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="location lat lon"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/location_website"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/location_phone" />
+
+        <TextView
+            android:id="@+id/location_website"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="location website"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/location_zip"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/location_lat_lon" />
+
+        <TextView
+            android:id="@+id/location_zip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="zip"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/location_website" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>
 
 <!--

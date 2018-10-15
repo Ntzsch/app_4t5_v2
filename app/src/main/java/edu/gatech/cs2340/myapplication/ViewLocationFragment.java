@@ -33,7 +33,7 @@ public class ViewLocationFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_view_location, container, false);
         RecyclerView recyclerView = view.findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2, RecyclerView.VERTICAL, false));
+        recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 1, RecyclerView.VERTICAL, false));
 
         final LocationCardRecyclerViewAdapter adapter = new LocationCardRecyclerViewAdapter(
                 new ArrayList<LocationEntry>());

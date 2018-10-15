@@ -1,8 +1,10 @@
 package edu.gatech.cs2340.myapplication;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -19,6 +21,11 @@ public class LocationCardRecyclerViewAdapter extends RecyclerView.Adapter<Locati
         public TextView location_address;
         public TextView location_type;
         public TextView location_phone;
+        public TextView location_lat_lon;
+        public TextView location_website;
+        public TextView location_zip;
+        public ImageView dropdown_button;
+        public boolean open = false;
 
 
         public LocationCardViewHolder(View itemView) {
@@ -27,6 +34,10 @@ public class LocationCardRecyclerViewAdapter extends RecyclerView.Adapter<Locati
             location_address = itemView.findViewById(R.id.location_address);
             location_type = itemView.findViewById(R.id.location_type);
             location_phone = itemView.findViewById(R.id.location_phone);
+            location_lat_lon = itemView.findViewById(R.id.location_lat_lon);
+            location_website = itemView.findViewById(R.id.location_website);
+            location_zip = itemView.findViewById(R.id.location_zip);
+            dropdown_button = itemView.findViewById(R.id.dropdown_button);
         }
     }
 
@@ -43,13 +54,37 @@ public class LocationCardRecyclerViewAdapter extends RecyclerView.Adapter<Locati
     }
 
     @Override
-    public void onBindViewHolder(@NonNull LocationCardViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull final LocationCardViewHolder holder, int position) {
         if (m_location_list != null && position < m_location_list.size()) {
             LocationEntry location = m_location_list.get(position);
             holder.location_name.setText(location.name);
             holder.location_address.setText(location.street_address + ", " + location.city + ", " + location.state);
             holder.location_type.setText(location.type);
             holder.location_phone.setText(location.phone);
+            holder.location_lat_lon.setText(location.latitude + ", " + location.longitude);
+            holder.location_website.setText(location.website);
+            holder.location_zip.setText(location.zip);
+            holder.dropdown_button.setOnClickListener(new View.OnClickListener() {
+                final private LocationCardViewHolder h = holder;
+                @Override
+                public void onClick(View v) {
+                    // v.findViewById(R.id.location_zip).setVisibility(View.VISIBLE);
+                    if (h.open == false) {
+                        Log.i("dropdown button", "maximizing view");
+                        h.location_lat_lon.setVisibility(View.VISIBLE);
+                        h.location_website.setVisibility(View.VISIBLE);
+                        h.location_zip.setVisibility(View.VISIBLE);
+                        h.dropdown_button.setImageResource(R.drawable.ic_arrow_drop_up_black_24dp);
+                    } else {
+                        Log.i("dropdown button", "minimizing view");
+                        h.location_lat_lon.setVisibility(View.GONE);
+                        h.location_website.setVisibility(View.GONE);
+                        h.location_zip.setVisibility(View.GONE);
+                        h.dropdown_button.setImageResource(R.drawable.ic_arrow_drop_down_black_24dp);
+                    }
+                    h.open = !h.open;
+                }
+            });
             // imageRequester.setImageFromUrl(holder.productImage, product.url);
         }
     }
