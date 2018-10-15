@@ -1,4 +1,4 @@
-package edu.gatech.cs2340.myapplication;
+package edu.gatech.cs2340.myapplication.controllers;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +9,8 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.NavigationUI;
+import edu.gatech.cs2340.myapplication.R;
+import edu.gatech.cs2340.myapplication.The_Cloud;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -16,6 +18,8 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
+
+import static edu.gatech.cs2340.myapplication.The_Cloud.get_user_type;
 
 public class MainActivity extends AppCompatActivity {
     private DrawerLayout m_drawer_layout;
@@ -96,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void update_navigation() {
         m_navigation_view.getMenu().clear();
-        switch (The_Cloud.get_user_type()) {
+        switch (get_user_type()) {
             case GUEST:
                 m_navigation_view.inflateMenu(R.menu.nav_guest_items);
                 break;

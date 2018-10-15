@@ -23,6 +23,7 @@ import java.util.List;
 import java.util.Map;
 
 import androidx.annotation.NonNull;
+import edu.gatech.cs2340.myapplication.models.LocationEntry;
 
 public class The_Cloud {
     private static FirebaseAuth m_auth =  m_auth = FirebaseAuth.getInstance();

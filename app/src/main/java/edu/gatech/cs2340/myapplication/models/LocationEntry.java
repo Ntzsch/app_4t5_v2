@@ -1,4 +1,4 @@
-package edu.gatech.cs2340.myapplication;
+package edu.gatech.cs2340.myapplication.models;
 
 import java.util.ArrayList;
 import java.util.List;

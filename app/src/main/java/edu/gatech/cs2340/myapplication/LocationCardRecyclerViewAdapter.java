@@ -11,6 +11,7 @@ import java.util.List;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+import edu.gatech.cs2340.myapplication.models.LocationEntry;
 
 public class LocationCardRecyclerViewAdapter extends RecyclerView.Adapter<LocationCardRecyclerViewAdapter.LocationCardViewHolder> {  // TODO:
     private List<LocationEntry> m_location_list;

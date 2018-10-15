@@ -15,6 +15,7 @@ import com.google.android.material.textfield.TextInputLayout;
 
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
+import edu.gatech.cs2340.myapplication.controllers.MainActivity;
 
 /**
  * A simple {@link Fragment} subclass.
