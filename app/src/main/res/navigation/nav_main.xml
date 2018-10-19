@@ -39,6 +39,25 @@
         android:id="@+id/nav_view_inventory_details"
         android:name="edu.gatech.cs2340.myapplication.controllers.fragments.InventoryEntryDetails"
         android:label="inventory_detail_view"
-        tools:layout="@layout/fragment_inventory_details"/>
+        tools:layout="@layout/fragment_inventory_details">
+        <argument
+            android:name="time"
+            android:defaultValue="null" />
+        <argument
+            android:name="location"
+            android:defaultValue="null" />
+        <argument
+            android:name="smallDescript"
+            android:defaultValue="null" />
+        <argument
+            android:name="longDescript"
+            android:defaultValue="null" />
+        <argument
+            android:name="value"
+            android:defaultValue="null" />
+        <argument
+            android:name="category"
+            android:defaultValue="null" />
+    </fragment>
 
 </navigation>

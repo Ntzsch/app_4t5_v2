@@ -36,14 +36,12 @@ public class InventoryEntryDetails extends Fragment {
         TextView itemValue = view.findViewById(R.id.itemValue);
         TextView itemTime = view.findViewById(R.id.itemTime);
 
-        InventoryEntry item = new InventoryEntry("a", "b",
-                "c", "d", "e", "f");
-        itemName.setText(item.getSmallDescription());
-        itemDescription.setText(item.getFullDescription());
-        itemLocation.setText(item.getLocation());
-        itemValue.setText(item.getValue());
-        itemTime.setText(item.getTimeStamp());
-        itemCategory.setText(item.getCategory());
+        itemName.setText(getArguments().getString("smallDescript"));
+        itemDescription.setText(getArguments().getString("longDescript"));
+        itemLocation.setText(getArguments().getString("location"));
+        itemValue.setText(getArguments().getString("value"));
+        itemTime.setText(getArguments().getString("time"));
+        itemCategory.setText(getArguments().getString("category"));
 
 
     }
