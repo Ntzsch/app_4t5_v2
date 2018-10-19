@@ -81,6 +81,7 @@ public class LocationCardRecyclerViewAdapter extends RecyclerView
                     // .VISIBLE);
                     if (!h.open) {
                         Log.i("dropdown button", "maximizing view");
+                        h.locationPhone.setVisibility(View.VISIBLE);
                         h.locationLatLon.setVisibility(View.VISIBLE);
                         h.locationWebsite.setVisibility(View.VISIBLE);
                         h.locationZip.setVisibility(View.VISIBLE);
@@ -88,6 +89,7 @@ public class LocationCardRecyclerViewAdapter extends RecyclerView
                                 .ic_arrow_drop_up_black_24dp);
                     } else {
                         Log.i("dropdown button", "minimizing view");
+                        h.locationPhone.setVisibility(View.GONE);
                         h.locationLatLon.setVisibility(View.GONE);
                         h.locationWebsite.setVisibility(View.GONE);
                         h.locationZip.setVisibility(View.GONE);
