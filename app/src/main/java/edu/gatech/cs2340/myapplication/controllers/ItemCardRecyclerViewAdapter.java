@@ -15,6 +15,7 @@ import edu.gatech.cs2340.myapplication.models.InventoryEntry;
 public class ItemCardRecyclerViewAdapter
         extends RecyclerView.Adapter<
         ItemCardRecyclerViewAdapter.ItemCardViewHolder> {
+
     private List<InventoryEntry> mItemList;
 
     public class ItemCardViewHolder extends RecyclerView.ViewHolder {
@@ -22,7 +23,7 @@ public class ItemCardRecyclerViewAdapter
         public TextView itemLocation;
         public TextView itemPrice;
 
-        public ItemCardViewHolder(View view) {
+        ItemCardViewHolder(View view) {
             super(view);
             itemName = view.findViewById(R.id.itemName);
             itemLocation = view.findViewById(R.id.itemLocation);
@@ -50,6 +51,7 @@ public class ItemCardRecyclerViewAdapter
             holder.itemLocation.setText(item.getLocation());
             holder.itemPrice.setText(item.getValue());
         }
+
 
     }
 
