@@ -1,6 +1,6 @@
 package edu.gatech.cs2340.myapplication.models;
 
-public class DonationItem {
+public class InventoryEntry {
 //    public static enum CATEGORY {
 //        CLOTHING("Clothing"), HAT("Hat"), KITCHEN("Kitchen"), ELECTRONICS("Electronics")
 //        ,HOUSEHOLD("Household"), OTHER("Other");
@@ -23,9 +23,9 @@ public class DonationItem {
     private String value; //in dollars
     private String category;
 
-    public DonationItem(String timeStamp, String location,
-                        String smallDescription, String fullDescription,
-                        String value, String category) {
+    public InventoryEntry(String timeStamp, String location,
+                          String smallDescription, String fullDescription,
+                          String value, String category) {
         this.timeStamp = timeStamp;
         this.location = location;
         this.smallDescription = smallDescription;

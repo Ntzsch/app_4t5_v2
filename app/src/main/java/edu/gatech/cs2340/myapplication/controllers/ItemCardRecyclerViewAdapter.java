@@ -1,24 +1,21 @@
 package edu.gatech.cs2340.myapplication.controllers;
 
 import androidx.recyclerview.widget.RecyclerView;
-import android.util.Log;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 import java.util.List;
 import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
 import edu.gatech.cs2340.myapplication.R;
-import edu.gatech.cs2340.myapplication.models.DonationItem;
-import edu.gatech.cs2340.myapplication.models.LocationEntry;
+import edu.gatech.cs2340.myapplication.models.InventoryEntry;
 
 
 public class ItemCardRecyclerViewAdapter
         extends RecyclerView.Adapter<
         ItemCardRecyclerViewAdapter.ItemCardViewHolder> {
-    private List<DonationItem> mItemList;
+    private List<InventoryEntry> mItemList;
 
     public class ItemCardViewHolder extends RecyclerView.ViewHolder {
         public TextView itemName;
@@ -33,7 +30,7 @@ public class ItemCardRecyclerViewAdapter
         }
     }
 
-    public ItemCardRecyclerViewAdapter(List<DonationItem> mItemList) {
+    public ItemCardRecyclerViewAdapter(List<InventoryEntry> mItemList) {
         this.mItemList = mItemList;
     }
     @NonNull
@@ -48,7 +45,7 @@ public class ItemCardRecyclerViewAdapter
     public void onBindViewHolder(@NonNull final ItemCardViewHolder holder,
                                  int position) {
         if (mItemList != null && position <mItemList.size()) {
-            DonationItem item = mItemList.get(position);
+            InventoryEntry item = mItemList.get(position);
             holder.itemName.setText(item.getSmallDescription());
             holder.itemLocation.setText(item.getLocation());
             holder.itemPrice.setText(item.getValue());
