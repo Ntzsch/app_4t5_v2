@@ -25,4 +25,9 @@
         android:name="edu.gatech.cs2340.myapplication.controllers.fragments.ViewLocationFragment"
         android:label="fragment_view_location"
         tools:layout="@layout/fragment_view_location" />
+    <fragment
+        android:id="@+id/nav_view_items"
+        android:name="edu.gatech.cs2340.myapplication.controllers.fragments.ViewItemFragment"
+        android:label="fragment_view_location"
+        tools:layout="@layout/fragment_view_location" />
 </navigation>

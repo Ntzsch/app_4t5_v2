@@ -64,6 +64,9 @@ public class MainActivity extends AppCompatActivity {
                         // set item as selected to persist highlight
                         // menuItem.setChecked(true);
                         switch (menuItem.getItemId()) {
+                        case R.id.nav_view_inventory:
+                            mNavController.navigate(R.id.nav_view_items);
+                            break;
                         case R.id.nav_login:
                             Log.e("menu_navigation", "nav_login");
                             mNavController.navigate(R.id.nav_login);

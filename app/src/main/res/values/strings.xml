@@ -7,13 +7,15 @@
     <string name="nav_view_inventory">view inventory</string>
     <string name="nav_edit_inventory">edit inventory</string>
     <string name="nav_register">register</string>
-
+    <string name="item_header">Items</string>
     <string name="username_hint">username</string>
     <string name="password_hint">password</string>
     <string name="login_button_text">login</string>
 
     <string name="register_button_text">register</string>
     <string name="register_spinner_prompt">user type</string>
+
+    <string name="add_button_text">add</string>
 
     <string-array name="admin_user_register_options">
         <item>employee</item>
