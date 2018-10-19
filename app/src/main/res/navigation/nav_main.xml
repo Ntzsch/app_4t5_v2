@@ -30,4 +30,9 @@
         android:name="edu.gatech.cs2340.myapplication.controllers.fragments.ViewItemFragment"
         android:label="fragment_view_location"
         tools:layout="@layout/fragment_view_location" />
+    <fragment
+        android:id="@+id/nav_edit_inventory"
+        android:name="edu.gatech.cs2340.myapplication.controllers.fragments.EditInventoryFragment"
+        android:label="fragment_view_"
+        tools:layout="@layout/fragment_view_edit_inventory" />
 </navigation>
