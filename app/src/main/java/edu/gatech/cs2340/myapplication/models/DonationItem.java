@@ -17,7 +17,6 @@ public class DonationItem {
 //    }
 
     private String timeStamp;
-
     private String location;
     private String smallDescription;
     private String fullDescription;
