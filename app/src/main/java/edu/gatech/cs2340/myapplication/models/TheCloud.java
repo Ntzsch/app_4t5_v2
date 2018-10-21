@@ -93,6 +93,30 @@ public class TheCloud {
                 });
     }
 
+    private static Task<Boolean> addInventoryEntry(InventoryEntry entry) {
+        // Create the arguments to the callable function.
+        Map<String, Object> data = new HashMap<>();
+        data.put("timeStamp", entry.getTimeStamp());
+        data.put("location", entry.getLocation());
+        data.put("smallDescription", entry.getSmallDescription());
+        data.put("fullDescription", entry.getFullDescription());
+        data.put("value", entry.getValue());
+        data.put("category", entry.getCategory());
+
+        return mFunctions
+                .getHttpsCallable("addInventoryItem")
+                .call(data)
+                .continueWith(new Continuation<HttpsCallableResult, Boolean>() {
+                    // tokens are strings
+                    @Override
+                    public Boolean then(@NonNull Task<HttpsCallableResult>
+                                               task) throws Exception {
+                        Boolean success = (Boolean) task.getResult().getData();
+                        return success;
+                    }
+                });
+    }
+
     public static Task<Boolean> registerUser(String username, String
             password, String type) {
         // Create the arguments to the callable function.
@@ -145,6 +169,45 @@ public class TheCloud {
                             locationHashmap.get("Zip")));
                 }
                 callback.callback(locationEntries);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                // Getting Post failed, log a message
+                Log.e("DATABASE_ERROR", "loadPost:onCancelled",
+                        databaseError.toException());
+                callback.callback(null);
+            }
+        });
+    }
+
+    public static void getInventory(final Callback<List<LocationEntry>>
+                                            callback) {
+        DatabaseReference tmpDb = FirebaseDatabase.getInstance().getReference();
+        tmpDb = tmpDb.child("inventory");
+        tmpDb.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                // Get Post object and use the values to update the UI
+                ArrayList<InventoryEntry> inventoryEntries = new ArrayList<>();
+
+                Iterable<DataSnapshot> locations = dataSnapshot.getChildren();
+
+                for (DataSnapshot location : locations) {
+                    GenericTypeIndicator<HashMap<String, String>> t = new
+                            GenericTypeIndicator<HashMap<String, String>>() {
+                            };
+                    HashMap<String, String> locationHashmap = location
+                            .getValue(t);
+                    inventoryEntries.add(new InventoryEntry(
+                            locationHashmap.get("timeStamp"),
+                            locationHashmap.get("location"),
+                            locationHashmap.get("smallDescription"),
+                            locationHashmap.get("fullDescription"),
+                            locationHashmap.get("value"),
+                            locationHashmap.get("category")));
+                }
+                callback.callback(inventoryEntries);
             }
 
             @Override
