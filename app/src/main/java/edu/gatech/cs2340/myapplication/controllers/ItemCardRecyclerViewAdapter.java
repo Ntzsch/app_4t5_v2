@@ -15,14 +15,16 @@ import edu.gatech.cs2340.myapplication.models.InventoryEntry;
 public class ItemCardRecyclerViewAdapter
         extends RecyclerView.Adapter<
         ItemCardRecyclerViewAdapter.ItemCardViewHolder> {
+
     private List<InventoryEntry> mItemList;
+    CustomItemClickListener listener;
 
     public class ItemCardViewHolder extends RecyclerView.ViewHolder {
         public TextView itemName;
         public TextView itemLocation;
         public TextView itemPrice;
 
-        public ItemCardViewHolder(View view) {
+        ItemCardViewHolder(View view) {
             super(view);
             itemName = view.findViewById(R.id.itemName);
             itemLocation = view.findViewById(R.id.itemLocation);
@@ -30,17 +32,30 @@ public class ItemCardRecyclerViewAdapter
         }
     }
 
-    public ItemCardRecyclerViewAdapter(List<InventoryEntry> mItemList) {
+    public ItemCardRecyclerViewAdapter(List<InventoryEntry> mItemList,
+                                       CustomItemClickListener listener) {
         this.mItemList = mItemList;
+        this.listener = listener;
     }
+
+
     @NonNull
     @Override
     public ItemCardViewHolder onCreateViewHolder(@NonNull ViewGroup parent,
                                                      int viewType) {
         View layoutView = LayoutInflater.from(parent.getContext()).inflate(R
                 .layout.item_card, parent, false);
-        return new ItemCardViewHolder(layoutView);
+        final ItemCardViewHolder mViewHolder = new ItemCardViewHolder(layoutView);
+        layoutView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                listener.onItemClick(v, mViewHolder.getLayoutPosition());
+            }
+        });
+        return mViewHolder;
     }
+
+
     @Override
     public void onBindViewHolder(@NonNull final ItemCardViewHolder holder,
                                  int position) {
@@ -50,6 +65,7 @@ public class ItemCardRecyclerViewAdapter
             holder.itemLocation.setText(item.getLocation());
             holder.itemPrice.setText(item.getValue());
         }
+
 
     }
 
