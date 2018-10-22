@@ -39,7 +39,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/username_textlayout"
-        app:layout_constraintBottom_toBottomOf="@id/login_button">
+        app:layout_constraintBottom_toBottomOf="@id/cancel_button">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/password_edittext"
@@ -50,7 +50,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/login_button"
+        android:id="@+id/cancel_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
