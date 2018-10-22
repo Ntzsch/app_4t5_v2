@@ -181,7 +181,7 @@ public class TheCloud {
         });
     }
 
-    public static void getInventory(final Callback<List<LocationEntry>>
+    public static void getInventory(final Callback<List<InventoryEntry>>
                                             callback) {
         DatabaseReference tmpDb = FirebaseDatabase.getInstance().getReference();
         tmpDb = tmpDb.child("inventory");
