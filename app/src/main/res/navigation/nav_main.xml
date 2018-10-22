@@ -9,7 +9,7 @@
         android:id="@+id/mainFragment"
         android:name="edu.gatech.cs2340.myapplication.controllers.fragments.MainFragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" ></fragment>
+        tools:layout="@layout/fragment_main" />
     <fragment
         android:id="@+id/nav_login"
         android:name="edu.gatech.cs2340.myapplication.controllers.fragments.LoginFragment"
@@ -30,6 +30,36 @@
         android:name="edu.gatech.cs2340.myapplication.controllers.fragments.ViewItemFragment"
         android:label="fragment_view_location"
         tools:layout="@layout/fragment_view_location" />
+    <fragment
+        android:id="@+id/nav_edit_inventory"
+        android:name="edu.gatech.cs2340.myapplication.controllers.fragments.EditInventoryFragment"
+        android:label="fragment_view_"
+        tools:layout="@layout/fragment_view_edit_inventory" />
+    <fragment
+        android:id="@+id/nav_view_inventory_details"
+        android:name="edu.gatech.cs2340.myapplication.controllers.fragments.InventoryEntryDetails"
+        android:label="inventory_detail_view"
+        tools:layout="@layout/fragment_inventory_details">
+        <argument
+            android:name="time"
+            android:defaultValue="null" />
+        <argument
+            android:name="location"
+            android:defaultValue="null" />
+        <argument
+            android:name="smallDescript"
+            android:defaultValue="null" />
+        <argument
+            android:name="longDescript"
+            android:defaultValue="null" />
+        <argument
+            android:name="value"
+            android:defaultValue="null" />
+        <argument
+            android:name="category"
+            android:defaultValue="null" />
+    </fragment>
+
     <fragment
         android:id="@+id/nav_add_inventory"
         android:name="edu.gatech.cs2340.myapplication.controllers.fragments.AddInventoryFragment"
