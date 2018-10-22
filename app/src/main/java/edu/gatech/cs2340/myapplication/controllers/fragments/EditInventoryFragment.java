@@ -25,7 +25,16 @@ public class EditInventoryFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_view_edit_inventory, container, false);
+
         FloatingActionButton addButton = view.findViewById(R.id.floating_action_button);
+        addButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(final View view) {
+                Navigation.findNavController(view).navigate(R.id
+                        .nav_add_inventory);
+            }
+        });
+
         RecyclerView rView = view.findViewById(R.id.recycler_view2);
         rView.setHasFixedSize(true);
         rView.setLayoutManager(new GridLayoutManager(getContext(), 1,

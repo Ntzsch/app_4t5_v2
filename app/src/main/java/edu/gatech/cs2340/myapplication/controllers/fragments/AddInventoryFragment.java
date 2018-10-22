@@ -51,18 +51,19 @@ public class AddInventoryFragment extends Fragment {
         // Do some parsing for the time stamp
         //mtimeStamp
 
-        mlocation = view.findViewById(R.id.location);
-        mshortDescription = view.findViewById(R.id.description_short);
-        mlongDescription = view.findViewById(R.id.description_long);
-        mvalue = view.findViewById(R.id.value);
-        mcategory = view.findViewById(R.id.category);
-        mtimeStamp = view.findViewById(R.id.timestamp);
+        mlocation = view.findViewById(R.id.edit_location);
+        mshortDescription = view.findViewById(R.id.edit_short_description);
+        mlongDescription = view.findViewById(R.id.edit_long_description);
+        mvalue = view.findViewById(R.id.edit_price);
+        mcategory = view.findViewById(R.id.edit_category);
+        mtimeStamp = view.findViewById(R.id.edit_time);
+        mCancelButton = view.findViewById(R.id.cancel_button);
+        mConfirmButton = view.findViewById(R.id.confirm_button);
 
         mCancelButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View view) {
-
-
+                Navigation.findNavController(view).navigate(R.id.nav_edit_inventory);
                 mCancelButton.setEnabled(false);
             }
         });
@@ -76,6 +77,30 @@ public class AddInventoryFragment extends Fragment {
                 String value = mvalue.getText().toString();
                 String category = mcategory.getText().toString();
                 String timeStamp = mtimeStamp.getText().toString();
+
+
+
+                /*
+                *
+                * backend code should be entered here
+                *
+                * */
+
+
+
+                /* this "bundle" stuff is for front end display only. After
+                * hitting the "confirm" button, the item's detail page
+                * will be brought up.*/
+                Bundle bundle = new Bundle();
+                bundle.putString("time", timeStamp);
+                bundle.putString("location", location);
+                bundle.putString("smallDescript", shortDescription);
+                bundle.putString("longDescript", longDescription);
+                bundle.putString("value", value);
+                bundle.putString("category", category);
+
+                Navigation.findNavController(view).navigate(R.id
+                        .nav_view_inventory_details, bundle);
 
                 mConfirmButton.setEnabled(false);
             }
