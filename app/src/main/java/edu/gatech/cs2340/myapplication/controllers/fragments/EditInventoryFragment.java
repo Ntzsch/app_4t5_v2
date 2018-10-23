@@ -15,7 +15,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import edu.gatech.cs2340.myapplication.R;
 import edu.gatech.cs2340.myapplication.controllers.CustomItemClickListener;
-import edu.gatech.cs2340.myapplication.controllers.ItemCardRecyclerViewAdapter;
+import edu.gatech.cs2340.myapplication.controllers.InventoryCardRecyclerViewAdapter;
 import edu.gatech.cs2340.myapplication.models.InventoryEntry;
 
 public class EditInventoryFragment extends Fragment {
@@ -34,7 +34,7 @@ public class EditInventoryFragment extends Fragment {
                         .nav_add_inventory);
             }
         });
-
+        /*
         RecyclerView rView = view.findViewById(R.id.recycler_view2);
         rView.setHasFixedSize(true);
         rView.setLayoutManager(new GridLayoutManager(getContext(), 1,
@@ -52,8 +52,8 @@ public class EditInventoryFragment extends Fragment {
         hardCode.add(two);
         // ------------------TO HERE--------------------//
 
-        final ItemCardRecyclerViewAdapter adapter = new
-                ItemCardRecyclerViewAdapter(hardCode, new CustomItemClickListener() {
+        final InventoryCardRecyclerViewAdapter adapter = new
+                InventoryCardRecyclerViewAdapter(hardCode, new CustomItemClickListener() {
             @Override
             public void onItemClick(View v, int position) {
                 InventoryEntry clicked = hardCode.get(position);
@@ -71,6 +71,7 @@ public class EditInventoryFragment extends Fragment {
         });
 
         rView.setAdapter(adapter);
+        */
         return view;
     }
 

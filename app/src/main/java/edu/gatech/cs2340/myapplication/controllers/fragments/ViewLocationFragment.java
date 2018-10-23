@@ -24,8 +24,6 @@ public class ViewLocationFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        Log.e("ViewLocationFragment", "ENTERING");
-
         View view = inflater.inflate(R.layout.fragment_view_location,
                 container, false);
         RecyclerView recyclerView = view.findViewById(R.id.recycler_view);
@@ -44,13 +42,6 @@ public class ViewLocationFragment extends Fragment {
                 adapter.updateList(value);
             }
         });
-
-        int largePadding = 16; //getResources().getDimensionPixelSize(R.dimen
-        // .shr_product_grid_spacing);
-        int smallPadding = 16; //getResources().getDimensionPixelSize(R.dimen
-        // .shr_product_grid_spacing_small);
-        // recyclerView.addItemDecoration(new ProductGridItemDecoration
-        // (largePadding, smallPadding));
 
 
         // Inflate the layout for this fragment
