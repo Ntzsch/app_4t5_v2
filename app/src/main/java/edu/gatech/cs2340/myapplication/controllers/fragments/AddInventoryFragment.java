@@ -16,6 +16,7 @@ import com.google.android.material.textfield.TextInputLayout;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 import edu.gatech.cs2340.myapplication.R;
+import edu.gatech.cs2340.myapplication.models.InventoryEntry;
 import edu.gatech.cs2340.myapplication.models.TheCloud;
 import edu.gatech.cs2340.myapplication.controllers.MainActivity;
 
@@ -48,9 +49,6 @@ public class AddInventoryFragment extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
 
-        // Do some parsing for the time stamp
-        //mtimeStamp
-
         mlocation = view.findViewById(R.id.edit_location);
         mshortDescription = view.findViewById(R.id.edit_short_description);
         mlongDescription = view.findViewById(R.id.edit_long_description);
@@ -78,19 +76,11 @@ public class AddInventoryFragment extends Fragment {
                 String category = mcategory.getText().toString();
                 String timeStamp = mtimeStamp.getText().toString();
 
-
-
-                /*
-                *
-                * backend code should be entered here
-                *
-                * */
-
-
-
+                InventoryEntry entry = new InventoryEntry(timeStamp, location, shortDescription,
+                        longDescription, value, category);
                 /* this "bundle" stuff is for front end display only. After
-                * hitting the "confirm" button, the item's detail page
-                * will be brought up.*/
+                 * hitting the "confirm" button, the item's detail page
+                 * will be brought up.*/
                 Bundle bundle = new Bundle();
                 bundle.putString("time", timeStamp);
                 bundle.putString("location", location);
@@ -99,6 +89,22 @@ public class AddInventoryFragment extends Fragment {
                 bundle.putString("value", value);
                 bundle.putString("category", category);
 
+                TheCloud.addInventoryEntry(entry).continueWith(new
+                                                                         Continuation<Boolean, Object>() {
+                                                                             @Override
+                                                                             public Object then(Task<Boolean> task) {
+                     Log.e("AddInventoryFragment", task.getResult().toString());
+                     mConfirmButton.setEnabled(true);
+                     if (task.getResult()) {
+                         ((MainActivity) getActivity()).updateNavigation();
+
+
+
+
+                     }
+                     return null;
+                 }
+             });
                 Navigation.findNavController(view).navigate(R.id
                         .nav_view_inventory_details, bundle);
 
