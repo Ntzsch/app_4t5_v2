@@ -104,7 +104,7 @@ public class TheCloud {
         data.put("category", entry.getCategory());
 
         return mFunctions
-                .getHttpsCallable("addInventoryItem")
+                .getHttpsCallable("addInventoryEntry")
                 .call(data)
                 .continueWith(new Continuation<HttpsCallableResult, Boolean>() {
                     // tokens are strings

@@ -8,15 +8,18 @@ import android.view.ViewGroup;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import edu.gatech.cs2340.myapplication.Callback;
 import edu.gatech.cs2340.myapplication.R;
 import edu.gatech.cs2340.myapplication.controllers.CustomItemClickListener;
 import edu.gatech.cs2340.myapplication.controllers.InventoryCardRecyclerViewAdapter;
 import edu.gatech.cs2340.myapplication.models.InventoryEntry;
+import edu.gatech.cs2340.myapplication.models.TheCloud;
 
 public class EditInventoryFragment extends Fragment {
     public EditInventoryFragment() { }
@@ -32,6 +35,19 @@ public class EditInventoryFragment extends Fragment {
             public void onClick(final View view) {
                 Navigation.findNavController(view).navigate(R.id
                         .nav_add_inventory);
+            }
+        });
+        RecyclerView rView = view.findViewById(R.id.recycler_view2);
+        rView.setHasFixedSize(true);
+        rView.setLayoutManager(new GridLayoutManager(getContext(), 1,
+                RecyclerView.VERTICAL, false));
+
+        final InventoryCardRecyclerViewAdapter adapter = new InventoryCardRecyclerViewAdapter(new ArrayList<InventoryEntry>(), rView);
+        rView.setAdapter(adapter);
+        TheCloud.getInventory(new Callback<List<InventoryEntry>>() {
+            @Override
+            public void callback(List<InventoryEntry> value) {
+                adapter.updateList(value);
             }
         });
         /*
