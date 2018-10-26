@@ -93,7 +93,7 @@ public class TheCloud {
                 });
     }
 
-    private static Task<Boolean> addInventoryEntry(InventoryEntry entry) {
+    public static Task<Boolean> addInventoryEntry(InventoryEntry entry) {
         // Create the arguments to the callable function.
         Map<String, Object> data = new HashMap<>();
         data.put("timeStamp", entry.getTimeStamp());
@@ -104,7 +104,7 @@ public class TheCloud {
         data.put("category", entry.getCategory());
 
         return mFunctions
-                .getHttpsCallable("addInventoryItem")
+                .getHttpsCallable("addInventoryEntry")
                 .call(data)
                 .continueWith(new Continuation<HttpsCallableResult, Boolean>() {
                     // tokens are strings

@@ -9,7 +9,7 @@
         android:id="@+id/mainFragment"
         android:name="edu.gatech.cs2340.myapplication.controllers.fragments.MainFragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" ></fragment>
+        tools:layout="@layout/fragment_main" />
     <fragment
         android:id="@+id/nav_login"
         android:name="edu.gatech.cs2340.myapplication.controllers.fragments.LoginFragment"
@@ -27,7 +27,7 @@
         tools:layout="@layout/fragment_view_location" />
     <fragment
         android:id="@+id/nav_view_items"
-        android:name="edu.gatech.cs2340.myapplication.controllers.fragments.ViewItemFragment"
+        android:name="edu.gatech.cs2340.myapplication.controllers.fragments.ViewInventoryFragment"
         android:label="fragment_view_location"
         tools:layout="@layout/fragment_view_location" />
     <fragment
@@ -60,4 +60,9 @@
             android:defaultValue="null" />
     </fragment>
 
+    <fragment
+        android:id="@+id/nav_add_inventory"
+        android:name="edu.gatech.cs2340.myapplication.controllers.fragments.AddInventoryFragment"
+        android:label="fragment_add_inventory"
+        tools:layout="@layout/fragment_add_inventory" />
 </navigation>
