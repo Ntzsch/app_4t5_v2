@@ -78,6 +78,7 @@ public class AddInventoryFragment extends Fragment {
 
                 InventoryEntry entry = new InventoryEntry(timeStamp, location, shortDescription,
                         longDescription, value, category);
+
                 /* this "bundle" stuff is for front end display only. After
                  * hitting the "confirm" button, the item's detail page
                  * will be brought up.*/
