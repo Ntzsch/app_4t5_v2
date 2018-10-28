@@ -2,6 +2,8 @@ package edu.gatech.cs2340.myapplication.controllers.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -23,6 +25,12 @@ import edu.gatech.cs2340.myapplication.models.TheCloud;
 
 public class EditInventoryFragment extends Fragment {
     public EditInventoryFragment() { }
+
+    @Override
+    public void onCreate (Bundle savedInstanceState) {
+        setHasOptionsMenu(true);
+        super.onCreate(savedInstanceState);
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -89,6 +97,13 @@ public class EditInventoryFragment extends Fragment {
         rView.setAdapter(adapter);
         */
         return view;
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.main_menu, menu);
+        super.onCreateOptionsMenu(menu, inflater);
+
     }
 
     @Override
