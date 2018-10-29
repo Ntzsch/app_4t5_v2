@@ -8,6 +8,9 @@
         <item
             android:id="@+id/nav_view_inventory"
             android:title="@string/nav_view_inventory" />
+        <item
+            android:id="@+id/nav_view_map"
+            android:title="view map" />
     </group>
     <group android:checkableBehavior="single"
         android:id="@+id/login_group">

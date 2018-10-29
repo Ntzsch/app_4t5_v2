@@ -80,6 +80,9 @@ public class MainActivity extends AppCompatActivity {
                             Log.e("menu_navigation", "nav_view_locations");
                             mNavController.navigate(R.id.nav_view_locations);
                             break;
+                        case R.id.nav_view_map:
+                            mNavController.navigate(R.id.nav_view_map);
+                            break;
                         case R.id.nav_view_edit_inventory:
                             mNavController.navigate(R.id.nav_edit_inventory);
                             break;
