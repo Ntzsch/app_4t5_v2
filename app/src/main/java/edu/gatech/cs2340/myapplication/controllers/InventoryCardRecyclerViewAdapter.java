@@ -19,6 +19,8 @@ import androidx.annotation.NonNull;
 import edu.gatech.cs2340.myapplication.R;
 import edu.gatech.cs2340.myapplication.models.InventoryEntry;
 
+import static androidx.constraintlayout.motion.widget.MotionScene.TAG;
+
 
 public class InventoryCardRecyclerViewAdapter
         extends RecyclerView.Adapter<
@@ -102,8 +104,6 @@ public class InventoryCardRecyclerViewAdapter
             holder.itemLocation.setText(item.getLocation());
             holder.itemPrice.setText(item.getValue());
         }
-
-
     }
 
     @Override
@@ -136,14 +136,16 @@ public class InventoryCardRecyclerViewAdapter
             @Override
             protected void publishResults(CharSequence charSequence,
                                           FilterResults filterResults) {
-                filteredList = (ArrayList<InventoryEntry>) filterResults.values;
+                filteredList.clear();
+                filteredList.addAll((List) filterResults.values);
                 notifyDataSetChanged();
             }
         };
     }
 
     public void updateList(List<InventoryEntry> inventoryList) {
-        mInventoryList = inventoryList;
+        mInventoryList = new ArrayList<>();
+        mInventoryList.addAll(inventoryList);
         notifyDataSetChanged();
     }
 

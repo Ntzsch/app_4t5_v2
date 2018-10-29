@@ -64,18 +64,6 @@ public class EditInventoryFragment extends Fragment {
         rView.setLayoutManager(new GridLayoutManager(getContext(), 1,
                 RecyclerView.VERTICAL, false));
 
-        // ---------TEMPORARY CODE FROM HERE-----------//
-        final ArrayList<InventoryEntry> hardCode = new ArrayList<>();
-        InventoryEntry one = new InventoryEntry
-                ("10:00", "GoodWill", "Piano",
-                        "haha", "$150", "Other");
-        InventoryEntry two = new InventoryEntry
-                ("11:29", "SalvationArmy", "1.0 GPA",
-                        "haha", "$-2", "Other");
-        hardCode.add(one);
-        hardCode.add(two);
-        // ------------------TO HERE--------------------//
-
         final InventoryCardRecyclerViewAdapter adapter = new
                 InventoryCardRecyclerViewAdapter(hardCode, new CustomItemClickListener() {
             @Override

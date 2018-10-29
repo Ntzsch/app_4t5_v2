@@ -1,8 +1,12 @@
 package edu.gatech.cs2340.myapplication.controllers.fragments;
 
+import android.app.SearchManager;
 import android.os.Bundle;
+
+import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -21,42 +25,74 @@ import edu.gatech.cs2340.myapplication.controllers.InventoryCardRecyclerViewAdap
 import edu.gatech.cs2340.myapplication.models.InventoryEntry;
 import edu.gatech.cs2340.myapplication.models.TheCloud;
 
-public class ViewInventoryFragment extends Fragment {
+import static androidx.constraintlayout.motion.widget.MotionScene.TAG;
+
+public class ViewInventoryFragment extends Fragment implements SearchView.OnQueryTextListener{
+    private InventoryCardRecyclerViewAdapter mAdapter;
+    private List<InventoryEntry> inventoryList;
 
     public ViewInventoryFragment() { }
     @Override
     public void onCreate (Bundle savedInstanceState) {
-        setHasOptionsMenu(true);
         super.onCreate(savedInstanceState);
+        setHasOptionsMenu(true);
     }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         setHasOptionsMenu(true);
         View view = inflater.inflate(R.layout.fragment_view_items, container, false);
+
         RecyclerView rView = view.findViewById(R.id.recycler_view1);
         rView.setHasFixedSize(true);
         rView.setLayoutManager(new GridLayoutManager(getContext(), 1,
                 RecyclerView.VERTICAL, false));
 
-        final InventoryCardRecyclerViewAdapter adapter = new InventoryCardRecyclerViewAdapter(new ArrayList<InventoryEntry>(), rView);
-        rView.setAdapter(adapter);
+        this.mAdapter = new InventoryCardRecyclerViewAdapter(new ArrayList<InventoryEntry>(), rView);
+
         TheCloud.getInventory(new Callback<List<InventoryEntry>>() {
             @Override
             public void callback(List<InventoryEntry> value) {
-                adapter.updateList(value);
+                inventoryList = value;
+                mAdapter.updateList(value);
             }
         });
+        rView.setAdapter(mAdapter);
         return view;
     }
 
+
+
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        inflater.inflate(R.menu.main_menu, menu);
         super.onCreateOptionsMenu(menu, inflater);
-
+        inflater.inflate(R.menu.main_menu, menu);
+        SearchView searchView = (SearchView) menu.findItem(R.id.action_search).getActionView();
+        searchView.setOnQueryTextListener(this);
     }
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) { }
+
+
+    @Override
+    public boolean onQueryTextSubmit(String query) {
+        return false;
+    }
+
+    @Override
+    public boolean onQueryTextChange(String newText) {
+        String input = newText.toLowerCase();
+        List<InventoryEntry> newList = new ArrayList<>();
+
+        for (InventoryEntry ie : inventoryList) {
+            if (ie.getSmallDescription().toLowerCase().contains(input)) {
+                newList.add(ie);
+            }
+        }
+
+        mAdapter.updateList(newList);
+
+        return true;
+    }
 }
