@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml:2:1-50:12
-INJECTED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml:2:1-50:12
-INJECTED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml:2:1-50:12
-INJECTED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml:2:1-50:12
+ADDED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml:2:1-53:12
+INJECTED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml:2:1-53:12
+INJECTED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml:2:1-53:12
+INJECTED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml:2:1-53:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-alpha2] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/constraintlayout-2.0.0-alpha2.aar/c4d0a0eb2893f5d3e2322d94ba6d3284/AndroidManifest.xml:2:1-11:12
 MERGED from [android.arch.navigation:navigation-ui:1.0.0-alpha06] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-navigation-ui-1.0.0-alpha06.aar/00623b5ff9e0317f7f9de7afde446507/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.material:material:1.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/ca2f0777174d58397c546643ae215da8/AndroidManifest.xml:17:1-24:12
@@ -64,20 +64,20 @@ MERGED from [androidx.print:print:1.0.0] /Users/ClaudiaChu/.gradle/caches/transf
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/1bba66c0e1443df850c666c94679ec14/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/a51f1ba9c8db3723b1bfa688e4cc6c7e/AndroidManifest.xml:17:1-25:12
 MERGED from [com.google.android.gms:play-services-measurement-base:16.0.2] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.2.aar/f8ef29e047a6d8d89e3d804bcd7edd4f/AndroidManifest.xml:2:1-9:12
-INJECTED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml:2:1-50:12
-INJECTED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml:2:1-50:12
-INJECTED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml:2:1-50:12
+INJECTED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml:2:1-53:12
+INJECTED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml:2:1-53:12
+INJECTED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml:2:1-53:12
 	package
 		ADDED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml:3:5-46
 		INJECTED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml
-		ADDED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml:2:1-50:12
+		ADDED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml:2:1-53:12
 		INJECTED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml
-		ADDED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml:2:1-50:12
+		ADDED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml:2:1-53:12
 		INJECTED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml:2:11-69
@@ -86,7 +86,7 @@ ADDED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManif
 	android:name
 		ADDED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml:10:22-76
 application
-ADDED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml:12:5-48:19
+ADDED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml:12:5-51:19
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-alpha2] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/constraintlayout-2.0.0-alpha2.aar/c4d0a0eb2893f5d3e2322d94ba6d3284/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-alpha2] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/constraintlayout-2.0.0-alpha2.aar/c4d0a0eb2893f5d3e2322d94ba6d3284/AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.material:material:1.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/ca2f0777174d58397c546643ae215da8/AndroidManifest.xml:22:5-20
@@ -183,6 +183,12 @@ ADDED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManif
 		ADDED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml:47:13-32
 	android:name
 		ADDED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml:46:13-53
+uses-library#org.apache.http.legacy
+ADDED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml:49:9-87
+	android:required
+		ADDED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml:49:61-85
+	android:name
+		ADDED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml:49:23-60
 uses-sdk
 INJECTED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml

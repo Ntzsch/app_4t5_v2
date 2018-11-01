@@ -83,13 +83,12 @@ public class MainActivity extends AppCompatActivity {
                             mNavController.navigate(R.id.nav_view_locations);
                             break;
                         case R.id.nav_view_map:
-                            // mNavController.navigate(R.id.nav_view_map);
-                            ViewMapsFragment viewMapsFragment = new ViewMapsFragment();
-                            FragmentManager manager = getSupportFragmentManager();
-                            manager.beginTransaction().replace(R.id.nav_host_fragment, viewMapsFragment).commit();
+                            Log.e("menu_navigation", "nav_view_maps");
+                            mNavController.navigate(R.id.nav_view_map);
                             break;
                         case R.id.nav_edit_inventory:
                             mNavController.navigate(R.id.nav_edit_inventory);
+                            break;
                         case R.id.nav_register:
                             Log.e("menu_navigation", "nav_register");
                             mNavController.navigate(R.id.nav_register);

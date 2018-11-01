@@ -25,32 +25,51 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import java.util.ArrayList;
 import java.util.List;
 
+import androidx.fragment.app.FragmentManager;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import edu.gatech.cs2340.myapplication.Callback;
 import edu.gatech.cs2340.myapplication.R;
 import edu.gatech.cs2340.myapplication.controllers.InventoryCardRecyclerViewAdapter;
+import edu.gatech.cs2340.myapplication.controllers.LocationCardRecyclerViewAdapter;
 import edu.gatech.cs2340.myapplication.models.InventoryEntry;
 import edu.gatech.cs2340.myapplication.models.LocationEntry;
 import edu.gatech.cs2340.myapplication.models.TheCloud;
 
+
 public class ViewMapsFragment extends Fragment implements OnMapReadyCallback {
 
-    GoogleMap mMap;
+    private GoogleMap mMap;
+    private List<LocationEntry> mLocationList;
 
-    public ViewMapsFragment() {}
+    public ViewMapsFragment() {
+
+    }
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_view_map, container, false);
-        return view;
-    }
 
-    @Override
-    public void onViewCreated(View view, Bundle savedInstanceState) {
-        SupportMapFragment mapFragment = (SupportMapFragment)getFragmentManager().findFragmentById(R.id.map);
+        final LocationCardRecyclerViewAdapter mAdapter = new
+                LocationCardRecyclerViewAdapter(
+                new ArrayList<LocationEntry>());
+
+        TheCloud.getLocations(new Callback<List<LocationEntry>>() {
+            @Override
+            public void callback(List<LocationEntry> value) {
+                mLocationList = value;
+                mAdapter.updateList(value);
+            }
+        });
+        mLocationList = mAdapter.getmLocationList();
+
+        // View view = inflater.inflate(R.layout.fragment_view_map, container, false);
+        View view = inflater.inflate(R.layout.activity_maps, container, false);
+
+        SupportMapFragment mapFragment = (SupportMapFragment) this.getChildFragmentManager()
+                .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+        return view;
     }
 
 
@@ -58,19 +77,14 @@ public class ViewMapsFragment extends Fragment implements OnMapReadyCallback {
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        final List<LocationEntry> locationList = new ArrayList<>();
 
-        TheCloud.getLocations(new Callback<List<LocationEntry>>() {
-            @Override
-            public void callback(List<LocationEntry> value) {
-                for (LocationEntry location:value) {
-                    locationList.add(location);
-                }
-            }
-        });
+        Log.d("onMapReady", "Got Locations");
+
+        mMap.getUiSettings().setZoomControlsEnabled(true);
 
         //iterate through the list and add a pin for each element in the model
-        for (LocationEntry locationEntry : locationList) {
+        for (LocationEntry locationEntry : mLocationList) {
+            Log.d("onMapReady", "getting latlong");
             double lat = Double.parseDouble(locationEntry.latitude);
             double lng = Double.parseDouble(locationEntry.longitude);
             LatLng loc = new LatLng(lat, lng);
@@ -78,8 +92,12 @@ public class ViewMapsFragment extends Fragment implements OnMapReadyCallback {
             mMap.moveCamera(CameraUpdateFactory.newLatLng(loc));
         }
 
-
         mMap.setInfoWindowAdapter(new CustomInfoWindowAdapter());
+
+//        // Add a marker in Sydney and move the camera
+//        LatLng sydney = new LatLng(-34, 151);
+//        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
+//        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
     }
 
     /**
@@ -115,6 +133,8 @@ public class ViewMapsFragment extends Fragment implements OnMapReadyCallback {
         }
 
     }
+
+
 }
 
 
