@@ -5,10 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.FragmentManager;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.NavigationUI;
 import edu.gatech.cs2340.myapplication.R;
+import edu.gatech.cs2340.myapplication.controllers.fragments.ViewMapsFragment;
 import edu.gatech.cs2340.myapplication.models.TheCloud;
 
 import android.os.Bundle;
@@ -81,15 +83,16 @@ public class MainActivity extends AppCompatActivity {
                             mNavController.navigate(R.id.nav_view_locations);
                             break;
                         case R.id.nav_view_map:
-                            mNavController.navigate(R.id.nav_view_map);
+                            // mNavController.navigate(R.id.nav_view_map);
+                            ViewMapsFragment viewMapsFragment = new ViewMapsFragment();
+                            FragmentManager manager = getSupportFragmentManager();
+                            manager.beginTransaction().replace(R.id.nav_host_fragment, viewMapsFragment).commit();
                             break;
-                        case R.id.nav_view_edit_inventory:
+                        case R.id.nav_edit_inventory:
                             mNavController.navigate(R.id.nav_edit_inventory);
-                            break;
                         case R.id.nav_register:
                             Log.e("menu_navigation", "nav_register");
                             mNavController.navigate(R.id.nav_register);
-                            break;
                         default:
                             break;
                         }
