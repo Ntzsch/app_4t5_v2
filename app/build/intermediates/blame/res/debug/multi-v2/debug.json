@@ -6083,6 +6083,25 @@
                     }
                 },
                 {
+                    "source": "/Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-navigation-common-1.0.0-alpha06.aar/c108244afb825cfcd69dcce0db4760af/res/values/values.xml",
+                    "from": {
+                        "startLines": "2,16,22,26,29",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,782,1026,1179,1312",
+                        "endLines": "15,21,25,28,32",
+                        "endColumns": "24,24,24,24,24",
+                        "endOffsets": "777,1021,1174,1307,1444"
+                    },
+                    "to": {
+                        "startLines": "1756,1770,1776,1780,1791",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "105414,106141,106385,106538,107531",
+                        "endLines": "1769,1775,1779,1782,1794",
+                        "endColumns": "24,24,24,24,24",
+                        "endOffsets": "106136,106380,106533,106666,107663"
+                    }
+                },
+                {
                     "source": "/Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/35e7b4ca2aef4359719775beec683f2e/res/values/values.xml",
                     "from": {
                         "startLines": "2,3,13,102",
@@ -6178,25 +6197,6 @@
                     }
                 },
                 {
-                    "source": "/Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-navigation-common-1.0.0-alpha06.aar/f9db11dbed8f9ad73ab7158d71c8ed8e/res/values/values.xml",
-                    "from": {
-                        "startLines": "2,16,22,26,29",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "55,782,1026,1179,1312",
-                        "endLines": "15,21,25,28,32",
-                        "endColumns": "24,24,24,24,24",
-                        "endOffsets": "777,1021,1174,1307,1444"
-                    },
-                    "to": {
-                        "startLines": "1756,1770,1776,1780,1791",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "105414,106141,106385,106538,107531",
-                        "endLines": "1769,1775,1779,1782,1794",
-                        "endColumns": "24,24,24,24,24",
-                        "endOffsets": "106136,106380,106533,106666,107663"
-                    }
-                },
-                {
                     "source": "/Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/res/values/styles.xml",
                     "from": {
                         "startLines": "3",
@@ -6269,7 +6269,7 @@
                     }
                 },
                 {
-                    "source": "/Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-navigation-runtime-1.0.0-alpha06.aar/e0167f68a4abdf8be30b49ab53b9f076/res/values/values.xml",
+                    "source": "/Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-navigation-runtime-1.0.0-alpha06.aar/1932a36a2f490e04d412ec06a94ffa5b/res/values/values.xml",
                     "from": {
                         "startLines": "2,8,11",
                         "startColumns": "4,4,4",
@@ -6326,6 +6326,25 @@
                     }
                 },
                 {
+                    "source": "/Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-navigation-fragment-1.0.0-alpha06.aar/e3989ad4151150bb6afb476246c6088c/res/values/values.xml",
+                    "from": {
+                        "startLines": "2,5",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,165",
+                        "endLines": "4,8",
+                        "endColumns": "24,24",
+                        "endOffsets": "160,338"
+                    },
+                    "to": {
+                        "startLines": "1383,1783",
+                        "startColumns": "4,4",
+                        "startOffsets": "84512,106671",
+                        "endLines": "1385,1786",
+                        "endColumns": "24,24",
+                        "endOffsets": "84617,106844"
+                    }
+                },
+                {
                     "source": "/Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/cardview-1.0.0.aar/c0c7484bb90d46dc062f3c0346cb2208/res/values/values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,35,36,37,38,45,47,50",
@@ -6376,25 +6395,6 @@
                         "startOffsets": "13178,13225,13276,13328,13377,13430",
                         "endColumns": "46,50,51,48,52,53",
                         "endOffsets": "13220,13271,13323,13372,13425,13479"
-                    }
-                },
-                {
-                    "source": "/Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-navigation-fragment-1.0.0-alpha06.aar/284193251c381184d37a2bc59d4618fd/res/values/values.xml",
-                    "from": {
-                        "startLines": "2,5",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,165",
-                        "endLines": "4,8",
-                        "endColumns": "24,24",
-                        "endOffsets": "160,338"
-                    },
-                    "to": {
-                        "startLines": "1383,1783",
-                        "startColumns": "4,4",
-                        "startOffsets": "84512,106671",
-                        "endLines": "1385,1786",
-                        "endColumns": "24,24",
-                        "endOffsets": "84617,106844"
                     }
                 },
                 {
