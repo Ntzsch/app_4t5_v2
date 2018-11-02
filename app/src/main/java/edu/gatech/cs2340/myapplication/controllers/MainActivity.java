@@ -20,6 +20,7 @@ import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
 
+import static androidx.constraintlayout.motion.widget.MotionScene.TAG;
 import static edu.gatech.cs2340.myapplication.models.TheCloud.getUserType;
 
 public class MainActivity extends AppCompatActivity {
@@ -138,8 +139,15 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
         case android.R.id.home:
             mDrawerLayout.openDrawer(GravityCompat.START);
-            return true;
+            break;
+        case R.id.adv_search:
+            Log.d(TAG, "Got clicked");
+            mNavController.navigate(R.id.nav_advanced_search);
+            break;
         }
+
+
+
         return super.onOptionsItemSelected(item);
     }
 
