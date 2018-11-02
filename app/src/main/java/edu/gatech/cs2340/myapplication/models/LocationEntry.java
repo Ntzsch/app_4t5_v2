@@ -10,6 +10,47 @@ public class LocationEntry {
     public final String name;
     public final String phone;
     public final String state;
+
+    public String getCity() {
+        return city;
+    }
+
+    public String getLatitude() {
+        return latitude;
+    }
+
+    public String getLongitude() {
+        return longitude;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public String getStreetAddress() {
+        return streetAddress;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public String getWebsite() {
+        return website;
+    }
+
+    public String getZip() {
+        return zip;
+    }
+
     public final String streetAddress;
     public final String type;
     public final String website;

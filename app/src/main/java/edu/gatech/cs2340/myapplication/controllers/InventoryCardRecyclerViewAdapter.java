@@ -9,18 +9,25 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 import java.util.List;
 import androidx.annotation.NonNull;
 import edu.gatech.cs2340.myapplication.R;
 import edu.gatech.cs2340.myapplication.models.InventoryEntry;
 
+import static androidx.constraintlayout.motion.widget.MotionScene.TAG;
+
 
 public class InventoryCardRecyclerViewAdapter
         extends RecyclerView.Adapter<
-        InventoryCardRecyclerViewAdapter.ItemCardViewHolder> {
+        InventoryCardRecyclerViewAdapter.ItemCardViewHolder> implements Filterable {
 
     private List<InventoryEntry> mInventoryList;
+    private List<InventoryEntry> filteredList;
     private View.OnClickListener mOnClickListener;
     private final RecyclerView mRecyclerView;
 
@@ -97,8 +104,6 @@ public class InventoryCardRecyclerViewAdapter
             holder.itemLocation.setText(item.getLocation());
             holder.itemPrice.setText(item.getValue());
         }
-
-
     }
 
     @Override
@@ -106,8 +111,41 @@ public class InventoryCardRecyclerViewAdapter
         return mInventoryList.size();
     }
 
+    @Override
+    public Filter getFilter() {
+        return new Filter() {
+            @Override
+            protected FilterResults performFiltering(CharSequence charSequence) {
+                String charString = charSequence.toString();
+                if (charString.isEmpty()) {
+                    filteredList = mInventoryList;
+                } else {
+                    List<InventoryEntry> tempFilteredList = new ArrayList<>();
+                    for (InventoryEntry ie : mInventoryList) {
+                        if (ie.getSmallDescription().toLowerCase().contains(charString.toLowerCase())) {
+                            tempFilteredList.add(ie);
+                        }
+                    }
+                    filteredList = tempFilteredList;
+                }
+                FilterResults filterResults = new FilterResults();
+                filterResults.values = filteredList;
+                return filterResults;
+            }
+
+            @Override
+            protected void publishResults(CharSequence charSequence,
+                                          FilterResults filterResults) {
+                filteredList.clear();
+                filteredList.addAll((List) filterResults.values);
+                notifyDataSetChanged();
+            }
+        };
+    }
+
     public void updateList(List<InventoryEntry> inventoryList) {
-        mInventoryList = inventoryList;
+        mInventoryList = new ArrayList<>();
+        mInventoryList.addAll(inventoryList);
         notifyDataSetChanged();
     }
 

@@ -1,20 +1,6 @@
 package edu.gatech.cs2340.myapplication.models;
 
 public class InventoryEntry {
-//    public static enum CATEGORY {
-//        CLOTHING("Clothing"), HAT("Hat"), KITCHEN("Kitchen"), ELECTRONICS("Electronics")
-//        ,HOUSEHOLD("Household"), OTHER("Other");
-//
-//        private final String representation;
-//
-//        CATEGORY(String representation) {
-//            this.representation = representation;
-//        }
-//
-//        public String getString() {
-//            return this.representation;
-//        }
-//    }
 
     private String timeStamp;
     private String location;

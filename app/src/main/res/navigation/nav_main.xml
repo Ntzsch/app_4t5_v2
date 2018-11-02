@@ -29,12 +29,28 @@
         android:id="@+id/nav_view_items"
         android:name="edu.gatech.cs2340.myapplication.controllers.fragments.ViewInventoryFragment"
         android:label="fragment_view_location"
-        tools:layout="@layout/fragment_view_location" />
+        tools:layout="@layout/fragment_view_items" >
+        <argument
+            android:name="location_constraint"
+            android:defaultValue="null" />
+        <argument
+            android:name="category_constraint"
+            android:defaultValue="null" />
+    </fragment>
+
     <fragment
         android:id="@+id/nav_edit_inventory"
         android:name="edu.gatech.cs2340.myapplication.controllers.fragments.EditInventoryFragment"
         android:label="fragment_view_"
-        tools:layout="@layout/fragment_view_edit_inventory" />
+        tools:layout="@layout/fragment_view_edit_inventory" >
+        <argument
+            android:name="location_constraint"
+            android:defaultValue="null" />
+        <argument
+            android:name="category_constraint"
+            android:defaultValue="null" />
+    </fragment>
+
     <fragment
         android:id="@+id/nav_view_inventory_details"
         android:name="edu.gatech.cs2340.myapplication.controllers.fragments.InventoryEntryDetails"
@@ -65,4 +81,12 @@
         android:name="edu.gatech.cs2340.myapplication.controllers.fragments.AddInventoryFragment"
         android:label="fragment_add_inventory"
         tools:layout="@layout/fragment_add_inventory" />
+
+    <fragment
+        android:id="@+id/nav_advanced_search"
+        android:name="edu.gatech.cs2340.myapplication.controllers.fragments.AdvancedSearchFragment"
+        android:label="advanced search"
+        tools:layout="@layout/fragment_advanced_search" />
+
+
 </navigation>

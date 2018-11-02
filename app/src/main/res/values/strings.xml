@@ -12,6 +12,8 @@
     <string name="password_hint">password</string>
     <string name="login_button_text">login</string>
 
+    <string name="search_hint">search</string>
+
     <string name="register_button_text">register</string>
     <string name="register_spinner_prompt">user type</string>
 
