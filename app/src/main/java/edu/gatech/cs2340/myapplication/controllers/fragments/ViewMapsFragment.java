@@ -26,6 +26,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -94,10 +95,7 @@ public class ViewMapsFragment extends Fragment implements OnMapReadyCallback {
 
         mMap.setInfoWindowAdapter(new CustomInfoWindowAdapter());
 
-//        // Add a marker in Sydney and move the camera
-//        LatLng sydney = new LatLng(-34, 151);
-//        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-//        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+
     }
 
     /**

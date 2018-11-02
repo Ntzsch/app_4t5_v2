@@ -5,32 +5,32 @@ INJECTED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidMa
 INJECTED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml:2:1-53:12
 INJECTED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml:2:1-53:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-alpha2] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/constraintlayout-2.0.0-alpha2.aar/c4d0a0eb2893f5d3e2322d94ba6d3284/AndroidManifest.xml:2:1-11:12
-MERGED from [android.arch.navigation:navigation-ui:1.0.0-alpha06] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-navigation-ui-1.0.0-alpha06.aar/00623b5ff9e0317f7f9de7afde446507/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.navigation:navigation-ui:1.0.0-alpha06] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-navigation-ui-1.0.0-alpha06.aar/83d48247e7bde9aab296d3137868ff9e/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.material:material:1.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/ca2f0777174d58397c546643ae215da8/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/75173a68f6bcb483a34f6623ba027e73/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-maps:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.0.0.aar/4a414c4dcb2331684bb26c5b7c42b37a/AndroidManifest.xml:17:1-32:12
-MERGED from [android.arch.navigation:navigation-fragment:1.0.0-alpha06] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-navigation-fragment-1.0.0-alpha06.aar/284193251c381184d37a2bc59d4618fd/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.firebase:firebase-auth:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.0.3.aar/3cfb4c5942f8ff0f86fd0308639e4a39/AndroidManifest.xml:17:1-38:12
-MERGED from [com.google.firebase:firebase-database:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-database-16.0.1.aar/fec189c4e44673fbe6270bcd5b0ee09a/AndroidManifest.xml:2:1-8:12
-MERGED from [com.google.firebase:firebase-functions:16.1.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-functions-16.1.0.aar/6b0df20087cf6d12de7b43639520fee6/AndroidManifest.xml:2:1-10:12
+MERGED from [android.arch.navigation:navigation-fragment:1.0.0-alpha06] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-navigation-fragment-1.0.0-alpha06.aar/e3989ad4151150bb6afb476246c6088c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-auth:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.0.3.aar/883044a82b804f0c3a7fc0e881e698e4/AndroidManifest.xml:17:1-38:12
+MERGED from [com.google.firebase:firebase-database:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-database-16.0.1.aar/a7e5a23e37f50bfd265626bfdd14e74b/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-functions:16.1.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-functions-16.1.0.aar/9c305fa5ec9a54f9ad055749bc2a4788/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-core:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.3.aar/ef4f1dc9ed381f5bcc87a90b20297865/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/9d14ae9e0987bd839a0e0273f7d47660/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/recyclerview-1.0.0.aar/30ea736da65a3adfa64848adee103cef/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-flags:15.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/play-services-flags-15.0.1.aar/a9f047c56813c9c769b52f23dde02af4/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.firebase:firebase-auth-interop:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-interop-16.0.0.aar/30aaf05509f9a0c760c70f3804e58498/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-interop-16.0.0.aar/f329b9d13979aaa978a60575e97c338a/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-database-collection:15.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-15.0.1.aar/a52ea47f8cddbba4f324343e3037cf25/AndroidManifest.xml:2:1-8:12
-MERGED from [com.google.firebase:firebase-database-connection:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-database-connection-16.0.1.aar/8369efa251ab7ab0b6a1764c27316453/AndroidManifest.xml:2:1-10:12
-MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-impl-17.0.1.aar/3e4ffe045dac8438ded927456a630033/AndroidManifest.xml:17:1-34:12
-MERGED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/27d37f18f838e48995006be4ba800c74/AndroidManifest.xml:17:1-55:12
-MERGED from [com.google.android.gms:play-services-measurement-api:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-api-16.0.1.aar/6dc0c74a022dea406c714d47cd404877/AndroidManifest.xml:17:1-25:12
-MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-impl-16.2.1.aar/0a3b633de3dfdd7447a4c42898762056/AndroidManifest.xml:17:1-40:12
-MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:17:1-65:12
-MERGED from [com.google.android.gms:play-services-stats:15.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-stats-15.0.1.aar/13e45a1fcb21dbaac18a99e9be235693/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-interop-16.0.0.aar/369b730eefcc600b425fd1784da43085/AndroidManifest.xml:2:1-10:12
-MERGED from [com.google.firebase:firebase-measurement-connector:17.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-17.0.0.aar/78341b94eb120d7f6464ef40d08fb243/AndroidManifest.xml:17:1-25:12
-MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-identifier-15.0.1.aar/998ea8eedfeba9fbd0331374cc456ced/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-database-connection:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-database-connection-16.0.1.aar/b9dfa68a4976aa4082ab991ca1703ed1/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-impl-17.0.1.aar/0a86d53eca953abd4d53ea85689c6790/AndroidManifest.xml:17:1-34:12
+MERGED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/aa0dbb8fcb937a1f3dd2b7b8a587a5db/AndroidManifest.xml:17:1-55:12
+MERGED from [com.google.android.gms:play-services-measurement-api:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-api-16.0.1.aar/e125aafa6c3549982b05afedacac012d/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-impl-16.2.1.aar/5be47603f6f5ba230e1b9dba7d9651aa/AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:17:1-65:12
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-stats-15.0.1.aar/17a6518181255acf43818f04aadea9a9/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-interop-16.0.0.aar/03c5429392780342fd1c3e73867b086e/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-17.0.0.aar/acdc87c41ad9a15d2c3fc36fbac91fd7/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-identifier-15.0.1.aar/38a64fa8eab4393814e2e81872fbb1a7/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/1b51dfb0ead26365065ad441773e44d7/AndroidManifest.xml:17:1-29:12
-MERGED from [com.google.firebase:firebase-common:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-common-16.0.1.aar/5bff6707158a6862e3f0918257d3cb15/AndroidManifest.xml:2:1-17:12
+MERGED from [com.google.firebase:firebase-common:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-common-16.0.1.aar/d2ccd3dfc3e964e224f0d1469d897674/AndroidManifest.xml:2:1-17:12
 MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-16.0.1.aar/4d6b6a5bd8a873e68fadba5e50fc28ee/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.0.1.aar/773b307a9cfd81dec804778a8777cf08/AndroidManifest.xml:17:1-28:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0-rc01] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0-rc01.aar/0227fe5574dbda5daf307e6dc3b9863f/AndroidManifest.xml:17:1-22:12
@@ -38,7 +38,7 @@ MERGED from [androidx.fragment:fragment:1.0.0] /Users/ClaudiaChu/.gradle/caches/
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/0cdc6d8441a66e72d81e64574b5a65bb/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/b2afea53b294c54ca640a1a7cea2a241/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.0.aar/627fcbf75cb0e92fee45e20643818b81/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.navigation:navigation-runtime:1.0.0-alpha06] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-navigation-runtime-1.0.0-alpha06.aar/e0167f68a4abdf8be30b49ab53b9f076/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.navigation:navigation-runtime:1.0.0-alpha06] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-navigation-runtime-1.0.0-alpha06.aar/1932a36a2f490e04d412ec06a94ffa5b/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/b7cb1898d0f35525a9dd7988dca28779/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/162d5de866a675c97b10c50e994ed7ce/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/44f70ecdeba60520a8898c67f92a4eb4/AndroidManifest.xml:17:1-22:12
@@ -54,7 +54,7 @@ MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/ClaudiaC
 MERGED from [androidx.customview:customview:1.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/01718e13178bed83dfbde61e76f57af2/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/79cfdda917cc7cedf56d699bcf72378c/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/a54e188375238c85c9a4ba69418ee036/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.navigation:navigation-common:1.0.0-alpha06] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-navigation-common-1.0.0-alpha06.aar/f9db11dbed8f9ad73ab7158d71c8ed8e/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.navigation:navigation-common:1.0.0-alpha06] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-navigation-common-1.0.0-alpha06.aar/c108244afb825cfcd69dcce0db4760af/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/ffb097caabaf77899b4bf37d5ac8156c/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/5af9db2e7c1d94879615bed83ad35075/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/cardview-1.0.0.aar/c0c7484bb90d46dc062f3c0346cb2208/AndroidManifest.xml:17:1-22:12
@@ -93,34 +93,34 @@ MERGED from [com.google.android.material:material:1.0.0] /Users/ClaudiaChu/.grad
 MERGED from [com.google.android.material:material:1.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/ca2f0777174d58397c546643ae215da8/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-maps:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.0.0.aar/4a414c4dcb2331684bb26c5b7c42b37a/AndroidManifest.xml:30:5-20
 MERGED from [com.google.android.gms:play-services-maps:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.0.0.aar/4a414c4dcb2331684bb26c5b7c42b37a/AndroidManifest.xml:30:5-20
-MERGED from [com.google.firebase:firebase-auth:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.0.3.aar/3cfb4c5942f8ff0f86fd0308639e4a39/AndroidManifest.xml:22:5-36:19
-MERGED from [com.google.firebase:firebase-auth:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.0.3.aar/3cfb4c5942f8ff0f86fd0308639e4a39/AndroidManifest.xml:22:5-36:19
+MERGED from [com.google.firebase:firebase-auth:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.0.3.aar/883044a82b804f0c3a7fc0e881e698e4/AndroidManifest.xml:22:5-36:19
+MERGED from [com.google.firebase:firebase-auth:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.0.3.aar/883044a82b804f0c3a7fc0e881e698e4/AndroidManifest.xml:22:5-36:19
 MERGED from [com.google.firebase:firebase-core:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.3.aar/ef4f1dc9ed381f5bcc87a90b20297865/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-core:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.3.aar/ef4f1dc9ed381f5bcc87a90b20297865/AndroidManifest.xml:7:5-20
-MERGED from [com.google.firebase:firebase-auth-interop:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-interop-16.0.0.aar/30aaf05509f9a0c760c70f3804e58498/AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.firebase:firebase-auth-interop:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-interop-16.0.0.aar/30aaf05509f9a0c760c70f3804e58498/AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-impl-17.0.1.aar/3e4ffe045dac8438ded927456a630033/AndroidManifest.xml:26:5-32:19
-MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-impl-17.0.1.aar/3e4ffe045dac8438ded927456a630033/AndroidManifest.xml:26:5-32:19
-MERGED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/27d37f18f838e48995006be4ba800c74/AndroidManifest.xml:28:5-53:19
-MERGED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/27d37f18f838e48995006be4ba800c74/AndroidManifest.xml:28:5-53:19
-MERGED from [com.google.android.gms:play-services-measurement-api:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-api-16.0.1.aar/6dc0c74a022dea406c714d47cd404877/AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.android.gms:play-services-measurement-api:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-api-16.0.1.aar/6dc0c74a022dea406c714d47cd404877/AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-impl-16.2.1.aar/0a3b633de3dfdd7447a4c42898762056/AndroidManifest.xml:28:5-38:19
-MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-impl-16.2.1.aar/0a3b633de3dfdd7447a4c42898762056/AndroidManifest.xml:28:5-38:19
-MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:34:5-63:19
-MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:34:5-63:19
-MERGED from [com.google.android.gms:play-services-stats:15.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-stats-15.0.1.aar/13e45a1fcb21dbaac18a99e9be235693/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-stats:15.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-stats-15.0.1.aar/13e45a1fcb21dbaac18a99e9be235693/AndroidManifest.xml:7:5-20
-MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-interop-16.0.0.aar/369b730eefcc600b425fd1784da43085/AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-interop-16.0.0.aar/369b730eefcc600b425fd1784da43085/AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.firebase:firebase-measurement-connector:17.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-17.0.0.aar/78341b94eb120d7f6464ef40d08fb243/AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.firebase:firebase-measurement-connector:17.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-17.0.0.aar/78341b94eb120d7f6464ef40d08fb243/AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-identifier-15.0.1.aar/998ea8eedfeba9fbd0331374cc456ced/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-identifier-15.0.1.aar/998ea8eedfeba9fbd0331374cc456ced/AndroidManifest.xml:22:5-20
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-interop-16.0.0.aar/f329b9d13979aaa978a60575e97c338a/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-interop-16.0.0.aar/f329b9d13979aaa978a60575e97c338a/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-impl-17.0.1.aar/0a86d53eca953abd4d53ea85689c6790/AndroidManifest.xml:26:5-32:19
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-impl-17.0.1.aar/0a86d53eca953abd4d53ea85689c6790/AndroidManifest.xml:26:5-32:19
+MERGED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/aa0dbb8fcb937a1f3dd2b7b8a587a5db/AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/aa0dbb8fcb937a1f3dd2b7b8a587a5db/AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.android.gms:play-services-measurement-api:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-api-16.0.1.aar/e125aafa6c3549982b05afedacac012d/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-api:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-api-16.0.1.aar/e125aafa6c3549982b05afedacac012d/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-impl-16.2.1.aar/5be47603f6f5ba230e1b9dba7d9651aa/AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-impl-16.2.1.aar/5be47603f6f5ba230e1b9dba7d9651aa/AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:34:5-63:19
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:34:5-63:19
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-stats-15.0.1.aar/17a6518181255acf43818f04aadea9a9/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-stats-15.0.1.aar/17a6518181255acf43818f04aadea9a9/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-interop-16.0.0.aar/03c5429392780342fd1c3e73867b086e/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-interop-16.0.0.aar/03c5429392780342fd1c3e73867b086e/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-17.0.0.aar/acdc87c41ad9a15d2c3fc36fbac91fd7/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-17.0.0.aar/acdc87c41ad9a15d2c3fc36fbac91fd7/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-identifier-15.0.1.aar/38a64fa8eab4393814e2e81872fbb1a7/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-identifier-15.0.1.aar/38a64fa8eab4393814e2e81872fbb1a7/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/1b51dfb0ead26365065ad441773e44d7/AndroidManifest.xml:22:5-27:19
 MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/1b51dfb0ead26365065ad441773e44d7/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.firebase:firebase-common:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-common-16.0.1.aar/5bff6707158a6862e3f0918257d3cb15/AndroidManifest.xml:9:5-15:19
-MERGED from [com.google.firebase:firebase-common:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-common-16.0.1.aar/5bff6707158a6862e3f0918257d3cb15/AndroidManifest.xml:9:5-15:19
+MERGED from [com.google.firebase:firebase-common:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-common-16.0.1.aar/d2ccd3dfc3e964e224f0d1469d897674/AndroidManifest.xml:9:5-15:19
+MERGED from [com.google.firebase:firebase-common:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-common-16.0.1.aar/d2ccd3dfc3e964e224f0d1469d897674/AndroidManifest.xml:9:5-15:19
 MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-16.0.1.aar/4d6b6a5bd8a873e68fadba5e50fc28ee/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-16.0.1.aar/4d6b6a5bd8a873e68fadba5e50fc28ee/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.0.1.aar/773b307a9cfd81dec804778a8777cf08/AndroidManifest.xml:22:5-26:19
@@ -195,22 +195,22 @@ INJECTED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidMa
 INJECTED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-alpha2] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/constraintlayout-2.0.0-alpha2.aar/c4d0a0eb2893f5d3e2322d94ba6d3284/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-alpha2] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/constraintlayout-2.0.0-alpha2.aar/c4d0a0eb2893f5d3e2322d94ba6d3284/AndroidManifest.xml:5:5-7:41
-MERGED from [android.arch.navigation:navigation-ui:1.0.0-alpha06] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-navigation-ui-1.0.0-alpha06.aar/00623b5ff9e0317f7f9de7afde446507/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.navigation:navigation-ui:1.0.0-alpha06] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-navigation-ui-1.0.0-alpha06.aar/00623b5ff9e0317f7f9de7afde446507/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-ui:1.0.0-alpha06] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-navigation-ui-1.0.0-alpha06.aar/83d48247e7bde9aab296d3137868ff9e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-ui:1.0.0-alpha06] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-navigation-ui-1.0.0-alpha06.aar/83d48247e7bde9aab296d3137868ff9e/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/ca2f0777174d58397c546643ae215da8/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/ca2f0777174d58397c546643ae215da8/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/75173a68f6bcb483a34f6623ba027e73/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/75173a68f6bcb483a34f6623ba027e73/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-maps:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.0.0.aar/4a414c4dcb2331684bb26c5b7c42b37a/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-maps:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.0.0.aar/4a414c4dcb2331684bb26c5b7c42b37a/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.navigation:navigation-fragment:1.0.0-alpha06] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-navigation-fragment-1.0.0-alpha06.aar/284193251c381184d37a2bc59d4618fd/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.navigation:navigation-fragment:1.0.0-alpha06] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-navigation-fragment-1.0.0-alpha06.aar/284193251c381184d37a2bc59d4618fd/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-auth:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.0.3.aar/3cfb4c5942f8ff0f86fd0308639e4a39/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-auth:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.0.3.aar/3cfb4c5942f8ff0f86fd0308639e4a39/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-database:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-database-16.0.1.aar/fec189c4e44673fbe6270bcd5b0ee09a/AndroidManifest.xml:6:5-44
-MERGED from [com.google.firebase:firebase-database:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-database-16.0.1.aar/fec189c4e44673fbe6270bcd5b0ee09a/AndroidManifest.xml:6:5-44
-MERGED from [com.google.firebase:firebase-functions:16.1.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-functions-16.1.0.aar/6b0df20087cf6d12de7b43639520fee6/AndroidManifest.xml:6:5-8:41
-MERGED from [com.google.firebase:firebase-functions:16.1.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-functions-16.1.0.aar/6b0df20087cf6d12de7b43639520fee6/AndroidManifest.xml:6:5-8:41
+MERGED from [android.arch.navigation:navigation-fragment:1.0.0-alpha06] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-navigation-fragment-1.0.0-alpha06.aar/e3989ad4151150bb6afb476246c6088c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-fragment:1.0.0-alpha06] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-navigation-fragment-1.0.0-alpha06.aar/e3989ad4151150bb6afb476246c6088c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.0.3.aar/883044a82b804f0c3a7fc0e881e698e4/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.0.3.aar/883044a82b804f0c3a7fc0e881e698e4/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-database:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-database-16.0.1.aar/a7e5a23e37f50bfd265626bfdd14e74b/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-database:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-database-16.0.1.aar/a7e5a23e37f50bfd265626bfdd14e74b/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-functions:16.1.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-functions-16.1.0.aar/9c305fa5ec9a54f9ad055749bc2a4788/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-functions:16.1.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-functions-16.1.0.aar/9c305fa5ec9a54f9ad055749bc2a4788/AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.firebase:firebase-core:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.3.aar/ef4f1dc9ed381f5bcc87a90b20297865/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-core:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.3.aar/ef4f1dc9ed381f5bcc87a90b20297865/AndroidManifest.xml:5:5-44
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/9d14ae9e0987bd839a0e0273f7d47660/AndroidManifest.xml:20:5-44
@@ -219,34 +219,34 @@ MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/ClaudiaChu/.gradle
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/recyclerview-1.0.0.aar/30ea736da65a3adfa64848adee103cef/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-flags:15.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/play-services-flags-15.0.1.aar/a9f047c56813c9c769b52f23dde02af4/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-flags:15.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/play-services-flags-15.0.1.aar/a9f047c56813c9c769b52f23dde02af4/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-auth-interop:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-interop-16.0.0.aar/30aaf05509f9a0c760c70f3804e58498/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-auth-interop:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-interop-16.0.0.aar/30aaf05509f9a0c760c70f3804e58498/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-interop-16.0.0.aar/f329b9d13979aaa978a60575e97c338a/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-interop-16.0.0.aar/f329b9d13979aaa978a60575e97c338a/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-database-collection:15.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-15.0.1.aar/a52ea47f8cddbba4f324343e3037cf25/AndroidManifest.xml:6:5-44
 MERGED from [com.google.firebase:firebase-database-collection:15.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-15.0.1.aar/a52ea47f8cddbba4f324343e3037cf25/AndroidManifest.xml:6:5-44
-MERGED from [com.google.firebase:firebase-database-connection:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-database-connection-16.0.1.aar/8369efa251ab7ab0b6a1764c27316453/AndroidManifest.xml:6:5-44
-MERGED from [com.google.firebase:firebase-database-connection:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-database-connection-16.0.1.aar/8369efa251ab7ab0b6a1764c27316453/AndroidManifest.xml:6:5-44
-MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-impl-17.0.1.aar/3e4ffe045dac8438ded927456a630033/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-impl-17.0.1.aar/3e4ffe045dac8438ded927456a630033/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/27d37f18f838e48995006be4ba800c74/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/27d37f18f838e48995006be4ba800c74/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-api:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-api-16.0.1.aar/6dc0c74a022dea406c714d47cd404877/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-api:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-api-16.0.1.aar/6dc0c74a022dea406c714d47cd404877/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-impl-16.2.1.aar/0a3b633de3dfdd7447a4c42898762056/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-impl-16.2.1.aar/0a3b633de3dfdd7447a4c42898762056/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-stats:15.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-stats-15.0.1.aar/13e45a1fcb21dbaac18a99e9be235693/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-stats:15.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-stats-15.0.1.aar/13e45a1fcb21dbaac18a99e9be235693/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-interop-16.0.0.aar/369b730eefcc600b425fd1784da43085/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-interop-16.0.0.aar/369b730eefcc600b425fd1784da43085/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-measurement-connector:17.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-17.0.0.aar/78341b94eb120d7f6464ef40d08fb243/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-measurement-connector:17.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-17.0.0.aar/78341b94eb120d7f6464ef40d08fb243/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-identifier-15.0.1.aar/998ea8eedfeba9fbd0331374cc456ced/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-identifier-15.0.1.aar/998ea8eedfeba9fbd0331374cc456ced/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-database-connection:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-database-connection-16.0.1.aar/b9dfa68a4976aa4082ab991ca1703ed1/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-database-connection:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-database-connection-16.0.1.aar/b9dfa68a4976aa4082ab991ca1703ed1/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-impl-17.0.1.aar/0a86d53eca953abd4d53ea85689c6790/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-impl-17.0.1.aar/0a86d53eca953abd4d53ea85689c6790/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/aa0dbb8fcb937a1f3dd2b7b8a587a5db/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/aa0dbb8fcb937a1f3dd2b7b8a587a5db/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-api-16.0.1.aar/e125aafa6c3549982b05afedacac012d/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-api-16.0.1.aar/e125aafa6c3549982b05afedacac012d/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-impl-16.2.1.aar/5be47603f6f5ba230e1b9dba7d9651aa/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-impl-16.2.1.aar/5be47603f6f5ba230e1b9dba7d9651aa/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-stats-15.0.1.aar/17a6518181255acf43818f04aadea9a9/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-stats-15.0.1.aar/17a6518181255acf43818f04aadea9a9/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-interop-16.0.0.aar/03c5429392780342fd1c3e73867b086e/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-interop-16.0.0.aar/03c5429392780342fd1c3e73867b086e/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-17.0.0.aar/acdc87c41ad9a15d2c3fc36fbac91fd7/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-17.0.0.aar/acdc87c41ad9a15d2c3fc36fbac91fd7/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-identifier-15.0.1.aar/38a64fa8eab4393814e2e81872fbb1a7/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-identifier-15.0.1.aar/38a64fa8eab4393814e2e81872fbb1a7/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/1b51dfb0ead26365065ad441773e44d7/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/1b51dfb0ead26365065ad441773e44d7/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-common:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-common-16.0.1.aar/5bff6707158a6862e3f0918257d3cb15/AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.firebase:firebase-common:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-common-16.0.1.aar/5bff6707158a6862e3f0918257d3cb15/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-common:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-common-16.0.1.aar/d2ccd3dfc3e964e224f0d1469d897674/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-common:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-common-16.0.1.aar/d2ccd3dfc3e964e224f0d1469d897674/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-16.0.1.aar/4d6b6a5bd8a873e68fadba5e50fc28ee/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-16.0.1.aar/4d6b6a5bd8a873e68fadba5e50fc28ee/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.0.1.aar/773b307a9cfd81dec804778a8777cf08/AndroidManifest.xml:20:5-44
@@ -261,8 +261,8 @@ MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/ClaudiaChu/.grad
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/b2afea53b294c54ca640a1a7cea2a241/AndroidManifest.xml:20:5-44
 MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.0.aar/627fcbf75cb0e92fee45e20643818b81/AndroidManifest.xml:20:5-44
 MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.0.aar/627fcbf75cb0e92fee45e20643818b81/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.navigation:navigation-runtime:1.0.0-alpha06] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-navigation-runtime-1.0.0-alpha06.aar/e0167f68a4abdf8be30b49ab53b9f076/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.navigation:navigation-runtime:1.0.0-alpha06] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-navigation-runtime-1.0.0-alpha06.aar/e0167f68a4abdf8be30b49ab53b9f076/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-runtime:1.0.0-alpha06] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-navigation-runtime-1.0.0-alpha06.aar/1932a36a2f490e04d412ec06a94ffa5b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-runtime:1.0.0-alpha06] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-navigation-runtime-1.0.0-alpha06.aar/1932a36a2f490e04d412ec06a94ffa5b/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/b7cb1898d0f35525a9dd7988dca28779/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/b7cb1898d0f35525a9dd7988dca28779/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/162d5de866a675c97b10c50e994ed7ce/AndroidManifest.xml:20:5-44
@@ -293,8 +293,8 @@ MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/Claudi
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/79cfdda917cc7cedf56d699bcf72378c/AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/a54e188375238c85c9a4ba69418ee036/AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/a54e188375238c85c9a4ba69418ee036/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.navigation:navigation-common:1.0.0-alpha06] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-navigation-common-1.0.0-alpha06.aar/f9db11dbed8f9ad73ab7158d71c8ed8e/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.navigation:navigation-common:1.0.0-alpha06] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-navigation-common-1.0.0-alpha06.aar/f9db11dbed8f9ad73ab7158d71c8ed8e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-common:1.0.0-alpha06] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-navigation-common-1.0.0-alpha06.aar/c108244afb825cfcd69dcce0db4760af/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-common:1.0.0-alpha06] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-navigation-common-1.0.0-alpha06.aar/c108244afb825cfcd69dcce0db4760af/AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/ffb097caabaf77899b4bf37d5ac8156c/AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/ffb097caabaf77899b4bf37d5ac8156c/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/5af9db2e7c1d94879615bed83ad35075/AndroidManifest.xml:20:5-44
@@ -325,28 +325,28 @@ INJECTED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidMa
 		INJECTED from /Users/ClaudiaChu/StudioProjects/app_4t5_v2/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.android.gms:play-services-maps:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.0.0.aar/4a414c4dcb2331684bb26c5b7c42b37a/AndroidManifest.xml:23:5-79
-MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-impl-17.0.1.aar/3e4ffe045dac8438ded927456a630033/AndroidManifest.xml:23:5-79
-MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-impl-17.0.1.aar/3e4ffe045dac8438ded927456a630033/AndroidManifest.xml:23:5-79
-MERGED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/27d37f18f838e48995006be4ba800c74/AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/27d37f18f838e48995006be4ba800c74/AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-impl-16.2.1.aar/0a3b633de3dfdd7447a4c42898762056/AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-impl-16.2.1.aar/0a3b633de3dfdd7447a4c42898762056/AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:22:5-79
-MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-impl-17.0.1.aar/0a86d53eca953abd4d53ea85689c6790/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-impl-17.0.1.aar/0a86d53eca953abd4d53ea85689c6790/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/aa0dbb8fcb937a1f3dd2b7b8a587a5db/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/aa0dbb8fcb937a1f3dd2b7b8a587a5db/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-impl-16.2.1.aar/5be47603f6f5ba230e1b9dba7d9651aa/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-impl-16.2.1.aar/5be47603f6f5ba230e1b9dba7d9651aa/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:22:5-79
 	android:name
 		ADDED from [com.google.android.gms:play-services-maps:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.0.0.aar/4a414c4dcb2331684bb26c5b7c42b37a/AndroidManifest.xml:23:22-76
 uses-permission#android.permission.INTERNET
 ADDED from [com.google.android.gms:play-services-maps:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.0.0.aar/4a414c4dcb2331684bb26c5b7c42b37a/AndroidManifest.xml:24:5-67
-MERGED from [com.google.firebase:firebase-database-connection:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-database-connection-16.0.1.aar/8369efa251ab7ab0b6a1764c27316453/AndroidManifest.xml:8:5-67
-MERGED from [com.google.firebase:firebase-database-connection:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-database-connection-16.0.1.aar/8369efa251ab7ab0b6a1764c27316453/AndroidManifest.xml:8:5-67
-MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-impl-17.0.1.aar/3e4ffe045dac8438ded927456a630033/AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-impl-17.0.1.aar/3e4ffe045dac8438ded927456a630033/AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/27d37f18f838e48995006be4ba800c74/AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/27d37f18f838e48995006be4ba800c74/AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-impl-16.2.1.aar/0a3b633de3dfdd7447a4c42898762056/AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-impl-16.2.1.aar/0a3b633de3dfdd7447a4c42898762056/AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-database-connection:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-database-connection-16.0.1.aar/b9dfa68a4976aa4082ab991ca1703ed1/AndroidManifest.xml:8:5-67
+MERGED from [com.google.firebase:firebase-database-connection:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-database-connection-16.0.1.aar/b9dfa68a4976aa4082ab991ca1703ed1/AndroidManifest.xml:8:5-67
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-impl-17.0.1.aar/0a86d53eca953abd4d53ea85689c6790/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-impl-17.0.1.aar/0a86d53eca953abd4d53ea85689c6790/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/aa0dbb8fcb937a1f3dd2b7b8a587a5db/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/aa0dbb8fcb937a1f3dd2b7b8a587a5db/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-impl-16.2.1.aar/5be47603f6f5ba230e1b9dba7d9651aa/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-impl-16.2.1.aar/5be47603f6f5ba230e1b9dba7d9651aa/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:23:5-67
 	android:name
 		ADDED from [com.google.android.gms:play-services-maps:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.0.0.aar/4a414c4dcb2331684bb26c5b7c42b37a/AndroidManifest.xml:24:22-64
 uses-feature#0x00020000
@@ -356,167 +356,167 @@ ADDED from [com.google.android.gms:play-services-maps:16.0.0] /Users/ClaudiaChu/
 	android:required
 		ADDED from [com.google.android.gms:play-services-maps:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.0.0.aar/4a414c4dcb2331684bb26c5b7c42b37a/AndroidManifest.xml:28:9-32
 activity#com.google.firebase.auth.internal.FederatedSignInActivity
-ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.0.3.aar/3cfb4c5942f8ff0f86fd0308639e4a39/AndroidManifest.xml:23:9-29:75
+ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.0.3.aar/883044a82b804f0c3a7fc0e881e698e4/AndroidManifest.xml:23:9-29:75
 	android:excludeFromRecents
-		ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.0.3.aar/3cfb4c5942f8ff0f86fd0308639e4a39/AndroidManifest.xml:25:13-46
+		ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.0.3.aar/883044a82b804f0c3a7fc0e881e698e4/AndroidManifest.xml:25:13-46
 	android:launchMode
-		ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.0.3.aar/3cfb4c5942f8ff0f86fd0308639e4a39/AndroidManifest.xml:27:13-48
+		ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.0.3.aar/883044a82b804f0c3a7fc0e881e698e4/AndroidManifest.xml:27:13-48
 	android:exported
-		ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.0.3.aar/3cfb4c5942f8ff0f86fd0308639e4a39/AndroidManifest.xml:26:13-36
+		ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.0.3.aar/883044a82b804f0c3a7fc0e881e698e4/AndroidManifest.xml:26:13-36
 	android:permission
-		ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.0.3.aar/3cfb4c5942f8ff0f86fd0308639e4a39/AndroidManifest.xml:28:13-102
+		ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.0.3.aar/883044a82b804f0c3a7fc0e881e698e4/AndroidManifest.xml:28:13-102
 	android:theme
-		ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.0.3.aar/3cfb4c5942f8ff0f86fd0308639e4a39/AndroidManifest.xml:29:13-72
+		ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.0.3.aar/883044a82b804f0c3a7fc0e881e698e4/AndroidManifest.xml:29:13-72
 	android:name
-		ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.0.3.aar/3cfb4c5942f8ff0f86fd0308639e4a39/AndroidManifest.xml:24:13-85
+		ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.0.3.aar/883044a82b804f0c3a7fc0e881e698e4/AndroidManifest.xml:24:13-85
 service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.0.3.aar/3cfb4c5942f8ff0f86fd0308639e4a39/AndroidManifest.xml:31:9-35:19
-MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-impl-17.0.1.aar/3e4ffe045dac8438ded927456a630033/AndroidManifest.xml:27:9-31:19
-MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-impl-17.0.1.aar/3e4ffe045dac8438ded927456a630033/AndroidManifest.xml:27:9-31:19
-MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:35:9-39:19
-MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:35:9-39:19
+ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.0.3.aar/883044a82b804f0c3a7fc0e881e698e4/AndroidManifest.xml:31:9-35:19
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-impl-17.0.1.aar/0a86d53eca953abd4d53ea85689c6790/AndroidManifest.xml:27:9-31:19
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-impl-17.0.1.aar/0a86d53eca953abd4d53ea85689c6790/AndroidManifest.xml:27:9-31:19
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:35:9-39:19
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:35:9-39:19
 	android:name
-		ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.0.3.aar/3cfb4c5942f8ff0f86fd0308639e4a39/AndroidManifest.xml:31:18-89
+		ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.0.3.aar/883044a82b804f0c3a7fc0e881e698e4/AndroidManifest.xml:31:18-89
 meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
-ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.0.3.aar/3cfb4c5942f8ff0f86fd0308639e4a39/AndroidManifest.xml:32:13-34:85
+ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.0.3.aar/883044a82b804f0c3a7fc0e881e698e4/AndroidManifest.xml:32:13-34:85
 	android:value
-		ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.0.3.aar/3cfb4c5942f8ff0f86fd0308639e4a39/AndroidManifest.xml:34:17-82
+		ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.0.3.aar/883044a82b804f0c3a7fc0e881e698e4/AndroidManifest.xml:34:17-82
 	android:name
-		ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.0.3.aar/3cfb4c5942f8ff0f86fd0308639e4a39/AndroidManifest.xml:33:17-109
+		ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.0.3.aar/883044a82b804f0c3a7fc0e881e698e4/AndroidManifest.xml:33:17-109
 uses-permission#android.permission.WAKE_LOCK
-ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-impl-17.0.1.aar/3e4ffe045dac8438ded927456a630033/AndroidManifest.xml:24:5-68
-MERGED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/27d37f18f838e48995006be4ba800c74/AndroidManifest.xml:25:5-68
-MERGED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/27d37f18f838e48995006be4ba800c74/AndroidManifest.xml:25:5-68
-MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-impl-16.2.1.aar/0a3b633de3dfdd7447a4c42898762056/AndroidManifest.xml:25:5-68
-MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-impl-16.2.1.aar/0a3b633de3dfdd7447a4c42898762056/AndroidManifest.xml:25:5-68
-MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:24:5-68
-MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:24:5-68
+ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-impl-17.0.1.aar/0a86d53eca953abd4d53ea85689c6790/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/aa0dbb8fcb937a1f3dd2b7b8a587a5db/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/aa0dbb8fcb937a1f3dd2b7b8a587a5db/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-impl-16.2.1.aar/5be47603f6f5ba230e1b9dba7d9651aa/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-impl-16.2.1.aar/5be47603f6f5ba230e1b9dba7d9651aa/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:24:5-68
 	android:name
-		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-impl-17.0.1.aar/3e4ffe045dac8438ded927456a630033/AndroidManifest.xml:24:22-65
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-impl-17.0.1.aar/0a86d53eca953abd4d53ea85689c6790/AndroidManifest.xml:24:22-65
 meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
-ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-impl-17.0.1.aar/3e4ffe045dac8438ded927456a630033/AndroidManifest.xml:28:13-30:85
+ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-impl-17.0.1.aar/0a86d53eca953abd4d53ea85689c6790/AndroidManifest.xml:28:13-30:85
 	android:value
-		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-impl-17.0.1.aar/3e4ffe045dac8438ded927456a630033/AndroidManifest.xml:30:17-82
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-impl-17.0.1.aar/0a86d53eca953abd4d53ea85689c6790/AndroidManifest.xml:30:17-82
 	android:name
-		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-impl-17.0.1.aar/3e4ffe045dac8438ded927456a630033/AndroidManifest.xml:29:17-139
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-measurement-connector-impl-17.0.1.aar/0a86d53eca953abd4d53ea85689c6790/AndroidManifest.xml:29:17-139
 uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
-ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/27d37f18f838e48995006be4ba800c74/AndroidManifest.xml:26:5-110
-MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-impl-16.2.1.aar/0a3b633de3dfdd7447a4c42898762056/AndroidManifest.xml:26:5-110
-MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-impl-16.2.1.aar/0a3b633de3dfdd7447a4c42898762056/AndroidManifest.xml:26:5-110
+ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/aa0dbb8fcb937a1f3dd2b7b8a587a5db/AndroidManifest.xml:26:5-110
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-impl-16.2.1.aar/5be47603f6f5ba230e1b9dba7d9651aa/AndroidManifest.xml:26:5-110
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-impl-16.2.1.aar/5be47603f6f5ba230e1b9dba7d9651aa/AndroidManifest.xml:26:5-110
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/27d37f18f838e48995006be4ba800c74/AndroidManifest.xml:26:22-107
+		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/aa0dbb8fcb937a1f3dd2b7b8a587a5db/AndroidManifest.xml:26:22-107
 receiver#com.google.android.gms.measurement.AppMeasurementReceiver
-ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/27d37f18f838e48995006be4ba800c74/AndroidManifest.xml:29:9-33:20
+ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/aa0dbb8fcb937a1f3dd2b7b8a587a5db/AndroidManifest.xml:29:9-33:20
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/27d37f18f838e48995006be4ba800c74/AndroidManifest.xml:31:13-35
+		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/aa0dbb8fcb937a1f3dd2b7b8a587a5db/AndroidManifest.xml:31:13-35
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/27d37f18f838e48995006be4ba800c74/AndroidManifest.xml:32:13-37
+		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/aa0dbb8fcb937a1f3dd2b7b8a587a5db/AndroidManifest.xml:32:13-37
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/27d37f18f838e48995006be4ba800c74/AndroidManifest.xml:30:13-85
+		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/aa0dbb8fcb937a1f3dd2b7b8a587a5db/AndroidManifest.xml:30:13-85
 receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
-ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/27d37f18f838e48995006be4ba800c74/AndroidManifest.xml:34:9-42:20
-MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-impl-16.2.1.aar/0a3b633de3dfdd7447a4c42898762056/AndroidManifest.xml:29:9-37:20
-MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-impl-16.2.1.aar/0a3b633de3dfdd7447a4c42898762056/AndroidManifest.xml:29:9-37:20
+ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/aa0dbb8fcb937a1f3dd2b7b8a587a5db/AndroidManifest.xml:34:9-42:20
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-impl-16.2.1.aar/5be47603f6f5ba230e1b9dba7d9651aa/AndroidManifest.xml:29:9-37:20
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-impl-16.2.1.aar/5be47603f6f5ba230e1b9dba7d9651aa/AndroidManifest.xml:29:9-37:20
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/27d37f18f838e48995006be4ba800c74/AndroidManifest.xml:36:13-35
+		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/aa0dbb8fcb937a1f3dd2b7b8a587a5db/AndroidManifest.xml:36:13-35
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/27d37f18f838e48995006be4ba800c74/AndroidManifest.xml:37:13-36
+		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/aa0dbb8fcb937a1f3dd2b7b8a587a5db/AndroidManifest.xml:37:13-36
 	android:permission
-		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/27d37f18f838e48995006be4ba800c74/AndroidManifest.xml:38:13-69
+		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/aa0dbb8fcb937a1f3dd2b7b8a587a5db/AndroidManifest.xml:38:13-69
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/27d37f18f838e48995006be4ba800c74/AndroidManifest.xml:35:13-100
+		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/aa0dbb8fcb937a1f3dd2b7b8a587a5db/AndroidManifest.xml:35:13-100
 intent-filter#action:name:com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/27d37f18f838e48995006be4ba800c74/AndroidManifest.xml:39:13-41:29
+ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/aa0dbb8fcb937a1f3dd2b7b8a587a5db/AndroidManifest.xml:39:13-41:29
 action#com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/27d37f18f838e48995006be4ba800c74/AndroidManifest.xml:40:17-79
+ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/aa0dbb8fcb937a1f3dd2b7b8a587a5db/AndroidManifest.xml:40:17-79
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/27d37f18f838e48995006be4ba800c74/AndroidManifest.xml:40:25-76
+		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/aa0dbb8fcb937a1f3dd2b7b8a587a5db/AndroidManifest.xml:40:25-76
 service#com.google.android.gms.measurement.AppMeasurementService
-ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/27d37f18f838e48995006be4ba800c74/AndroidManifest.xml:44:9-47:40
+ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/aa0dbb8fcb937a1f3dd2b7b8a587a5db/AndroidManifest.xml:44:9-47:40
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/27d37f18f838e48995006be4ba800c74/AndroidManifest.xml:46:13-35
+		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/aa0dbb8fcb937a1f3dd2b7b8a587a5db/AndroidManifest.xml:46:13-35
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/27d37f18f838e48995006be4ba800c74/AndroidManifest.xml:47:13-37
+		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/aa0dbb8fcb937a1f3dd2b7b8a587a5db/AndroidManifest.xml:47:13-37
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/27d37f18f838e48995006be4ba800c74/AndroidManifest.xml:45:13-84
+		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/aa0dbb8fcb937a1f3dd2b7b8a587a5db/AndroidManifest.xml:45:13-84
 service#com.google.android.gms.measurement.AppMeasurementJobService
-ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/27d37f18f838e48995006be4ba800c74/AndroidManifest.xml:48:9-52:72
+ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/aa0dbb8fcb937a1f3dd2b7b8a587a5db/AndroidManifest.xml:48:9-52:72
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/27d37f18f838e48995006be4ba800c74/AndroidManifest.xml:50:13-35
+		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/aa0dbb8fcb937a1f3dd2b7b8a587a5db/AndroidManifest.xml:50:13-35
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/27d37f18f838e48995006be4ba800c74/AndroidManifest.xml:51:13-37
+		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/aa0dbb8fcb937a1f3dd2b7b8a587a5db/AndroidManifest.xml:51:13-37
 	android:permission
-		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/27d37f18f838e48995006be4ba800c74/AndroidManifest.xml:52:13-69
+		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/aa0dbb8fcb937a1f3dd2b7b8a587a5db/AndroidManifest.xml:52:13-69
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/27d37f18f838e48995006be4ba800c74/AndroidManifest.xml:49:13-87
+		ADDED from [com.google.firebase:firebase-analytics:16.0.3] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-analytics-16.0.3.aar/aa0dbb8fcb937a1f3dd2b7b8a587a5db/AndroidManifest.xml:49:13-87
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:26:5-82
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:26:5-82
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:26:22-79
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:26:22-79
 permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:28:5-30:47
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:28:5-30:47
 	android:protectionLevel
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:30:9-44
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:30:9-44
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:29:9-63
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:29:9-63
 permission#edu.gatech.cs2340.myapplication.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:28:5-30:47
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:28:5-30:47
 	android:protectionLevel
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:30:9-44
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:30:9-44
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:29:9-63
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:29:9-63
 uses-permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:32:5-79
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:32:5-79
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:32:22-76
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:32:22-76
 uses-permission#edu.gatech.cs2340.myapplication.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:32:5-79
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:32:5-79
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:32:22-76
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:32:22-76
 meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
-ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:36:13-38:85
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:36:13-38:85
 	android:value
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:38:17-82
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:38:17-82
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:37:17-96
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:37:17-96
 receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
-ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:41:9-50:20
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:41:9-50:20
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:43:13-36
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:43:13-36
 	android:permission
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:44:13-73
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:44:13-73
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:42:13-78
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:42:13-78
 intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:${applicationId}
-ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:45:13-49:29
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:45:13-49:29
 intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:edu.gatech.cs2340.myapplication
-ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:45:13-49:29
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:45:13-49:29
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:46:17-81
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:46:17-81
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:46:25-78
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:46:25-78
 category#${applicationId}
-ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:48:17-61
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:48:17-61
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:48:27-58
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:48:27-58
 category#edu.gatech.cs2340.myapplication
-ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:48:17-61
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:48:17-61
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:48:27-58
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:48:27-58
 service#com.google.firebase.iid.FirebaseInstanceIdService
-ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:56:9-62:19
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:56:9-62:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:58:13-36
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:58:13-36
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:57:13-77
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:57:13-77
 intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:59:13-61:29
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:59:13-61:29
 	android:priority
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:59:28-51
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:59:28-51
 action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:60:17-80
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:60:17-80
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/1e33304bd406deaf1ec701bdfdd72bee/AndroidManifest.xml:60:25-77
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-iid-16.0.0.aar/976f8c2e91d1df3c23f80cdd58ddc50b/AndroidManifest.xml:60:25-77
 activity#com.google.android.gms.common.api.GoogleApiActivity
 ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/1b51dfb0ead26365065ad441773e44d7/AndroidManifest.xml:23:9-26:75
 	android:exported
@@ -526,15 +526,15 @@ ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/ClaudiaChu/
 	android:name
 		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/1b51dfb0ead26365065ad441773e44d7/AndroidManifest.xml:24:13-79
 provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-common-16.0.1.aar/5bff6707158a6862e3f0918257d3cb15/AndroidManifest.xml:10:9-14:39
+ADDED from [com.google.firebase:firebase-common:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-common-16.0.1.aar/d2ccd3dfc3e964e224f0d1469d897674/AndroidManifest.xml:10:9-14:39
 	android:authorities
-		ADDED from [com.google.firebase:firebase-common:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-common-16.0.1.aar/5bff6707158a6862e3f0918257d3cb15/AndroidManifest.xml:12:13-72
+		ADDED from [com.google.firebase:firebase-common:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-common-16.0.1.aar/d2ccd3dfc3e964e224f0d1469d897674/AndroidManifest.xml:12:13-72
 	android:exported
-		ADDED from [com.google.firebase:firebase-common:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-common-16.0.1.aar/5bff6707158a6862e3f0918257d3cb15/AndroidManifest.xml:13:13-37
+		ADDED from [com.google.firebase:firebase-common:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-common-16.0.1.aar/d2ccd3dfc3e964e224f0d1469d897674/AndroidManifest.xml:13:13-37
 	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-common-16.0.1.aar/5bff6707158a6862e3f0918257d3cb15/AndroidManifest.xml:14:13-36
+		ADDED from [com.google.firebase:firebase-common:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-common-16.0.1.aar/d2ccd3dfc3e964e224f0d1469d897674/AndroidManifest.xml:14:13-36
 	android:name
-		ADDED from [com.google.firebase:firebase-common:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-common-16.0.1.aar/5bff6707158a6862e3f0918257d3cb15/AndroidManifest.xml:11:13-77
+		ADDED from [com.google.firebase:firebase-common:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-common-16.0.1.aar/d2ccd3dfc3e964e224f0d1469d897674/AndroidManifest.xml:11:13-77
 meta-data#com.google.android.gms.version
 ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/ClaudiaChu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.0.1.aar/773b307a9cfd81dec804778a8777cf08/AndroidManifest.xml:23:9-25:69
 	android:value
