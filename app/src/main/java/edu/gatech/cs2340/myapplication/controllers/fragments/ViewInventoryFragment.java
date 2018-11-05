@@ -54,7 +54,8 @@ public class ViewInventoryFragment extends Fragment implements SearchView.OnQuer
         rView.setLayoutManager(new GridLayoutManager(getContext(), 1,
                 RecyclerView.VERTICAL, false));
 
-        this.mAdapter = new InventoryCardRecyclerViewAdapter(new ArrayList<InventoryEntry>(), rView);
+        this.mAdapter = new InventoryCardRecyclerViewAdapter(new ArrayList<InventoryEntry>(),
+                rView);
 
         TheCloud.getInventory(new Callback<List<InventoryEntry>>() {
             @Override

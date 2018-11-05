@@ -88,8 +88,10 @@ public class AdvancedSearchFragment extends Fragment {
             @Override
             public void onClick(final View view) {
                 Bundle bundle = new Bundle();
-                bundle.putString("location_constraint", locationSpinner.getSelectedItem().toString());
-                bundle.putString("category_constraint", categorySpinner.getSelectedItem().toString());
+                bundle.putString("location_constraint",
+                        locationSpinner.getSelectedItem().toString());
+                bundle.putString("category_constraint",
+                        categorySpinner.getSelectedItem().toString());
 
                 Navigation.findNavController(view).navigate(R.id
                         .nav_view_items, bundle);

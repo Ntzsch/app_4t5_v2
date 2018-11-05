@@ -44,7 +44,8 @@ public class InventoryCardRecyclerViewAdapter
         }
     }
 
-    public InventoryCardRecyclerViewAdapter(List<InventoryEntry> mItemList, final RecyclerView recyclerView) {
+    public InventoryCardRecyclerViewAdapter(List<InventoryEntry> mItemList,
+                                            final RecyclerView recyclerView) {
         this.mInventoryList = mItemList;
         this.mRecyclerView = recyclerView;
         this.mOnClickListener = new View.OnClickListener(){
@@ -68,7 +69,8 @@ public class InventoryCardRecyclerViewAdapter
 
         /*
         this.addOnItemTouchListener(
-                new RecyclerItemClickListener(context, recyclerView ,new RecyclerItemClickListener.OnItemClickListener() {
+                new RecyclerItemClickListener(context, recyclerView ,
+                    new RecyclerItemClickListener.OnItemClickListener() {
                     @Override public void onItemClick(View view, int position) {
                         // do whatever
                     }
@@ -122,7 +124,8 @@ public class InventoryCardRecyclerViewAdapter
                 } else {
                     List<InventoryEntry> tempFilteredList = new ArrayList<>();
                     for (InventoryEntry ie : mInventoryList) {
-                        if (ie.getSmallDescription().toLowerCase().contains(charString.toLowerCase())) {
+                        if (ie.getSmallDescription().toLowerCase()
+                                .contains(charString.toLowerCase())) {
                             tempFilteredList.add(ie);
                         }
                     }
