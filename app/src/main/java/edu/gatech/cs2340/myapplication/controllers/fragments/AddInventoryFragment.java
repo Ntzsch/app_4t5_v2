@@ -90,10 +90,9 @@ public class AddInventoryFragment extends Fragment {
                 bundle.putString("value", value);
                 bundle.putString("category", category);
 
-                TheCloud.addInventoryEntry(entry).continueWith(new
-                                                                         Continuation<Boolean, Object>() {
-                                                                             @Override
-                                                                             public Object then(Task<Boolean> task) {
+                TheCloud.addInventoryEntry(entry).continueWith(new Continuation<Boolean, Object>() {
+                        @Override
+                        public Object then(Task<Boolean> task) {
                      Log.e("AddInventoryFragment", task.getResult().toString());
                      mConfirmButton.setEnabled(true);
                      if (task.getResult()) {
