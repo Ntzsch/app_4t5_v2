@@ -26,7 +26,7 @@ import androidx.annotation.NonNull;
 import edu.gatech.cs2340.myapplication.Callback;
 
 public class TheCloud {
-    private static FirebaseAuth mAuth =  mAuth = FirebaseAuth.getInstance();
+    private static FirebaseAuth mAuth = FirebaseAuth.getInstance();
     private static FirebaseFunctions mFunctions = FirebaseFunctions
             .getInstance();
     private static User mUser = new User();
