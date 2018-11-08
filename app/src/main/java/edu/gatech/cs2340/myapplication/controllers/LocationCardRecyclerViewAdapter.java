@@ -112,4 +112,8 @@ public class LocationCardRecyclerViewAdapter extends RecyclerView
         mLocationList = locationList;
         notifyDataSetChanged();
     }
+
+    public List<LocationEntry> getmLocationList() {
+        return mLocationList;
+    }
 }

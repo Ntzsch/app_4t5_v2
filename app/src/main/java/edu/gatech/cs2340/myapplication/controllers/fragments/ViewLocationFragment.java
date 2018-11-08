@@ -19,6 +19,7 @@ import edu.gatech.cs2340.myapplication.models.LocationEntry;
 import edu.gatech.cs2340.myapplication.models.TheCloud;
 
 public class ViewLocationFragment extends Fragment {
+
     public ViewLocationFragment() { }
 
     @Override
