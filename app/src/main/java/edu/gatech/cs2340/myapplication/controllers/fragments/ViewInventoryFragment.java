@@ -10,12 +10,16 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.google.android.material.button.MaterialButton;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -30,6 +34,8 @@ import static androidx.constraintlayout.motion.widget.MotionScene.TAG;
 public class ViewInventoryFragment extends Fragment implements SearchView.OnQueryTextListener{
     private InventoryCardRecyclerViewAdapter mAdapter;
     private List<InventoryEntry> inventoryList;
+    private String categoryConstraint = null;
+    private String locationConstraint = null;
 
     public ViewInventoryFragment() { }
     @Override
@@ -48,7 +54,8 @@ public class ViewInventoryFragment extends Fragment implements SearchView.OnQuer
         rView.setLayoutManager(new GridLayoutManager(getContext(), 1,
                 RecyclerView.VERTICAL, false));
 
-        this.mAdapter = new InventoryCardRecyclerViewAdapter(new ArrayList<InventoryEntry>(), rView);
+        this.mAdapter = new InventoryCardRecyclerViewAdapter(new ArrayList<InventoryEntry>(),
+                rView);
 
         TheCloud.getInventory(new Callback<List<InventoryEntry>>() {
             @Override
@@ -61,8 +68,6 @@ public class ViewInventoryFragment extends Fragment implements SearchView.OnQuer
         return view;
     }
 
-
-
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
@@ -72,7 +77,10 @@ public class ViewInventoryFragment extends Fragment implements SearchView.OnQuer
     }
 
     @Override
-    public void onViewCreated(View view, Bundle savedInstanceState) { }
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        categoryConstraint = getArguments().getString("category_constraint");
+        locationConstraint = getArguments().getString("location_constraint");
+    }
 
 
     @Override
@@ -84,10 +92,26 @@ public class ViewInventoryFragment extends Fragment implements SearchView.OnQuer
     public boolean onQueryTextChange(String newText) {
         String input = newText.toLowerCase();
         List<InventoryEntry> newList = new ArrayList<>();
-
-        for (InventoryEntry ie : inventoryList) {
-            if (ie.getSmallDescription().toLowerCase().contains(input)) {
-                newList.add(ie);
+        if (categoryConstraint != null && (!categoryConstraint.equals("All"))) {
+            for (InventoryEntry ie : inventoryList) {
+                if (ie.getCategory().toLowerCase().contains(
+                        (categoryConstraint.toLowerCase())) && ie.getSmallDescription()
+                        .toLowerCase().contains(input)) {
+                    newList.add(ie);
+                }
+            }
+        } else if (locationConstraint != null && (!locationConstraint.equals("All"))) {
+            for (InventoryEntry ie : inventoryList) {
+                if (ie.getLocation().toLowerCase().contains(locationConstraint.toLowerCase())
+                        && ie.getSmallDescription().toLowerCase().contains(input)) {
+                    newList.add(ie);
+                }
+            }
+        } else {
+            for (InventoryEntry ie : inventoryList) {
+                if (ie.getSmallDescription().toLowerCase().contains(input)) {
+                    newList.add(ie);
+                }
             }
         }
 
@@ -95,4 +119,5 @@ public class ViewInventoryFragment extends Fragment implements SearchView.OnQuer
 
         return true;
     }
+
 }

@@ -50,7 +50,8 @@ public class EditInventoryFragment extends Fragment {
         rView.setLayoutManager(new GridLayoutManager(getContext(), 1,
                 RecyclerView.VERTICAL, false));
 
-        final InventoryCardRecyclerViewAdapter adapter = new InventoryCardRecyclerViewAdapter(new ArrayList<InventoryEntry>(), rView);
+        final InventoryCardRecyclerViewAdapter adapter = new InventoryCardRecyclerViewAdapter(
+                new ArrayList<InventoryEntry>(), rView);
         rView.setAdapter(adapter);
         TheCloud.getInventory(new Callback<List<InventoryEntry>>() {
             @Override
