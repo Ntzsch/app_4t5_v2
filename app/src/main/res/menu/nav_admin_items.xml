@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/nav_admin_items">
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_view_locations"
             android:title="@string/nav_view_locations" />
-        <item
-            android:id="@+id/nav_edit_locations"
-            android:title="@string/nav_edit_locations" />
-        <item
-            android:id="@+id/nav_view_edit_inventory"
-            android:title="@string/nav_edit_inventory" />
+        <item android:title="@string/nav_edit_locations" />
+        <item android:title="@string/nav_edit_inventory" />
     </group>
-    <group android:checkableBehavior="single"
-        android:id="@+id/login_group">
+    <group android:checkableBehavior="single">
     <item
             android:id="@+id/nav_register"
             android:title="@string/nav_register" />

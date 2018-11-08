@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/blah"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".controllers.fragments.AdvancedSearchFragment">
@@ -15,7 +15,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
-        android:text="Advanced Search"
+        android:text="@string/adv_search_text"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,17 +24,15 @@
         android:id="@+id/advSearchText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="item name"
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/advSearchHeader">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/advSearch_edittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Item Name" />
+            android:text="@string/item_name_text" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -46,7 +44,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
-        android:text="Search By..."
+        android:text="@string/search_by_text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/advSearchText" />
 
@@ -57,8 +55,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="12dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/locationHead" />
@@ -70,7 +68,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
-        android:text="Location"
+        android:text="@string/location_text"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewP" />
@@ -82,7 +80,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
-        android:text="Category"
+        android:text="@string/category_text"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/locationSpinner" />
@@ -107,7 +105,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
-        android:text="Price Range"
+        android:text="@string/price_range_text"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/categorySpinner" />
@@ -124,10 +122,9 @@
         app:layout_constraintTop_toBottomOf="@+id/priceHead">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/lowP_edittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="$" />
+            android:text="@string/low_price_text" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -142,16 +139,14 @@
         app:layout_constraintTop_toBottomOf="@+id/priceHead">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/highP_edittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="$$$" />
+            android:text="@string/high_price_text" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
 
     <TextView
-        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -159,7 +154,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:text="to"
+        android:text="@string/to_text"
         app:layout_constraintEnd_toStartOf="@+id/highPrice"
         app:layout_constraintStart_toEndOf="@+id/lowPrice"
         app:layout_constraintTop_toBottomOf="@+id/priceHead" />
@@ -171,7 +166,7 @@
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:layout_marginBottom="32dp"
-        android:text="Apply"
+        android:text="@string/apply_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/nav_employee_items">
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_view_locations"
@@ -12,8 +11,7 @@
             android:id="@+id/nav_edit_inventory"
             android:title="@string/nav_view_inventory" />
     </group>
-    <group android:checkableBehavior="single"
-        android:id="@+id/login_group">
+    <group android:checkableBehavior="single">
     <item
             android:id="@+id/nav_logout"
             android:title="@string/nav_logout" />

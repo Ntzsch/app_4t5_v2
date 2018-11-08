@@ -1,24 +1,31 @@
 package edu.gatech.cs2340.myapplication.controllers.fragments;
 
 import android.os.Bundle;
+
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import com.google.android.material.button.MaterialButton;
-import androidx.navigation.Navigation;
-import edu.gatech.cs2340.myapplication.R;
-import edu.gatech.cs2340.myapplication.models.InventoryEntry;
 
+import edu.gatech.cs2340.myapplication.R;
+/**
+ * InventoryEntryDetails
+ *
+ * Shows item name, description, location, category, price, and time donated
+ *
+ * @author Team4t5
+ * @version 1.0
+ *
+ */
 public class InventoryEntryDetails extends Fragment {
 
-    public InventoryEntryDetails() {
-    }
+
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup
+            container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_inventory_details,
                 container, false);
@@ -28,7 +35,7 @@ public class InventoryEntryDetails extends Fragment {
     }
 
     @Override
-    public void onViewCreated(View view, Bundle savedInstanceState) {
+    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         TextView itemCategory = view.findViewById(R.id.itemCategory);
         TextView itemName = view.findViewById(R.id.itemName);
         TextView itemDescription = view.findViewById(R.id.itemDescription);
@@ -36,25 +43,16 @@ public class InventoryEntryDetails extends Fragment {
         TextView itemValue = view.findViewById(R.id.itemValue);
         TextView itemTime = view.findViewById(R.id.itemTime);
 
-        itemName.setText(getArguments().getString("smallDescription"));
-        itemDescription.setText(getArguments().getString("longDescription"));
-        itemLocation.setText(getArguments().getString("location"));
-        itemValue.setText(getArguments().getString("value"));
-        itemTime.setText(getArguments().getString("time"));
-        itemCategory.setText(getArguments().getString("category"));
-
+        if (getArguments() != null) {
+            itemName.setText(getArguments().getString("smallDescription"));
+            itemDescription.setText(getArguments().getString
+                    ("longDescription"));
+            itemLocation.setText(getArguments().getString("location"));
+            itemValue.setText(getArguments().getString("value"));
+            itemTime.setText(getArguments().getString("time"));
+            itemCategory.setText(getArguments().getString("category"));
+        }
 
     }
-
-//        mEditButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(final View view) {
-//                ((MainActivity) getActivity()).updateNavigation();
-//                Navigation.findNavController(view).navigate(R.id
-//                        .nextfragname);
-//
-//            }
-//        });
-
 
 }
