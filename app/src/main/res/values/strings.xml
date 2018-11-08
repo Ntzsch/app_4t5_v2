@@ -27,6 +27,7 @@
     <string name="high_price_text">$$$</string>
     <string name="to_text">to</string>
     <string name="apply_text">Apply</string>
+    <string name="cancel_text">Cancel</string>
 
 
     <string name="search_hint">search</string>

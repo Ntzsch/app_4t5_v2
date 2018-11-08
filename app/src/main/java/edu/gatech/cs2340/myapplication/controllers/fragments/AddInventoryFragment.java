@@ -11,7 +11,6 @@ import com.google.android.gms.tasks.Continuation;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
-import com.google.android.material.textfield.TextInputLayout;
 
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
@@ -25,17 +24,20 @@ import edu.gatech.cs2340.myapplication.controllers.MainActivity;
  */
 public class AddInventoryFragment extends Fragment {
 
-    private TextInputEditText mtimeStamp;
-    private TextInputEditText mlocation;
-    private TextInputEditText mshortDescription;
-    private TextInputEditText mlongDescription;
-    private TextInputEditText mvalue; //in dollars
-    private TextInputEditText mcategory;
+    private TextInputEditText mTimeStamp;
+    private TextInputEditText mLocation;
+    private TextInputEditText mShortDescription;
+    private TextInputEditText mLongDescription;
+    private TextInputEditText mValue; //in dollars
+    private TextInputEditText mCategory;
     private MaterialButton mCancelButton;
     private MaterialButton mConfirmButton;
 
+    /**
+     * Required empty public constructor for AddInventoryFragment.
+     */
     public AddInventoryFragment() {
-        // Required empty public constructor
+
     }
 
 
@@ -49,12 +51,12 @@ public class AddInventoryFragment extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
 
-        mlocation = view.findViewById(R.id.edit_location);
-        mshortDescription = view.findViewById(R.id.edit_short_description);
-        mlongDescription = view.findViewById(R.id.edit_long_description);
-        mvalue = view.findViewById(R.id.edit_price);
-        mcategory = view.findViewById(R.id.edit_category);
-        mtimeStamp = view.findViewById(R.id.edit_time);
+        mLocation = view.findViewById(R.id.edit_location);
+        mShortDescription = view.findViewById(R.id.edit_short_description);
+        mLongDescription = view.findViewById(R.id.edit_long_description);
+        mValue = view.findViewById(R.id.edit_price);
+        mCategory = view.findViewById(R.id.edit_category);
+        mTimeStamp = view.findViewById(R.id.edit_time);
         mCancelButton = view.findViewById(R.id.cancel_button);
         mConfirmButton = view.findViewById(R.id.confirm_button);
 
@@ -69,12 +71,13 @@ public class AddInventoryFragment extends Fragment {
         mConfirmButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View view) {
-                String location = mlocation.getText().toString();
-                String shortDescription = mshortDescription.getText().toString();
-                String longDescription = mlongDescription.getText().toString();
-                String value = mvalue.getText().toString();
-                String category = mcategory.getText().toString();
-                String timeStamp = mtimeStamp.getText().toString();
+                // TODO: Add handling for if the user doesn't fill all text boxes
+                String location = mLocation.getText().toString();
+                String shortDescription = mShortDescription.getText().toString();
+                String longDescription = mLongDescription.getText().toString();
+                String value = mValue.getText().toString();
+                String category = mCategory.getText().toString();
+                String timeStamp = mTimeStamp.getText().toString();
 
                 InventoryEntry entry = new InventoryEntry(timeStamp, location, shortDescription,
                         longDescription, value, category);
@@ -85,15 +88,14 @@ public class AddInventoryFragment extends Fragment {
                 Bundle bundle = new Bundle();
                 bundle.putString("time", timeStamp);
                 bundle.putString("location", location);
-                bundle.putString("smallDescript", shortDescription);
-                bundle.putString("longDescript", longDescription);
+                bundle.putString("smallDescription", shortDescription);
+                bundle.putString("longDescription", longDescription);
                 bundle.putString("value", value);
                 bundle.putString("category", category);
 
-                TheCloud.addInventoryEntry(entry).continueWith(new
-                                                                         Continuation<Boolean, Object>() {
-                                                                             @Override
-                                                                             public Object then(Task<Boolean> task) {
+                TheCloud.addInventoryEntry(entry).continueWith(new Continuation<Boolean, Object>() {
+                    @Override
+                    public Object then(Task<Boolean> task) {
                      Log.e("AddInventoryFragment", task.getResult().toString());
                      mConfirmButton.setEnabled(true);
                      if (task.getResult()) {
