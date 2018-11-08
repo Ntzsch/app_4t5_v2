@@ -37,7 +37,9 @@ import edu.gatech.cs2340.myapplication.models.InventoryEntry;
 import edu.gatech.cs2340.myapplication.models.LocationEntry;
 import edu.gatech.cs2340.myapplication.models.TheCloud;
 
-
+/**
+ * Main fragment activity controlled by navController
+ */
 public class ViewMapsFragment extends Fragment implements OnMapReadyCallback {
 
     private GoogleMap mMap;
@@ -47,6 +49,13 @@ public class ViewMapsFragment extends Fragment implements OnMapReadyCallback {
 
     }
 
+    /**
+     * Opens map and fills in the locations
+     * @param inflater inflater
+     * @param container container
+     * @param savedInstanceState instanceState
+     * @return a view
+     */
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
@@ -73,6 +82,10 @@ public class ViewMapsFragment extends Fragment implements OnMapReadyCallback {
     }
 
 
+    /**
+     * Places markers on the map
+     * @param googleMap the map
+     */
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
@@ -93,11 +106,6 @@ public class ViewMapsFragment extends Fragment implements OnMapReadyCallback {
         }
 
         mMap.setInfoWindowAdapter(new CustomInfoWindowAdapter());
-
-//        // Add a marker in Sydney and move the camera
-//        LatLng sydney = new LatLng(-34, 151);
-//        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-//        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
     }
 
     /**

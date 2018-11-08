@@ -16,6 +16,14 @@ import edu.gatech.cs2340.myapplication.R;
  * create an instance of this fragment.
  */
 public class MainFragment extends Fragment {
+
+    /**
+     * Opens welcome page
+     * @param inflater inflates
+     * @param container contains
+     * @param savedInstanceState savedInstance
+     * @return the main view
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

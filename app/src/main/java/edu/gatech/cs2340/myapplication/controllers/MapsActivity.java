@@ -1,31 +1,29 @@
 package edu.gatech.cs2340.myapplication.controllers;
 
 import androidx.fragment.app.FragmentActivity;
-import edu.gatech.cs2340.myapplication.Callback;
+
 import edu.gatech.cs2340.myapplication.R;
-import edu.gatech.cs2340.myapplication.models.LocationEntry;
-import edu.gatech.cs2340.myapplication.models.TheCloud;
-
 import android.os.Bundle;
-import android.view.View;
-import android.widget.TextView;
-
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-import java.util.ArrayList;
-import java.util.List;
 
+/**
+ * GoogleMaps provided activity file
+ */
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
 
 
+    /**
+     * Opens initial activity_map
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
