@@ -1,5 +1,7 @@
 package edu.gatech.cs2340.myapplication.models;
 
+import android.content.Context;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -10,14 +12,19 @@ import static org.junit.Assert.*;
 
 import edu.gatech.cs2340.myapplication.Callback;
 import edu.gatech.cs2340.myapplication.controllers.LocationCardRecyclerViewAdapter;
-import edu.gatech.cs2340.myapplication.models.TheCloud;
-import com.google.firebase.auth.FirebaseAuth;
+import edu.gatech.cs2340.myapplication.controllers.MainActivity;
+
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.functions.FirebaseFunctions;
+import static org.mockito.Mockito.*;
+
 
 public class TheCloudTest {
 
+
     @Before
     public void setUp() {
+        // FirebaseApp.initializeApp(this);
 
     }
 
@@ -123,7 +130,7 @@ public class TheCloudTest {
         });
         List<LocationEntry> locationEntryListFromDB = adapter.getmLocationList();
 
-        // assertEquals(locationEntryList, locationEntryListFromDB);
+        assertEquals(locationEntryList, locationEntryListFromDB);
     }
 
     // Reece?
