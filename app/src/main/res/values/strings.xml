@@ -28,6 +28,22 @@
     <string name="to_text">to</string>
     <string name="apply_text">Apply</string>
     <string name="cancel_text">Cancel</string>
+    <string name="welcome">Welcome</string>
+    <string name="get_started">Get started with one of the buttons below</string>
+    <string name="more_options">or view side menu for more options</string>
+    <string name="view_map">View Map</string>
+    <string name="search_items">Search Items</string>
+    <string name="location_name">location name</string>
+    <string name="location_type">location type</string>
+    <string name="location_address">location address</string>
+    <string name="location_phone">location phone</string>
+    <string name="location_lat_long">location lat_long</string>
+    <string name="location_website">location name</string>
+    <string name="zip">zip</string>
+    <string name="text">text</string>
+    <string name="search_options">search options</string>
+    <string name="search">search</string>
+
 
 
     <string name="search_hint">search</string>

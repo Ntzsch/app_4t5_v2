@@ -9,7 +9,7 @@
             android:title="@string/nav_view_inventory" />
         <item
             android:id="@+id/nav_view_map"
-            android:title="view map" />
+            android:title="@string/view_map" />
     </group>
     <group android:checkableBehavior="single">
         <item
