@@ -15,7 +15,7 @@
         android:layout_marginEnd="48dp"
         android:layout_marginStart="48dp"
         android:layout_marginTop="200dp"
-        android:text="Welcome!"
+        android:text="@string/welcome"
         android:textAppearance="?attr/textAppearanceBody2"
         android:textSize="50sp"
         android:gravity="center"
@@ -32,7 +32,7 @@
         android:layout_marginStart="48dp"
         android:layout_marginLeft="200dp"
         android:layout_marginRight="200dp"
-        android:text="Get started with one of the buttons below"
+        android:text="@string/get_started"
         android:textAppearance="?attr/textAppearanceBody2"
         android:textSize="30sp"
         android:gravity="center"
@@ -48,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="48dp"
         android:layout_marginStart="48dp"
-        android:text="or view side menu for more options"
+        android:text="@string/more_options"
         android:textAppearance="?attr/textAppearanceBody2"
         android:textSize="20sp"
         android:layout_marginTop="24dp"
@@ -71,14 +71,14 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="View Map"
+            android:text="@string/view_map"
             android:textSize="12sp" />
 
         <com.google.android.material.button.MaterialButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="View Map"
+            android:text="@string/view_map"
             android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"/>
@@ -87,7 +87,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Search Items"
+            android:text="@string/search_items"
             android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />

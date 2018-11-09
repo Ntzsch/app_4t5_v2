@@ -4,15 +4,15 @@
 
 
     <item
-        android:title="search options"
+        android:title="@string/search_options"
         android:id="@+id/adv_search"
         app:showAsAction="never"
-        ></item>
+        />
     <item
         android:id="@+id/action_search"
         android:icon="@drawable/ic_search_black_24dp"
         android:orderInCategory="100"
-        android:title="search"
+        android:title="@string/search"
         app:showAsAction="always"
         app:actionViewClass="androidx.appcompat.widget.SearchView"/>
 
