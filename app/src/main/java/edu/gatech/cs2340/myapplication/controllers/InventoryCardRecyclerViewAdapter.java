@@ -1,6 +1,5 @@
 package edu.gatech.cs2340.myapplication.controllers;
 
-import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -19,8 +18,6 @@ import androidx.annotation.NonNull;
 import edu.gatech.cs2340.myapplication.R;
 import edu.gatech.cs2340.myapplication.models.InventoryEntry;
 
-import static androidx.constraintlayout.motion.widget.MotionScene.TAG;
-
 
 public class InventoryCardRecyclerViewAdapter
         extends RecyclerView.Adapter<
@@ -28,13 +25,12 @@ public class InventoryCardRecyclerViewAdapter
 
     private List<InventoryEntry> mInventoryList;
     private List<InventoryEntry> filteredList;
-    private View.OnClickListener mOnClickListener;
-    private final RecyclerView mRecyclerView;
+    private final View.OnClickListener mOnClickListener;
 
     public class ItemCardViewHolder extends RecyclerView.ViewHolder {
-        public TextView itemName;
-        public TextView itemLocation;
-        public TextView itemPrice;
+        private final TextView itemName;
+        private final TextView itemLocation;
+        private final TextView itemPrice;
 
         ItemCardViewHolder(View view) {
             super(view);
@@ -46,7 +42,6 @@ public class InventoryCardRecyclerViewAdapter
 
     public InventoryCardRecyclerViewAdapter(List<InventoryEntry> mItemList, final RecyclerView recyclerView) {
         this.mInventoryList = mItemList;
-        this.mRecyclerView = recyclerView;
         this.mOnClickListener = new View.OnClickListener(){
             public void onClick(View v){
                 Log.e("TEST", "onClick: ");

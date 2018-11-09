@@ -31,7 +31,8 @@ import edu.gatech.cs2340.myapplication.models.TheCloud;
 
 import static androidx.constraintlayout.motion.widget.MotionScene.TAG;
 
-public class ViewInventoryFragment extends Fragment implements SearchView.OnQueryTextListener{
+public class ViewInventoryFragment extends Fragment implements SearchView
+        .OnQueryTextListener{
     private InventoryCardRecyclerViewAdapter mAdapter;
     private List<InventoryEntry> inventoryList;
     private String categoryConstraint = null;

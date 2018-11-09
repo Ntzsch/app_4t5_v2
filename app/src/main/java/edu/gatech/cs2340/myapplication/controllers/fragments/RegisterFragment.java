@@ -28,7 +28,7 @@ public class RegisterFragment extends Fragment {
     private TextInputEditText mPasswordText;
     private TextInputLayout mPasswordLayout;
     private MaterialButton mRegisterButton;
-    Spinner mSpinner;
+    private Spinner mSpinner;
 
     public RegisterFragment() {
         // Required empty public constructor

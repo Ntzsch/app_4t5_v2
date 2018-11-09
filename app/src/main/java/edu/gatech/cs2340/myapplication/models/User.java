@@ -1,17 +1,18 @@
 package edu.gatech.cs2340.myapplication.models;
 
 public class User {
-    private String mUsername;
-    private String mPassword;
+    private final String mUsername;
+    private final String mPassword;
+
     public enum Type {
         GUEST, EMPLOYEE, MANAGER, ADMIN
     }
-    private Type mType;
+    private final Type mType;
 
     public User(String username, String password, Type type) {
         this.mUsername = username;
-        this.mPassword = password;
         this.mType = type;
+        this.mPassword = password;
     }
 
     public User() {

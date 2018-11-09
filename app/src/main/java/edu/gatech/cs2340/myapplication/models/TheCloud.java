@@ -26,8 +26,8 @@ import androidx.annotation.NonNull;
 import edu.gatech.cs2340.myapplication.Callback;
 
 public class TheCloud {
-    private static FirebaseAuth mAuth =  mAuth = FirebaseAuth.getInstance();
-    private static FirebaseFunctions mFunctions = FirebaseFunctions
+    private static final FirebaseAuth mAuth = FirebaseAuth.getInstance();
+    private static final FirebaseFunctions mFunctions = FirebaseFunctions
             .getInstance();
     private static User mUser = new User();
 
@@ -86,7 +86,7 @@ public class TheCloud {
                     // tokens are strings
                     @Override
                     public String then(@NonNull Task<HttpsCallableResult>
-                                               task) throws Exception {
+                                               task) {
                         String token = (String) task.getResult().getData();
                         return token;
                     }
@@ -110,7 +110,7 @@ public class TheCloud {
                     // tokens are strings
                     @Override
                     public Boolean then(@NonNull Task<HttpsCallableResult>
-                                               task) throws Exception {
+                                               task) {
                         Boolean success = (Boolean) task.getResult().getData();
                         return success;
                     }
@@ -131,7 +131,7 @@ public class TheCloud {
                     // tokens are strings
                     @Override
                     public Boolean then(@NonNull Task<HttpsCallableResult>
-                                                task) throws Exception {
+                                                task) {
                         Boolean result = (Boolean) task.getResult().getData();
                         return result;
                     }
@@ -228,9 +228,6 @@ public class TheCloud {
         return mUser.getUsername();
     }
 
-    private static void cleanup() {
-
-    }
 }
 
 class JWTDecoder {
