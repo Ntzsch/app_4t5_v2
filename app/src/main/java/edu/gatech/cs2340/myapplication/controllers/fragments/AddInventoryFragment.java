@@ -71,7 +71,6 @@ public class AddInventoryFragment extends Fragment {
         mConfirmButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View view) {
-                // TODO: Add handling for if the user doesn't fill all text boxes
                 String location = mLocation.getText().toString();
                 String shortDescription = mShortDescription.getText().toString();
                 String longDescription = mLongDescription.getText().toString();

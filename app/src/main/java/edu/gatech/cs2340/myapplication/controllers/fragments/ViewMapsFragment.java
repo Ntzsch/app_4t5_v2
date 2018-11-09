@@ -136,7 +136,6 @@ public class ViewMapsFragment extends Fragment implements OnMapReadyCallback {
 
         @Override
         public View getInfoWindow(Marker marker) {
-            // TODO Auto-generated method stub
             return null;
         }
 

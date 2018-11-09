@@ -14,6 +14,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import edu.gatech.cs2340.myapplication.R;
 import edu.gatech.cs2340.myapplication.models.LocationEntry;
 
+/**
+ * adapter class for the location view UI
+ */
 public class LocationCardRecyclerViewAdapter extends RecyclerView
         .Adapter<LocationCardRecyclerViewAdapter.LocationCardViewHolder> {
     private List<LocationEntry> mLocationList;
@@ -30,7 +33,10 @@ public class LocationCardRecyclerViewAdapter extends RecyclerView
         public ImageView dropdownButton;
         public boolean open = false;
 
-
+        /**
+         * constructor for a LocationCardViewHolder
+         * @param itemView the view of the card view
+         */
         public LocationCardViewHolder(View itemView) {
             super(itemView);
             locationName = itemView.findViewById(R.id.locationName);
@@ -44,6 +50,10 @@ public class LocationCardRecyclerViewAdapter extends RecyclerView
         }
     }
 
+    /**
+     * constructor for a card view adapter
+     * @param productList the list of entries to display
+     */
     public LocationCardRecyclerViewAdapter(List<LocationEntry> productList) {
         this.mLocationList = productList;
         // imageRequester = ImageRequester.getInstance();
@@ -108,11 +118,19 @@ public class LocationCardRecyclerViewAdapter extends RecyclerView
         return mLocationList.size();
     }
 
+    /**
+     * updates the list of entries displayed
+     * @param locationList the new list of entries
+     */
     public void updateList(List<LocationEntry> locationList) {
         mLocationList = locationList;
         notifyDataSetChanged();
     }
 
+    /**
+     * a getter for the entry list
+     * @return the location entry list
+     */
     public List<LocationEntry> getmLocationList() {
         return mLocationList;
     }

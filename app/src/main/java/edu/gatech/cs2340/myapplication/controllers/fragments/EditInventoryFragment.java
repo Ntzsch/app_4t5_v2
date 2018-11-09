@@ -25,7 +25,6 @@ import edu.gatech.cs2340.myapplication.models.InventoryEntry;
 import edu.gatech.cs2340.myapplication.models.TheCloud;
 
 public class EditInventoryFragment extends Fragment {
-    public EditInventoryFragment() { }
 
     @Override
     public void onCreate (Bundle savedInstanceState) {

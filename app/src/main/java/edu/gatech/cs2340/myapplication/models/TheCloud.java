@@ -146,7 +146,7 @@ public class TheCloud {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 // Get Post object and use the values to update the UI
-                ArrayList<LocationEntry> locationEntries = new ArrayList<>();
+                List<LocationEntry> locationEntries = new ArrayList<>();
 
                 Iterable<DataSnapshot> locations = dataSnapshot.getChildren();
 
@@ -154,7 +154,7 @@ public class TheCloud {
                     GenericTypeIndicator<HashMap<String, String>> t = new
                             GenericTypeIndicator<HashMap<String, String>>() {
                     };
-                    HashMap<String, String> locationHashmap = location
+                    Map<String, String> locationHashmap = location
                             .getValue(t);
                     locationEntries.add(new LocationEntry(
                             locationHashmap.get("City"),
@@ -189,7 +189,7 @@ public class TheCloud {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 // Get Post object and use the values to update the UI
-                ArrayList<InventoryEntry> inventoryEntries = new ArrayList<>();
+                List<InventoryEntry> inventoryEntries = new ArrayList<>();
 
                 Iterable<DataSnapshot> locations = dataSnapshot.getChildren();
 
@@ -197,7 +197,7 @@ public class TheCloud {
                     GenericTypeIndicator<HashMap<String, String>> t = new
                             GenericTypeIndicator<HashMap<String, String>>() {
                             };
-                    HashMap<String, String> locationHashmap = location
+                    Map<String, String> locationHashmap = location
                             .getValue(t);
                     inventoryEntries.add(new InventoryEntry(
                             locationHashmap.get("timeStamp"),
