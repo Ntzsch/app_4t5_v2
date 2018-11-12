@@ -19,7 +19,6 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import edu.gatech.cs2340.myapplication.Callback;
 import edu.gatech.cs2340.myapplication.R;
-import edu.gatech.cs2340.myapplication.controllers.CustomItemClickListener;
 import edu.gatech.cs2340.myapplication.controllers.InventoryCardRecyclerViewAdapter;
 import edu.gatech.cs2340.myapplication.models.InventoryEntry;
 import edu.gatech.cs2340.myapplication.models.TheCloud;

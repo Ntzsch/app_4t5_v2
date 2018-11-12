@@ -18,7 +18,7 @@ public class InventoryEntry {
      * @param timeStamp the time item was donated
      * @param location the location where item was donated
      * @param smallDescription a short description of when item was donated
-     * @param fullDescription a longer descrption of when item wasd onated
+     * @param fullDescription a longer description of when item was donated
      * @param value the cost of the item
      * @param category the category of the item donated
      */

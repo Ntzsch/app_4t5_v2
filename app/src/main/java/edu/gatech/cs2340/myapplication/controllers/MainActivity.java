@@ -1,16 +1,15 @@
 package edu.gatech.cs2340.myapplication.controllers;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.fragment.app.FragmentManager;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.NavigationUI;
 import edu.gatech.cs2340.myapplication.R;
-import edu.gatech.cs2340.myapplication.controllers.fragments.ViewMapsFragment;
 import edu.gatech.cs2340.myapplication.models.TheCloud;
 
 import android.os.Bundle;
@@ -63,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         mNavigationView.setNavigationItemSelectedListener(
                 new NavigationView.OnNavigationItemSelectedListener() {
                     @Override
-                    public boolean onNavigationItemSelected(MenuItem menuItem) {
+                    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                         // set item as selected to persist highlight
                         // menuItem.setChecked(true);
                         switch (menuItem.getItemId()) {

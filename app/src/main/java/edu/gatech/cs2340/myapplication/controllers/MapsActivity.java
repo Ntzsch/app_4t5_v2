@@ -22,7 +22,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     /**
      * Opens initial activity_map
-     * @param savedInstanceState
+     * @param savedInstanceState current state
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -14,6 +14,7 @@ import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import edu.gatech.cs2340.myapplication.R;
 import edu.gatech.cs2340.myapplication.models.TheCloud;
@@ -36,7 +37,7 @@ public class RegisterFragment extends Fragment {
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View mView = inflater.inflate(R.layout.fragment_register, container,
                 false);
@@ -57,7 +58,7 @@ public class RegisterFragment extends Fragment {
         return mView;
     }
     @Override
-    public void onViewCreated(View view, Bundle savedInstanceState) {
+    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         mUsernameText = view.findViewById(R.id.username_edittext);
         mPasswordText = view.findViewById(R.id.password_edittext);
         mPasswordLayout = view.findViewById(R.id.password_textlayout);
@@ -72,7 +73,7 @@ public class RegisterFragment extends Fragment {
                 TheCloud.registerUser(username, password, userType)
                         .continueWith(new Continuation<Boolean, Object>() {
                             @Override
-                                public Object then(Task<Boolean> task) {
+                                public Object then(@NonNull Task<Boolean> task) {
                                 mRegisterButton.setEnabled(true);
                                 if (task.getResult()) {
                                     mPasswordLayout.setError("registered "

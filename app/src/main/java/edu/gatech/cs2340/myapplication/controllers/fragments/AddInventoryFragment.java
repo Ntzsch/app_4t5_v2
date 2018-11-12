@@ -12,6 +12,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 import edu.gatech.cs2340.myapplication.R;
@@ -42,14 +43,14 @@ public class AddInventoryFragment extends Fragment {
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_add_inventory, container, false);
     } // CHECK TO SEE IF CONSISTENT ACROSS ALL FRAGMENTS
 
     @Override
-    public void onViewCreated(View view, Bundle savedInstanceState) {
+    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
 
         mLocation = view.findViewById(R.id.edit_location);
         mShortDescription = view.findViewById(R.id.edit_short_description);
@@ -94,7 +95,7 @@ public class AddInventoryFragment extends Fragment {
 
                 TheCloud.addInventoryEntry(entry).continueWith(new Continuation<Boolean, Object>() {
                     @Override
-                    public Object then(Task<Boolean> task) {
+                    public Object then(@NonNull Task<Boolean> task) {
                      Log.e("AddInventoryFragment", task.getResult().toString());
                      mConfirmButton.setEnabled(true);
                      if (task.getResult()) {

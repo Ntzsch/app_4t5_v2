@@ -59,11 +59,7 @@ public class TheCloud {
                         .continueWith(new Continuation<AuthResult, Boolean>() {
                             public Boolean then(@NonNull Task<AuthResult>
                                                         task) {
-                                if (task.isSuccessful()) {
-                                    return true;
-                                } else {
-                                    return false;
-                                }
+                                return task.isSuccessful();
                             } });
             }
         });
@@ -87,8 +83,7 @@ public class TheCloud {
                     @Override
                     public String then(@NonNull Task<HttpsCallableResult>
                                                task) {
-                        String token = (String) task.getResult().getData();
-                        return token;
+                        return (String) task.getResult().getData();
                     }
                 });
     }
@@ -111,8 +106,7 @@ public class TheCloud {
                     @Override
                     public Boolean then(@NonNull Task<HttpsCallableResult>
                                                task) {
-                        Boolean success = (Boolean) task.getResult().getData();
-                        return success;
+                        return (Boolean) task.getResult().getData();
                     }
                 });
     }
@@ -132,8 +126,7 @@ public class TheCloud {
                     @Override
                     public Boolean then(@NonNull Task<HttpsCallableResult>
                                                 task) {
-                        Boolean result = (Boolean) task.getResult().getData();
-                        return result;
+                        return (Boolean) task.getResult().getData();
                     }
                 });
     }
@@ -144,7 +137,7 @@ public class TheCloud {
         tmpDb = tmpDb.child("locations");
         tmpDb.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 // Get Post object and use the values to update the UI
                 List<LocationEntry> locationEntries = new ArrayList<>();
 
@@ -172,7 +165,7 @@ public class TheCloud {
             }
 
             @Override
-            public void onCancelled(DatabaseError databaseError) {
+            public void onCancelled(@NonNull DatabaseError databaseError) {
                 // Getting Post failed, log a message
                 Log.e("DATABASE_ERROR", "loadPost:onCancelled",
                         databaseError.toException());
@@ -187,7 +180,7 @@ public class TheCloud {
         tmpDb = tmpDb.child("inventory");
         tmpDb.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 // Get Post object and use the values to update the UI
                 List<InventoryEntry> inventoryEntries = new ArrayList<>();
 
@@ -211,7 +204,7 @@ public class TheCloud {
             }
 
             @Override
-            public void onCancelled(DatabaseError databaseError) {
+            public void onCancelled(@NonNull DatabaseError databaseError) {
                 // Getting Post failed, log a message
                 Log.e("DATABASE_ERROR", "loadPost:onCancelled",
                         databaseError.toException());

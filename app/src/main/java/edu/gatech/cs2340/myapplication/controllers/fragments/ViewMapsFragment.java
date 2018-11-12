@@ -1,15 +1,11 @@
 package edu.gatech.cs2340.myapplication.controllers.fragments;
 
-import android.app.SearchManager;
 import android.os.Bundle;
 
-import androidx.appcompat.widget.SearchView;
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -24,16 +20,9 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import androidx.fragment.app.FragmentManager;
-import androidx.navigation.Navigation;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 import edu.gatech.cs2340.myapplication.Callback;
 import edu.gatech.cs2340.myapplication.R;
-import edu.gatech.cs2340.myapplication.controllers.InventoryCardRecyclerViewAdapter;
 import edu.gatech.cs2340.myapplication.controllers.LocationCardRecyclerViewAdapter;
-import edu.gatech.cs2340.myapplication.models.InventoryEntry;
 import edu.gatech.cs2340.myapplication.models.LocationEntry;
 import edu.gatech.cs2340.myapplication.models.TheCloud;
 
@@ -56,7 +45,7 @@ public class ViewMapsFragment extends Fragment implements OnMapReadyCallback {
      * @param savedInstanceState instanceState
      * @return a view
      */
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         final LocationCardRecyclerViewAdapter mAdapter = new
@@ -127,9 +116,9 @@ public class ViewMapsFragment extends Fragment implements OnMapReadyCallback {
         @Override
         public View getInfoContents(Marker marker) {
 
-            TextView locationName = ((TextView)myContentsView.findViewById(R.id.locationName));
+            TextView locationName = (myContentsView.findViewById(R.id.locationName));
             locationName.setText(marker.getTitle());
-            TextView locationPhone = ((TextView)myContentsView.findViewById(R.id.locationPhone));
+            TextView locationPhone = (myContentsView.findViewById(R.id.locationPhone));
             locationPhone.setText(marker.getSnippet());
 
             return myContentsView;

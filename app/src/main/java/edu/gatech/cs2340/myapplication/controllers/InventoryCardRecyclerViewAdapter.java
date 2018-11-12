@@ -75,7 +75,7 @@ public class InventoryCardRecyclerViewAdapter
         ); */
     }
 
-    public void onAttachedToRecyclerView(RecyclerView recyclerView){}
+    public void onAttachedToRecyclerView(@NonNull RecyclerView recyclerView){}
 
 
     @NonNull
