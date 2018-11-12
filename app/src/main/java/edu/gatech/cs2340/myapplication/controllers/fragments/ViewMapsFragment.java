@@ -120,6 +120,7 @@ public class ViewMapsFragment extends Fragment implements OnMapReadyCallback {
          */
         CustomInfoWindowAdapter(){
             // hook up the custom layout view in res/custom_map_pin_layout.xml
+            // myContentsView = getLayoutInflater().inflate(R.layout.fragment_map_pin_details, null);
             myContentsView = getLayoutInflater().inflate(R.layout.fragment_map_pin_details, null);
         }
 
