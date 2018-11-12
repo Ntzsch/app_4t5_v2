@@ -74,12 +74,12 @@ public class LocationCardRecyclerViewAdapter extends RecyclerView
         if (mLocationList != null && position < mLocationList.size()) {
             LocationEntry location = mLocationList.get(position);
             holder.locationName.setText(location.name);
-            holder.locationAddress.setText(location.streetAddress + ", "
-                    + location.city + ", " + location.state);
+            String address = String.format("%s, %s, %s", location.streetAddress, location.city, location.state);
+            holder.locationAddress.setText(address);
             holder.locationType.setText(location.type);
             holder.locationPhone.setText(location.phone);
-            holder.locationLatLon.setText(location.latitude + ", " + location
-                    .longitude);
+            String latlon = String.format("%s, %s", location.latitude, location.longitude);
+            holder.locationLatLon.setText(latlon);
             holder.locationWebsite.setText(location.website);
             holder.locationZip.setText(location.zip);
             holder.dropdownButton.setOnClickListener(new View.OnClickListener(

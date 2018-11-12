@@ -78,10 +78,7 @@ public class ViewMapsFragment extends Fragment implements OnMapReadyCallback {
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-
-
         Log.d("onMapReady", "Got Locations");
-
         mMap.getUiSettings().setZoomControlsEnabled(true);
 
         //iterate through the list and add a pin for each element in the model

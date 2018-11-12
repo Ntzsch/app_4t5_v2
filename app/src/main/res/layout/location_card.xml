@@ -67,7 +67,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/locationType" />
 
             <ImageView
-                android:contentDescription="Dropdown arrow"
+                android:contentDescription="@string/item_description_text"
                 android:id="@+id/dropdownButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

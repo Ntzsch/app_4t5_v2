@@ -63,7 +63,8 @@ public class LoginFragment extends Fragment {
                             ((MainActivity) getActivity()).updateNavigation();
                             Navigation.findNavController(view).navigate(R.id
                                     .mainFragment);
-                            mUsernameText.setText("LOGGED IN");
+                            String logInMessage = "LOGGED IN";
+                            mUsernameText.setText(logInMessage);
                         } else {
                             mPasswordLayout.setError("incorrect "
                                     + "username/password");
