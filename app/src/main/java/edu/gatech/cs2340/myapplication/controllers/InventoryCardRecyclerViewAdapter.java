@@ -110,4 +110,12 @@ public class InventoryCardRecyclerViewAdapter
         notifyDataSetChanged();
     }
 
+    /**
+     * a getter for the entry list
+     * @return the location entry list
+     */
+    public List<InventoryEntry> getmInventoryList() {
+        return mInventoryList;
+    }
+
 }
