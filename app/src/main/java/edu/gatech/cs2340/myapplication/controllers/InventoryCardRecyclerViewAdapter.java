@@ -1,6 +1,5 @@
 package edu.gatech.cs2340.myapplication.controllers;
 
-import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -9,8 +8,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Filter;
-import android.widget.Filterable;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -19,8 +16,6 @@ import androidx.annotation.NonNull;
 import edu.gatech.cs2340.myapplication.R;
 import edu.gatech.cs2340.myapplication.models.InventoryEntry;
 
-import static androidx.constraintlayout.motion.widget.MotionScene.TAG;
-
 
 public class InventoryCardRecyclerViewAdapter
         extends RecyclerView.Adapter<
@@ -28,13 +23,12 @@ public class InventoryCardRecyclerViewAdapter
 
     private List<InventoryEntry> mInventoryList;
     private List<InventoryEntry> filteredList;
-    private View.OnClickListener mOnClickListener;
-    private final RecyclerView mRecyclerView;
+    private final View.OnClickListener mOnClickListener;
 
     public class ItemCardViewHolder extends RecyclerView.ViewHolder {
-        public TextView itemName;
-        public TextView itemLocation;
-        public TextView itemPrice;
+        private final TextView itemName;
+        private final TextView itemLocation;
+        private final TextView itemPrice;
 
         ItemCardViewHolder(View view) {
             super(view);
@@ -46,7 +40,6 @@ public class InventoryCardRecyclerViewAdapter
 
     public InventoryCardRecyclerViewAdapter(List<InventoryEntry> mItemList, final RecyclerView recyclerView) {
         this.mInventoryList = mItemList;
-        this.mRecyclerView = recyclerView;
         this.mOnClickListener = new View.OnClickListener(){
             public void onClick(View v){
                 Log.e("TEST", "onClick: ");
@@ -80,7 +73,7 @@ public class InventoryCardRecyclerViewAdapter
         ); */
     }
 
-    public void onAttachedToRecyclerView(RecyclerView recyclerView){}
+    public void onAttachedToRecyclerView(@NonNull RecyclerView recyclerView){}
 
 
     @NonNull
@@ -111,11 +104,22 @@ public class InventoryCardRecyclerViewAdapter
         return mInventoryList.size();
     }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7e20e9908c91907de433a840d5d5d8880155faa4
     public void updateList(List<InventoryEntry> inventoryList) {
         mInventoryList = new ArrayList<>();
         mInventoryList.addAll(inventoryList);
         notifyDataSetChanged();
+    }
+
+    /**
+     * a getter for the entry list
+     * @return the location entry list
+     */
+    public List<InventoryEntry> getmInventoryList() {
+        return mInventoryList;
     }
 
 }

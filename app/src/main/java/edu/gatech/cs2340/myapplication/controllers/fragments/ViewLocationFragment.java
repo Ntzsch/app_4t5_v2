@@ -1,8 +1,9 @@
 package edu.gatech.cs2340.myapplication.controllers.fragments;
 
 import android.os.Bundle;
+
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,7 +24,7 @@ public class ViewLocationFragment extends Fragment {
     public ViewLocationFragment() { }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_view_location,
                 container, false);
@@ -50,5 +51,5 @@ public class ViewLocationFragment extends Fragment {
     }
 
     @Override
-    public void onViewCreated(View view, Bundle savedInstanceState) { }
+    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) { }
 }

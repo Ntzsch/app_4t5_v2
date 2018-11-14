@@ -23,21 +23,21 @@ public class LocationCardRecyclerViewAdapter extends RecyclerView
     // private ImageRequester imageRequester;
 
     public class LocationCardViewHolder extends RecyclerView.ViewHolder {
-        public TextView locationName;
-        public TextView locationAddress;
-        public TextView locationType;
-        public TextView locationPhone;
-        public TextView locationLatLon;
-        public TextView locationWebsite;
-        public TextView locationZip;
-        public ImageView dropdownButton;
-        public boolean open = false;
+        private final TextView locationName;
+        private final TextView locationAddress;
+        private final TextView locationType;
+        private final TextView locationPhone;
+        private final TextView locationLatLon;
+        private final TextView locationWebsite;
+        private final TextView locationZip;
+        private final ImageView dropdownButton;
+        private boolean open = false;
 
         /**
          * constructor for a LocationCardViewHolder
          * @param itemView the view of the card view
          */
-        public LocationCardViewHolder(View itemView) {
+        private LocationCardViewHolder(View itemView) {
             super(itemView);
             locationName = itemView.findViewById(R.id.locationName);
             locationAddress = itemView.findViewById(R.id.locationAddress);
@@ -74,12 +74,12 @@ public class LocationCardRecyclerViewAdapter extends RecyclerView
         if (mLocationList != null && position < mLocationList.size()) {
             LocationEntry location = mLocationList.get(position);
             holder.locationName.setText(location.name);
-            holder.locationAddress.setText(location.streetAddress + ", "
-                    + location.city + ", " + location.state);
+            String address = String.format("%s, %s, %s", location.streetAddress, location.city, location.state);
+            holder.locationAddress.setText(address);
             holder.locationType.setText(location.type);
             holder.locationPhone.setText(location.phone);
-            holder.locationLatLon.setText(location.latitude + ", " + location
-                    .longitude);
+            String latlon = String.format("%s, %s", location.latitude, location.longitude);
+            holder.locationLatLon.setText(latlon);
             holder.locationWebsite.setText(location.website);
             holder.locationZip.setText(location.zip);
             holder.dropdownButton.setOnClickListener(new View.OnClickListener(

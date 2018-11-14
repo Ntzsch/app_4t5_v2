@@ -26,8 +26,8 @@ import androidx.annotation.NonNull;
 import edu.gatech.cs2340.myapplication.Callback;
 
 public class TheCloud {
-    private static FirebaseAuth mAuth =  mAuth = FirebaseAuth.getInstance();
-    private static FirebaseFunctions mFunctions = FirebaseFunctions
+    private static final FirebaseAuth mAuth = FirebaseAuth.getInstance();
+    private static final FirebaseFunctions mFunctions = FirebaseFunctions
             .getInstance();
     private static User mUser = new User();
 
@@ -59,11 +59,7 @@ public class TheCloud {
                         .continueWith(new Continuation<AuthResult, Boolean>() {
                             public Boolean then(@NonNull Task<AuthResult>
                                                         task) {
-                                if (task.isSuccessful()) {
-                                    return true;
-                                } else {
-                                    return false;
-                                }
+                                return task.isSuccessful();
                             } });
             }
         });
@@ -86,9 +82,8 @@ public class TheCloud {
                     // tokens are strings
                     @Override
                     public String then(@NonNull Task<HttpsCallableResult>
-                                               task) throws Exception {
-                        String token = (String) task.getResult().getData();
-                        return token;
+                                               task) {
+                        return (String) task.getResult().getData();
                     }
                 });
     }
@@ -110,9 +105,8 @@ public class TheCloud {
                     // tokens are strings
                     @Override
                     public Boolean then(@NonNull Task<HttpsCallableResult>
-                                               task) throws Exception {
-                        Boolean success = (Boolean) task.getResult().getData();
-                        return success;
+                                               task) {
+                        return (Boolean) task.getResult().getData();
                     }
                 });
     }
@@ -131,9 +125,8 @@ public class TheCloud {
                     // tokens are strings
                     @Override
                     public Boolean then(@NonNull Task<HttpsCallableResult>
-                                                task) throws Exception {
-                        Boolean result = (Boolean) task.getResult().getData();
-                        return result;
+                                                task) {
+                        return (Boolean) task.getResult().getData();
                     }
                 });
     }
@@ -144,7 +137,7 @@ public class TheCloud {
         tmpDb = tmpDb.child("locations");
         tmpDb.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 // Get Post object and use the values to update the UI
                 List<LocationEntry> locationEntries = new ArrayList<>();
 
@@ -172,7 +165,7 @@ public class TheCloud {
             }
 
             @Override
-            public void onCancelled(DatabaseError databaseError) {
+            public void onCancelled(@NonNull DatabaseError databaseError) {
                 // Getting Post failed, log a message
                 Log.e("DATABASE_ERROR", "loadPost:onCancelled",
                         databaseError.toException());
@@ -187,7 +180,7 @@ public class TheCloud {
         tmpDb = tmpDb.child("inventory");
         tmpDb.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 // Get Post object and use the values to update the UI
                 List<InventoryEntry> inventoryEntries = new ArrayList<>();
 
@@ -211,7 +204,7 @@ public class TheCloud {
             }
 
             @Override
-            public void onCancelled(DatabaseError databaseError) {
+            public void onCancelled(@NonNull DatabaseError databaseError) {
                 // Getting Post failed, log a message
                 Log.e("DATABASE_ERROR", "loadPost:onCancelled",
                         databaseError.toException());
@@ -228,9 +221,6 @@ public class TheCloud {
         return mUser.getUsername();
     }
 
-    private static void cleanup() {
-
-    }
 }
 
 class JWTDecoder {

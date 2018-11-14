@@ -1,7 +1,5 @@
 package edu.gatech.cs2340.myapplication.models;
 
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * a class of location entries
@@ -40,7 +38,7 @@ public class LocationEntry {
     }
 
     /**
-     * a getter for a locaiton's name
+     * a getter for a location's name
      * @return the name of the location
      */
     public String getName() {
@@ -73,7 +71,8 @@ public class LocationEntry {
 
     /**
      * a getter for the location's type
-     * @return
+     * @return type of the user
+     *
      */
     public String getType() {
         return type;
@@ -124,7 +123,7 @@ public class LocationEntry {
      * @param state the state of the location
      * @param streetAddress the street address of the location
      * @param type the type of the location
-     * @param website the website of the locaiton
+     * @param website the website of the location
      * @param zip the zip code of the location
      */
     public LocationEntry(String city, String latitude, String longitude,
