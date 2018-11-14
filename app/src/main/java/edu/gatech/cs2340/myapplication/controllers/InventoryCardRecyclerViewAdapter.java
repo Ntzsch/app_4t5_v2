@@ -24,7 +24,7 @@ import static androidx.constraintlayout.motion.widget.MotionScene.TAG;
 
 public class InventoryCardRecyclerViewAdapter
         extends RecyclerView.Adapter<
-        InventoryCardRecyclerViewAdapter.ItemCardViewHolder> implements Filterable {
+        InventoryCardRecyclerViewAdapter.ItemCardViewHolder> {
 
     private List<InventoryEntry> mInventoryList;
     private List<InventoryEntry> filteredList;
@@ -111,37 +111,6 @@ public class InventoryCardRecyclerViewAdapter
         return mInventoryList.size();
     }
 
-    @Override
-    public Filter getFilter() {
-        return new Filter() {
-            @Override
-            protected FilterResults performFiltering(CharSequence charSequence) {
-                String charString = charSequence.toString();
-                if (charString.isEmpty()) {
-                    filteredList = mInventoryList;
-                } else {
-                    List<InventoryEntry> tempFilteredList = new ArrayList<>();
-                    for (InventoryEntry ie : mInventoryList) {
-                        if (ie.getSmallDescription().toLowerCase().contains(charString.toLowerCase())) {
-                            tempFilteredList.add(ie);
-                        }
-                    }
-                    filteredList = tempFilteredList;
-                }
-                FilterResults filterResults = new FilterResults();
-                filterResults.values = filteredList;
-                return filterResults;
-            }
-
-            @Override
-            protected void publishResults(CharSequence charSequence,
-                                          FilterResults filterResults) {
-                filteredList.clear();
-                filteredList.addAll((List) filterResults.values);
-                notifyDataSetChanged();
-            }
-        };
-    }
 
     public void updateList(List<InventoryEntry> inventoryList) {
         mInventoryList = new ArrayList<>();
