@@ -32,8 +32,6 @@ public class TheCloudTest {
 
     @Before
     public void setUp() {
-
-
         // Make Users
         mGuestUser = new User("claudia", "1234", User.Type.GUEST );
         mAdminUser = new User("chloe", "1234", User.Type.ADMIN );
