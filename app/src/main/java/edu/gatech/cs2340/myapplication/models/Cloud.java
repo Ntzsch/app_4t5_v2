@@ -1,7 +1,7 @@
 package edu.gatech.cs2340.myapplication.models;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Cloud {
     /*
@@ -18,22 +18,22 @@ public class Cloud {
     }
 
     // Menu item options -> put out a list of menu items
-    public static List<MenuOptions> getMenuOptions(User user) {
-        List<MenuOptions> displayOptionsList = new ArrayList<>();
+    public static Set<MenuOptions> getMenuOptions(User user) {
+        Set<MenuOptions> displayOptionsSet = new HashSet<>();
         User.Type type = user.getType();
 
         switch (type) {
             case ADMIN:
-                displayOptionsList.add(MenuOptions.REGISTER_USER);
+                displayOptionsSet.add(MenuOptions.REGISTER_USER);
             case MANAGER:
-                displayOptionsList.add(MenuOptions.EDIT_LOCATIONS);
+                displayOptionsSet.add(MenuOptions.EDIT_LOCATIONS);
             case EMPLOYEE:
-                displayOptionsList.add(MenuOptions.EDIT_INVENTORY);
+                displayOptionsSet.add(MenuOptions.EDIT_INVENTORY);
             case GUEST:
-                displayOptionsList.add(MenuOptions.VIEW_LOCATIONS);
-                displayOptionsList.add(MenuOptions.VIEW_INVENTORY);
+                displayOptionsSet.add(MenuOptions.VIEW_LOCATIONS);
+                displayOptionsSet.add(MenuOptions.VIEW_INVENTORY);
         }
-        return displayOptionsList;
+        return displayOptionsSet;
     }
 
     public enum MenuOptions {
