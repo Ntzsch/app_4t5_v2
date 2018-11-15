@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 
 /**
@@ -55,6 +56,26 @@ public class Database {
         }
         return inventoryEntryList;
     }
+
+    public boolean existInInventory(InventoryEntry entry) {
+        Map<String, String> checkEntry = new HashMap<>();
+        checkEntry.put("timeStamp", entry.getTimeStamp());
+        checkEntry.put("location", entry.getLocation());
+        checkEntry.put("smallDescription", entry.getSmallDescription());
+        checkEntry.put("fullDescription", entry.getFullDescription());
+        checkEntry.put("value", entry.getValue());
+        checkEntry.put("category", entry.getCategory());
+
+        for (Map<String, String> map : inventoryData) {
+            if (checkEntry.equals(map)) {
+                return true;
+            }
+        }
+        return false;
+
+    }
+
+
 
 
 }

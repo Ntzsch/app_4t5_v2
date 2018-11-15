@@ -104,10 +104,6 @@ public class InventoryCardRecyclerViewAdapter
         return mInventoryList.size();
     }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 7e20e9908c91907de433a840d5d5d8880155faa4
     public void updateList(List<InventoryEntry> inventoryList) {
         mInventoryList = new ArrayList<>();
         mInventoryList.addAll(inventoryList);
