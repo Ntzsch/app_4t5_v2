@@ -22,6 +22,13 @@ public class User {
     public Type getType() {
         return mType;
     }
+
     public String getUsername() {
-        return mUsername; }
+        return mUsername;
+    }
+
+    public String getPassword() {
+        return mPassword;
+    }
+
 }

@@ -1,4 +1,6 @@
 package edu.gatech.cs2340.myapplication.models;
+import android.location.Location;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -18,8 +20,43 @@ public class Database {
      * Constructor
      */
 
-    public Database() {
+    public Database(List<User> userList, List<InventoryEntry> inventoryList,
+                    List<LocationEntry> locationList) {
+        locationData = new ArrayList<>();
+        inventoryData = new ArrayList<>();
 
+        for (InventoryEntry entry : inventoryList) {
+            Map<String, String> newMap = new HashMap<>();
+            newMap.put("timeStamp", entry.getTimeStamp());
+            newMap.put("location", entry.getLocation());
+            newMap.put("smallDescription", entry.getSmallDescription());
+            newMap.put("fullDescription", entry.getFullDescription());
+            newMap.put("value", entry.getValue());
+            newMap.put("category", entry.getCategory());
+            inventoryData.add(newMap);
+        }
+
+        for (LocationEntry entry : locationList) {
+            Map<String, String> newMap = new HashMap<>();
+            newMap.put("City", entry.getCity());
+            newMap.put("Latitude", entry.getLatitude());
+            newMap.put("Longitude", entry.getLongitude());
+            newMap.put("Name", entry.getName());
+            newMap.put("Phone", entry.getPhone());
+            newMap.put("State", entry.getState());
+            newMap.put("Street Address", entry.getStreetAddress());
+            newMap.put("Type", entry.getType());
+            newMap.put("Website", entry.getWebsite());
+            newMap.put("Zip", entry.getZip());
+            locationData.add(newMap);
+        }
+
+        for (User user : userList) {
+            Map<String, String> newMap = new HashMap<>();
+            newMap.put("username", user.getUsername());
+            newMap.put("password", user.getPassword());
+            userData.add(newMap);
+        }
     }
 
     /**
@@ -72,7 +109,27 @@ public class Database {
             }
         }
         return false;
+    }
 
+    public boolean existInLocations(LocationEntry entry) {
+        Map<String, String> checkEntry = new HashMap<>();
+        checkEntry.put("City", entry.getCity());
+        checkEntry.put("Latitude", entry.getLatitude());
+        checkEntry.put("Longitude", entry.getLongitude());
+        checkEntry.put("Name", entry.getName());
+        checkEntry.put("Phone", entry.getPhone());
+        checkEntry.put("State", entry.getState());
+        checkEntry.put("Street Address", entry.getStreetAddress());
+        checkEntry.put("Type", entry.getType());
+        checkEntry.put("Website", entry.getWebsite());
+        checkEntry.put("Zip", entry.getZip());
+
+        for (Map<String, String> map : inventoryData) {
+            if (checkEntry.equals(map)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     public void addLocationEntry(Map<String, String> locationEntryMap) {
@@ -82,6 +139,8 @@ public class Database {
     public void addInventoryEntry(Map<String, String> inventoryEntryMap) {
         inventoryData.add(inventoryEntryMap);
     }
+
+
 
 
 
