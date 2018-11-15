@@ -90,7 +90,7 @@ public class TheCloud {
 
     public static Task<Boolean> addInventoryEntry(InventoryEntry entry) {
         // Create the arguments to the callable function.
-        Map<String, Object> data = new HashMap<>();
+        Map<String, String> data = new HashMap<>();
         data.put("timeStamp", entry.getTimeStamp());
         data.put("location", entry.getLocation());
         data.put("smallDescription", entry.getSmallDescription());

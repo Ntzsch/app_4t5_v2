@@ -165,6 +165,30 @@ public class TheCloudTest {
         assertEquals(menuOptions, Cloud.getMenuOptions(mAdminUser));
     }
 
+    @Test
+    public void testAddItem() {
+
+    }
+
+    @Test
+    public void testAddLocation() {
+
+    }
+
+    @Test
+    public void testRegisterUser() {
+
+    }
+
+    @Test
+    public void testSearchItem() {
+
+    }
+
+    @Test
+    public void testSearchLocation() {
+
+    }
 
 
 
