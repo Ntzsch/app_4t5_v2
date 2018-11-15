@@ -167,12 +167,46 @@ public class TheCloudTest {
 
     @Test
     public void testAddItem() {
-
+        InventoryEntry inventoryEntryAdded = new InventoryEntry("time",
+                "location",
+                "Added Inventory Entry",
+                "descriptions", "3",
+                "Category");
+        Cloud.addInventoryEntry(inventoryEntryAdded, db);
+        InventoryEntry inventoryEntryNotAdded = new InventoryEntry("time",
+                "location",
+                "Not Added Inventory Entry",
+                "descriptions", "3",
+                "Category");
+        assertEquals(true, db.existInInventory(inventoryEntryAdded));
+        assertEquals(false, db.existInInventory(inventoryEntryNotAdded));
     }
 
     @Test
     public void testAddLocation() {
-
+        LocationEntry locationEntryAdded = new LocationEntry("Atlanta",
+                "33",
+                "-84",
+                "Added Location",
+                "(123) 456 - 7890",
+                "GA",
+                "300 Ferst DR",
+                "Drop Off",
+                "www.gatech.edu",
+                "30332");
+        LocationEntry locationEntryNotAdded = new LocationEntry("Athens",
+                "35",
+                "-84",
+                "Not Added Location",
+                "(123) 456 - 7890",
+                "GA",
+                "300 Ferst DR",
+                "Drop Off",
+                "www.uga.edu",
+                "30602");
+        Cloud.addLocation(locationEntryAdded, db);
+        // (true, db.existInLo(locationEntryAdded));
+        // assertEquals(false, db.existInInventory(locationEntryNotAdded));
     }
 
     @Test

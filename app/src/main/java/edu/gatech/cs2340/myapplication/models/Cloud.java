@@ -1,7 +1,11 @@
 package edu.gatech.cs2340.myapplication.models;
 
+import android.provider.ContactsContract;
+
 import java.util.HashSet;
 import java.util.Set;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Cloud {
     /*
@@ -36,11 +40,40 @@ public class Cloud {
         return displayOptionsSet;
     }
 
+    /**
+     * Set menu items to force certain users particular accessibility
+     */
     public enum MenuOptions {
         VIEW_LOCATIONS, EDIT_LOCATIONS, VIEW_INVENTORY, EDIT_INVENTORY, LOGIN, LOGOUT, REGISTER_USER;
     }
 
-    public static void addLocation(LocationEntry locationEntry) {
+    public static void addLocation(LocationEntry locationEntry, Database db) {
+        Map<String, String> locationEntryMap = new HashMap<>();
+        locationEntryMap.put("City", locationEntry.getCity());
+        locationEntryMap.put("Latitude", locationEntry.getLatitude());
+        locationEntryMap.put("Longitude", locationEntry.getLongitude());
+        locationEntryMap.put("Name", locationEntry.getName());
+        locationEntryMap.put("Phone", locationEntry.getPhone());
+        locationEntryMap.put("State", locationEntry.getState());
+        locationEntryMap.put("StreetAddress", locationEntry.getStreetAddress());
+        locationEntryMap.put("Type", locationEntry.getType());
+        locationEntryMap.put("Website", locationEntry.getWebsite());
+        locationEntryMap.put("Zip", locationEntry.getZip());
+        db.addLocationEntry(locationEntryMap);
+    }
+
+
+
+    public static void addInventoryEntry(InventoryEntry inventoryEntry, Database db) {
+        Map<String, String> inventoryEntryMap = new HashMap<>();
+        inventoryEntryMap.put("timeStamp", inventoryEntry.getTimeStamp());
+        inventoryEntryMap.put("location", inventoryEntry.getLocation());
+        inventoryEntryMap.put("smallDescription", inventoryEntry.getSmallDescription());
+        inventoryEntryMap.put("fullDescription", inventoryEntry.getFullDescription());
+        inventoryEntryMap.put("value", inventoryEntry.getValue());
+        inventoryEntryMap.put("Category", inventoryEntry.getCategory());
+
+        db.addInventoryEntry(inventoryEntryMap);
 
     }
 

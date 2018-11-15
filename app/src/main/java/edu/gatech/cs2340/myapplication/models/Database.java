@@ -75,6 +75,13 @@ public class Database {
 
     }
 
+    public void addLocationEntry(Map<String, String> locationEntryMap) {
+        locationData.add(locationEntryMap);
+    }
+
+    public void addInventoryEntry(Map<String, String> inventoryEntryMap) {
+        inventoryData.add(inventoryEntryMap);
+    }
 
 
 
