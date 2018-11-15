@@ -27,7 +27,9 @@ public class TheCloudTest {
 
     List<LocationEntry> mLocationList;
     List<InventoryEntry> mInventoryList;
+    List<User> mUsers;
     Database db;
+
     User mGuestUser;
     User mAdminUser;
     User mManagerUser;
@@ -40,6 +42,12 @@ public class TheCloudTest {
         mAdminUser = new User("chloe", "1234", User.Type.ADMIN );
         mManagerUser = new User("collin", "1234", User.Type.MANAGER);
         mEmployeeUser = new User("raj", "1234", User.Type.EMPLOYEE);
+
+        mUsers = new ArrayList<>();
+        mUsers.add(mAdminUser);
+        mUsers.add(mEmployeeUser);
+        mUsers.add(mManagerUser);
+        mUsers.add(mGuestUser);
 
         // Initialize real data
         LocationEntry locationEntry1 = new LocationEntry("Atlanta",
@@ -113,22 +121,22 @@ public class TheCloudTest {
         // Inventory
         InventoryEntry item1 = new InventoryEntry("time",
                 "location",
-                "Item Name",
+                "Item 1",
                 "descriptions", "3",
                 "Category");
         InventoryEntry item2 = new InventoryEntry("time",
                 "location",
-                "Item Name",
+                "Item 2",
                 "descriptions", "3",
                 "Category");
         InventoryEntry item3 = new InventoryEntry("time",
                 "location",
-                "Item Name",
+                "Item 3",
                 "descriptions", "3",
                 "Category");
         InventoryEntry item4 = new InventoryEntry("time",
                 "location",
-                "Item Name",
+                "Item 4",
                 "descriptions", "3",
                 "Category");
 
@@ -137,6 +145,8 @@ public class TheCloudTest {
         mInventoryList.add(item2);
         mInventoryList.add(item3);
         mInventoryList.add(item4);
+
+        db = new Database(mUsers, mInventoryList, mLocationList);
     }
 
     @Test
@@ -178,6 +188,7 @@ public class TheCloudTest {
                 "Not Added Inventory Entry",
                 "descriptions", "3",
                 "Category");
+        assertEquals(true, db.existInInventory(mInventoryList.get(0)));
         assertEquals(true, db.existInInventory(inventoryEntryAdded));
         assertEquals(false, db.existInInventory(inventoryEntryNotAdded));
     }
@@ -205,8 +216,8 @@ public class TheCloudTest {
                 "www.uga.edu",
                 "30602");
         Cloud.addLocation(locationEntryAdded, db);
-        // (true, db.existInLo(locationEntryAdded));
-        // assertEquals(false, db.existInInventory(locationEntryNotAdded));
+        assertEquals(true, db.existInLocations(locationEntryAdded));
+        assertEquals(false, db.existInLocations(locationEntryNotAdded));
     }
 
     @Test

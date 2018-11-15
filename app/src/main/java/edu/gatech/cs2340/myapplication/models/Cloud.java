@@ -55,7 +55,7 @@ public class Cloud {
         locationEntryMap.put("Name", locationEntry.getName());
         locationEntryMap.put("Phone", locationEntry.getPhone());
         locationEntryMap.put("State", locationEntry.getState());
-        locationEntryMap.put("StreetAddress", locationEntry.getStreetAddress());
+        locationEntryMap.put("Street Address", locationEntry.getStreetAddress());
         locationEntryMap.put("Type", locationEntry.getType());
         locationEntryMap.put("Website", locationEntry.getWebsite());
         locationEntryMap.put("Zip", locationEntry.getZip());
@@ -71,10 +71,9 @@ public class Cloud {
         inventoryEntryMap.put("smallDescription", inventoryEntry.getSmallDescription());
         inventoryEntryMap.put("fullDescription", inventoryEntry.getFullDescription());
         inventoryEntryMap.put("value", inventoryEntry.getValue());
-        inventoryEntryMap.put("Category", inventoryEntry.getCategory());
+        inventoryEntryMap.put("category", inventoryEntry.getCategory());
 
         db.addInventoryEntry(inventoryEntryMap);
-
     }
 
     public static LocationEntry searchLocation(String locationEntry, Database db) {

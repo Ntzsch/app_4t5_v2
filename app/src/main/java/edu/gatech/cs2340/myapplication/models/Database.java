@@ -24,6 +24,7 @@ public class Database {
                     List<LocationEntry> locationList) {
         locationData = new ArrayList<>();
         inventoryData = new ArrayList<>();
+        userData = new ArrayList<>();
 
         for (InventoryEntry entry : inventoryList) {
             Map<String, String> newMap = new HashMap<>();
