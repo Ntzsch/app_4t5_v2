@@ -222,16 +222,34 @@ public class TheCloudTest {
 
     @Test
     public void testRegisterUser() {
+        User newUser = new User("Mickey Mouse", "Minnie Mouse", User.Type.ADMIN);
+        Cloud.registerUser(newUser);
+        assertEquals(true, db.existInUsers(newUser));
 
+        User newUserNotAdded = new User("Donal Duck", "Goofy", User.Type.MANAGER);
+        assertEquals(true, db.existInUsers(newUser));
+        assertEquals(true, db.existInUsers(mEmployeeUser)); // already there in initialized database
+        assertEquals(false, db.existInUsers(newUserNotAdded));
     }
 
     @Test
     public void testSearchItem() {
-
+        String searchItem1 = "item 1";
+        String searchItemNotThere = "Not an item";
+        // Item exists
+        assertEquals(mInventoryList.get(0), Cloud.searchInventory(searchItem1, db));
+        // Item not found because not in the database yet
+        assertEquals(null, Cloud.searchInventory(searchItemNotThere, db));
     }
 
     @Test
     public void testSearchLocation() {
+        String searchLocation1 = "AFD Station 4";
+        String serachLocationNotThere = "UGA";
+        // Location exists
+        assertEquals(mLocationList.get(0), Cloud.searchLocation(searchLocation1, db));
+        // Item not found because not in the database yet
+        assertEquals(null, Cloud.searchLocation(serachLocationNotThere, db));
 
     }
 

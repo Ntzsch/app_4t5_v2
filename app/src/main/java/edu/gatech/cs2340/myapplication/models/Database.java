@@ -140,9 +140,4 @@ public class Database {
     public void addInventoryEntry(Map<String, String> inventoryEntryMap) {
         inventoryData.add(inventoryEntryMap);
     }
-
-
-
-
-
 }

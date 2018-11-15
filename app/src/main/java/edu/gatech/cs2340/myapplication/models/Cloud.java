@@ -76,6 +76,17 @@ public class Cloud {
         db.addInventoryEntry(inventoryEntryMap);
     }
 
+    public static void registerUser(String username, String password, String type, Database db) {
+        Map<String, String> userMap = new HashMap<>();
+
+        userMap.put("username", username);
+        userMap.put("password", password);
+        userMap.put("type", type);
+
+        db.addUser(userMap);
+
+    }
+
     public static void getLocation(LocationEntry locationEntry) {
         // Case where the dummy item is null
         // return null if item not found
