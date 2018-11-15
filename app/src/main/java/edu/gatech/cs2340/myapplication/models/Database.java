@@ -72,8 +72,30 @@ public class Database {
             }
         }
         return false;
-
     }
+
+    public boolean existInLocations(LocationEntry entry) {
+        Map<String, String> checkEntry = new HashMap<>();
+        checkEntry.put("City", entry.getCity());
+        checkEntry.put("Latitude", entry.getLatitude());
+        checkEntry.put("Longitude", entry.getLongitude());
+        checkEntry.put("Name", entry.getName());
+        checkEntry.put("Phone", entry.getPhone());
+        checkEntry.put("State", entry.getState());
+        checkEntry.put("Street Address", entry.getStreetAddress());
+        checkEntry.put("Type", entry.getType());
+        checkEntry.put("Website", entry.getWebsite());
+        checkEntry.put("Zip", entry.getZip());
+
+        for (Map<String, String> map : inventoryData) {
+            if (checkEntry.equals(map)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+
 
 
 
