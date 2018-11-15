@@ -1,21 +1,22 @@
 package edu.gatech.cs2340.myapplication;
 
-import android.view.Menu;
-
-import org.junit.Test;
-import org.junit.Before;
-
-import edu.gatech.cs2340.myapplication.controllers.InventoryCardRecyclerViewAdapter;
-import edu.gatech.cs2340.myapplication.controllers.LocationCardRecyclerViewAdapter;
 import edu.gatech.cs2340.myapplication.models.Database;
 import edu.gatech.cs2340.myapplication.models.InventoryEntry;
 import edu.gatech.cs2340.myapplication.models.LocationEntry;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertNull;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 import java.util.HashSet;
+
+import org.junit.Test;
+import org.junit.Before;
 
 import edu.gatech.cs2340.myapplication.models.Cloud;
 import edu.gatech.cs2340.myapplication.models.User;
@@ -149,11 +150,6 @@ public class TheCloudTest {
         db = new Database(mUsers, mInventoryList, mLocationList);
     }
 
-    @Test
-    public void testGetLocations() {
-        List<LocationEntry> dbLocations = db.getLocations();
-        assertEquals(dbLocations, mLocationList);
-    }
 
     @Test
     public void testUserOptions() {
@@ -188,9 +184,9 @@ public class TheCloudTest {
                 "Not Added Inventory Entry",
                 "descriptions", "3",
                 "Category");
-        assertEquals(true, db.existInInventory(mInventoryList.get(0)));
-        assertEquals(true, db.existInInventory(inventoryEntryAdded));
-        assertEquals(false, db.existInInventory(inventoryEntryNotAdded));
+        assertTrue(db.existInInventory(mInventoryList.get(0)));
+        assertTrue(db.existInInventory(inventoryEntryAdded));
+        assertFalse(db.existInInventory(inventoryEntryNotAdded));
     }
 
     @Test
@@ -216,40 +212,41 @@ public class TheCloudTest {
                 "www.uga.edu",
                 "30602");
         Cloud.addLocation(locationEntryAdded, db);
-        assertEquals(true, db.existInLocations(locationEntryAdded));
-        assertEquals(false, db.existInLocations(locationEntryNotAdded));
+        assertTrue(db.existInLocations(locationEntryAdded));
+        assertFalse(db.existInLocations(locationEntryNotAdded));
     }
 
     @Test
     public void testRegisterUser() {
         User newUser = new User("Mickey Mouse", "Minnie Mouse", User.Type.ADMIN);
-        Cloud.registerUser(newUser);
-        assertEquals(true, db.existInUsers(newUser));
+        Cloud.registerUser(newUser, db);
+        assertTrue(db.existInUsers(newUser));
 
         User newUserNotAdded = new User("Donal Duck", "Goofy", User.Type.MANAGER);
-        assertEquals(true, db.existInUsers(newUser));
-        assertEquals(true, db.existInUsers(mEmployeeUser)); // already there in initialized database
-        assertEquals(false, db.existInUsers(newUserNotAdded));
+        assertTrue(db.existInUsers(newUser));
+        assertTrue(db.existInUsers(mEmployeeUser)); // already there in initialized database
+        assertFalse(db.existInUsers(newUserNotAdded));
     }
 
     @Test
     public void testSearchItem() {
-        String searchItem1 = "item 1";
+        String searchItem1 = "Item 1";
         String searchItemNotThere = "Not an item";
         // Item exists
-        assertEquals(mInventoryList.get(0), Cloud.searchInventory(searchItem1, db));
+        assertEquals(mInventoryList.get(0).getSmallDescription(), Cloud.searchInventory(searchItem1, db).getSmallDescription());
         // Item not found because not in the database yet
-        assertEquals(null, Cloud.searchInventory(searchItemNotThere, db));
+        assertNull(Cloud.searchInventory(searchItemNotThere, db));
     }
 
     @Test
     public void testSearchLocation() {
         String searchLocation1 = "AFD Station 4";
-        String serachLocationNotThere = "UGA";
+        String searchLocationNotThere = "UGA";
         // Location exists
-        assertEquals(mLocationList.get(0), Cloud.searchLocation(searchLocation1, db));
+        assertNotNull(Cloud.searchLocation(searchLocation1, db));
+        assertEquals(mLocationList.get(0).getName(), Cloud.searchLocation(searchLocation1, db).getName());
         // Item not found because not in the database yet
-        assertEquals(null, Cloud.searchLocation(serachLocationNotThere, db));
+        assertNull(Cloud.searchLocation(searchLocationNotThere, db));
 
     }
 

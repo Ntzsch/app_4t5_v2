@@ -1,25 +1,11 @@
 package edu.gatech.cs2340.myapplication.models;
 
-import android.provider.ContactsContract;
-
 import java.util.HashSet;
 import java.util.Set;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Cloud {
-    /*
-    1) signin
-    2) register
-    3) get locations
-    4) add inventory item
-    5) get inventory items
-     */
-
-
-    public void signIn(String username, String password) {
-
-    }
 
     // Menu item options -> put out a list of menu items
     public static Set<MenuOptions> getMenuOptions(User user) {
@@ -44,7 +30,7 @@ public class Cloud {
      * Set menu items to force certain users particular accessibility
      */
     public enum MenuOptions {
-        VIEW_LOCATIONS, EDIT_LOCATIONS, VIEW_INVENTORY, EDIT_INVENTORY, LOGIN, LOGOUT, REGISTER_USER;
+        VIEW_LOCATIONS, EDIT_LOCATIONS, VIEW_INVENTORY, EDIT_INVENTORY, REGISTER_USER
     }
 
     public static void addLocation(LocationEntry locationEntry, Database db) {
@@ -76,33 +62,34 @@ public class Cloud {
         db.addInventoryEntry(inventoryEntryMap);
     }
 
-<<<<<<< HEAD
-    public static void registerUser(String username, String password, String type, Database db) {
+    public static void registerUser(User user, Database db) {
         Map<String, String> userMap = new HashMap<>();
-
-        userMap.put("username", username);
-        userMap.put("password", password);
-        userMap.put("type", type);
-
+        userMap.put("username", user.getUsername());
+        userMap.put("password", user.getPassword());
+        userMap.put("type", user.getType().toString());
         db.addUser(userMap);
-
     }
 
-    public static void getLocation(LocationEntry locationEntry) {
-        // Case where the dummy item is null
-        // return null if item not found
-=======
+
     public static LocationEntry searchLocation(String locationEntry, Database db) {
         for (Map<String, String> map : db.locationData) {
             if (map.containsValue(locationEntry)) {
-                LocationEntry entry = new LocationEntry(map.get("City"), map.get("Latitude")
+                return new LocationEntry(map.get("City"), map.get("Latitude")
                         ,map.get("Longitude"), map.get("Name"), map.get("Phone"), map.get("State"), map.get("Street Address")
                         ,map.get("Type"), map.get("Website"), map.get("Zip"));
-                return entry;
             }
         }
         return null;
->>>>>>> e11d0ae51f1e0a1485733ca9af70f6f3bd5608ad
+    }
+
+    public static InventoryEntry searchInventory(String inventoryEntry, Database db) {
+        for (Map<String, String> map : db.inventoryData) {
+            if (map.containsValue(inventoryEntry)) {
+                return new InventoryEntry(map.get("timeStamp"), map.get("location")
+                        ,map.get("smallDescription"), map.get("fullDescription"), map.get("value"), map.get("category"));
+            }
+        }
+        return null;
     }
 
 

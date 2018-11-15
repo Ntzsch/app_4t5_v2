@@ -1,20 +1,17 @@
 package edu.gatech.cs2340.myapplication.models;
-import android.location.Location;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
-
 
 /**
  * Stores all the data for the app
  */
 public class Database {
-    List<Map<String, String>> locationData;
-    List<Map<String, String>> inventoryData;
-    List<Map<String, String>> userData;
+    public List<Map<String, String>> locationData;
+    public List<Map<String, String>> inventoryData;
+    public List<Map<String, String>> userData;
 
     /**
      * Constructor
@@ -56,44 +53,12 @@ public class Database {
             Map<String, String> newMap = new HashMap<>();
             newMap.put("username", user.getUsername());
             newMap.put("password", user.getPassword());
+            newMap.put("type", user.getType().toString());
             userData.add(newMap);
         }
     }
 
-    /**
-     * Get Locations
-     */
-    public List<LocationEntry> getLocations() {
-        List<LocationEntry> locationEntryList = new ArrayList<>();
-        for (Map<String, String> det: locationData) {
-            locationEntryList.add(new LocationEntry(
-                    det.get("City"),
-                    det.get("Latitude"),
-                    det.get("Longitude"),
-                    det.get("Name"),
-                    det.get("Phone"),
-                    det.get("State"),
-                    det.get("Street Address"),
-                    det.get("Type"),
-                    det.get("Website"),
-                    det.get("Zip")));
-        }
-        return locationEntryList;
-    }
 
-    public List<InventoryEntry> getInventory() {
-        List<InventoryEntry> inventoryEntryList = new ArrayList<>();
-        for(Map<String, String> det: inventoryData) {
-            inventoryEntryList.add(new InventoryEntry(
-                    det.get("timeStamp"),
-                    det.get("location"),
-                    det.get("smallDescription"),
-                    det.get("fullDescription"),
-                    det.get("value"),
-                    det.get("category")));
-        }
-        return inventoryEntryList;
-    }
 
     public boolean existInInventory(InventoryEntry entry) {
         Map<String, String> checkEntry = new HashMap<>();
@@ -125,7 +90,21 @@ public class Database {
         checkEntry.put("Website", entry.getWebsite());
         checkEntry.put("Zip", entry.getZip());
 
-        for (Map<String, String> map : inventoryData) {
+        for (Map<String, String> map : locationData) {
+            if (checkEntry.equals(map)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean existInUsers(User user) {
+        Map<String, String> checkEntry = new HashMap<>();
+        checkEntry.put("username", user.getUsername());
+        checkEntry.put("password", user.getPassword());
+        checkEntry.put("type", user.getType().toString());
+
+        for (Map<String, String> map : userData) {
             if (checkEntry.equals(map)) {
                 return true;
             }
@@ -139,5 +118,9 @@ public class Database {
 
     public void addInventoryEntry(Map<String, String> inventoryEntryMap) {
         inventoryData.add(inventoryEntryMap);
+    }
+
+    public void addUser(Map<String, String> userMap) {
+        userData.add(userMap);
     }
 }
