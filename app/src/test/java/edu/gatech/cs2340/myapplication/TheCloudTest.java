@@ -14,6 +14,9 @@ import edu.gatech.cs2340.myapplication.models.LocationEntry;
 import static org.junit.Assert.assertEquals;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
+import java.util.HashSet;
+
 import edu.gatech.cs2340.myapplication.models.Cloud;
 import edu.gatech.cs2340.myapplication.models.User;
 
@@ -143,14 +146,28 @@ public class TheCloudTest {
     }
 
     @Test
-    public void testGuestUserOptions() {
-        // expected menu options
-        List<Cloud.MenuOptions> menuOptions = new ArrayList<>();
+    public void testUserOptions() {
+        // expected guest menu options
+        Set<Cloud.MenuOptions> menuOptions = new HashSet<>();
         menuOptions.add(Cloud.MenuOptions.VIEW_LOCATIONS);
         menuOptions.add(Cloud.MenuOptions.VIEW_INVENTORY);
-
         assertEquals(menuOptions, Cloud.getMenuOptions(mGuestUser));
+
+        // expected employee menu options
+        menuOptions.add(Cloud.MenuOptions.EDIT_INVENTORY);
+        assertEquals(menuOptions, Cloud.getMenuOptions(mEmployeeUser));
+
+        // expected manager menu options
+        menuOptions.add(Cloud.MenuOptions.EDIT_LOCATIONS);
+        assertEquals(menuOptions, Cloud.getMenuOptions(mManagerUser));
+
+        menuOptions.add(Cloud.MenuOptions.REGISTER_USER);
+        assertEquals(menuOptions, Cloud.getMenuOptions(mAdminUser));
     }
+
+
+
+
 }
 
 
