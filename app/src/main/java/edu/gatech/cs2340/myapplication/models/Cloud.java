@@ -76,6 +76,7 @@ public class Cloud {
         db.addInventoryEntry(inventoryEntryMap);
     }
 
+<<<<<<< HEAD
     public static void registerUser(String username, String password, String type, Database db) {
         Map<String, String> userMap = new HashMap<>();
 
@@ -90,7 +91,20 @@ public class Cloud {
     public static void getLocation(LocationEntry locationEntry) {
         // Case where the dummy item is null
         // return null if item not found
+=======
+    public static LocationEntry searchLocation(String locationEntry, Database db) {
+        for (Map<String, String> map : db.locationData) {
+            if (map.containsValue(locationEntry)) {
+                LocationEntry entry = new LocationEntry(map.get("City"), map.get("Latitude")
+                        ,map.get("Longitude"), map.get("Name"), map.get("Phone"), map.get("State"), map.get("Street Address")
+                        ,map.get("Type"), map.get("Website"), map.get("Zip"));
+                return entry;
+            }
+        }
+        return null;
+>>>>>>> e11d0ae51f1e0a1485733ca9af70f6f3bd5608ad
     }
+
 
     // Add location and test that it's in the Database
         // isThere method in Database class
