@@ -3,7 +3,6 @@ package edu.gatech.cs2340.myapplication.controllers.fragments;
 import android.app.SearchManager;
 import android.os.Bundle;
 
-import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 
 import android.util.Log;
@@ -21,7 +20,8 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
-
+import com.google.android.gms.maps.model.LatLngBounds;
+import com.google.android.gms.maps.CameraUpdate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -36,6 +36,7 @@ import edu.gatech.cs2340.myapplication.controllers.LocationCardRecyclerViewAdapt
 import edu.gatech.cs2340.myapplication.models.InventoryEntry;
 import edu.gatech.cs2340.myapplication.models.LocationEntry;
 import edu.gatech.cs2340.myapplication.models.TheCloud;
+
 
 
 public class ViewMapsFragment extends Fragment implements OnMapReadyCallback {
@@ -81,6 +82,7 @@ public class ViewMapsFragment extends Fragment implements OnMapReadyCallback {
         Log.d("onMapReady", "Got Locations");
 
         mMap.getUiSettings().setZoomControlsEnabled(true);
+        LatLngBounds.Builder builder = new LatLngBounds.Builder();
 
         //iterate through the list and add a pin for each element in the model
         for (LocationEntry locationEntry : mLocationList) {
@@ -88,9 +90,16 @@ public class ViewMapsFragment extends Fragment implements OnMapReadyCallback {
             double lat = Double.parseDouble(locationEntry.latitude);
             double lng = Double.parseDouble(locationEntry.longitude);
             LatLng loc = new LatLng(lat, lng);
-            mMap.addMarker(new MarkerOptions().position(loc).title(locationEntry.getName()).snippet(locationEntry.phone));
+            MarkerOptions marker = new MarkerOptions()
+                    .position(loc).title(locationEntry.getName()).snippet(locationEntry.phone);
+            builder.include(marker.getPosition());
+            mMap.addMarker(marker);
             mMap.moveCamera(CameraUpdateFactory.newLatLng(loc));
         }
+        LatLngBounds bounds = builder.build();
+        int padding = 0; // offset from edges of the map in pixels
+        CameraUpdate cu = CameraUpdateFactory.newLatLngBounds(bounds, padding);
+        googleMap.moveCamera(cu);
 
         mMap.setInfoWindowAdapter(new CustomInfoWindowAdapter());
 
