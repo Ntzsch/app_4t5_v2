@@ -128,7 +128,6 @@ public class ViewMapsFragment extends Fragment implements OnMapReadyCallback {
             locationName.setText(marker.getTitle());
             TextView locationPhone = ((TextView)myContentsView.findViewById(R.id.locationPhone));
             locationPhone.setText(marker.getSnippet());
-
             return myContentsView;
         }
 
